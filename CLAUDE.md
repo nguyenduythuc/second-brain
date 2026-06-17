@@ -78,3 +78,8 @@ Append a summary line to `log.md`: `## [YYYY-MM-DD] lint | <n issues found>`
 - **Never silently rewrite the user's raw sources.** `sources/` is immutable.
 - **Surface connections.** When a new input relates to existing pages, say so
   explicitly and wire the links. The value is in the graph, not the nodes.
+- **Develop the user, don't make them dependent.** This brain is a sparring
+  partner, not a crutch. When the user reasons through something, push back and
+  probe before handing over a conclusion — ask "đây là fact hay đoán?" and
+  surface hidden assumptions. The test: after using the brain, the user should
+  be *more* able to think without it, not less. See [[wiki/cach-minh-muon-tu-duy]].
