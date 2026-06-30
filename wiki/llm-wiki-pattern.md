@@ -8,89 +8,88 @@ sources: [sources/2026-06-12-karpathy-llm-wiki.md, sources/2026-06-29-karpathy-l
 
 # LLM Wiki Pattern
 
-A knowledge-management pattern proposed by [[wiki/andrej-karpathy]]: an AI
-agent incrementally builds and maintains a persistent wiki of plain markdown
-files, instead of re-reading raw documents on every question. This second
-brain is a direct implementation of it (see [[wiki/about-this-brain]]).
+Một pattern quản trị tri thức do [[wiki/andrej-karpathy]] đề xuất: một agent AI
+dần dần xây và bảo trì một wiki markdown thuần bền vững, thay vì đọc lại tài
+liệu thô mỗi lần có câu hỏi. Second brain này là một bản triển khai trực tiếp
+của nó (xem [[wiki/about-this-brain]]).
 
-## Core insight
+## Insight cốt lõi
 
-Human wikis die because maintenance grows faster than value. An LLM agent
-doesn't get bored, never forgets a cross-reference, and can touch many files
-in one pass — so the wiki compounds instead of rotting.
+Wiki của con người chết vì công sức bảo trì tăng nhanh hơn giá trị. Một agent
+LLM thì không chán, không bao giờ quên một cross-reference, và chạm được nhiều
+file trong một lượt — nhờ vậy wiki compound thay vì mục rữa.
 
 > *"Most personal knowledge systems die of maintenance, not of bad ideas."*
 
-## The nine rules (field-notes v040426)
+## Chín quy tắc (field notes v040426)
 
-Karpathy later formalized the pattern into nine rules. The throughline:
-**the human owns judgment and the raw record, the model owns the bookkeeping,
-the wiki is a compiled artifact that compounds.**
+Karpathy về sau hệ thống hoá pattern thành chín quy tắc. Đường xuyên suốt:
+**con người sở hữu phán đoán và bản ghi thô, model sở hữu bookkeeping, wiki là
+một artifact được compile và biết compound.**
 
-1. **Sources are immutable.** Everything lands in raw sources and is never
-   edited. If a source is wrong, add a *correcting* source — don't rewrite
-   history, or you get two records of truth and can't tell which is real.
-2. **Separate the layers.** Three layers, three owners: raw (you), wiki (the
-   model), schema file (both). Blurring them — model writing into raw, or human
-   hand-tuning the wiki to win an argument — destroys the trust boundary.
-3. **The model owns the wiki.** You rarely write a wiki page yourself; you
-   choose what enters raw, ask questions, and think. If *you* end up doing the
-   bookkeeping, the schema is underspecified, not the model.
-4. **Compile, don't retrieve.** This is *not* RAG. RAG re-derives from raw
-   chunks every query and accumulates nothing. Here sources compile once into
-   linked pages. (raw = source code, model = compiler, wiki = executable,
-   queries = runtime.) **Compiled knowledge compounds; retrieved knowledge is
-   rediscovered.**
-5. **Ingest one source at a time.** A good ingest isn't one new page — it's the
-   model tracing a source's implications *across the graph*, touching every page
-   the new fact changes. Batch-importing your whole digital life in a weekend
-   produces a dump, not a wiki.
-6. **Link everything.** Every wikilink is a visible edge. An entity that appears
-   in five pages but links to none means a lazy ingest. *The value is in the
-   edges, not the nodes.* (This is why Obsidian works as a front-end: the graph
-   view exposes clusters, hubs, and orphans — see [[wiki/obsidian-vs-llm-wiki]].)
-7. **Navigate by index.** Reach an answer via `index.md` → a few relevant pages
-   → synthesis, not by loading the whole vault. If the model brute-forces the
-   corpus every question, the index has stopped reflecting the territory.
-8. **Lint the knowledge.** Treat the wiki like code. A contradiction is
-   *information*, not an error to paper over — it means two sources disagree and
-   you now know where to look. Skipping lint is how a wiki rots while the graph
-   still looks impressive.
-9. **Start small.** Ten sources, not ten thousand. Make ingest/query/lint feel
-   natural before adding a search engine or a twenty-rule schema. Early pages
-   are messy and naming conventions will change — that's normal. *A small wiki
-   you actually feed beats a beautiful architecture you abandon in week three.*
+1. **Sources bất biến.** Mọi thứ rơi vào sources thô và không bao giờ bị sửa.
+   Nếu một nguồn sai, thêm một nguồn *sửa lỗi* — đừng viết lại lịch sử, nếu
+   không bạn có hai bản ghi và không biết cái nào là thật.
+2. **Tách các lớp.** Ba lớp, ba chủ sở hữu: raw (bạn), wiki (model), file schema
+   (cả hai). Làm nhoè ranh giới — model ghi vào raw, hay người hand-tune wiki để
+   thắng một lập luận — là phá luôn cái boundary làm hệ thống đáng tin.
+3. **Model sở hữu wiki.** Bạn hiếm khi tự viết một trang wiki; bạn chọn cái gì
+   vào raw, đặt câu hỏi, và nghĩ. Nếu *bạn* phải làm bookkeeping, là schema chưa
+   đủ chi tiết, không phải lỗi của model.
+4. **Compile, đừng retrieve.** Đây *không* phải RAG. RAG tái suy ra câu trả lời
+   từ các chunk thô mỗi query và chẳng tích luỹ gì. Ở đây sources được compile
+   một lần thành các trang đã link. (raw = source code, model = compiler, wiki =
+   executable, query = runtime.) **Tri thức được compile thì compound; tri thức
+   đi retrieve thì bị tái-khám-phá mỗi lần.**
+5. **Ingest từng nguồn một.** Một ingest tốt không phải một trang mới — đó là
+   model truy vết hệ quả của một nguồn *xuyên suốt đồ thị*, chạm tới mọi trang mà
+   sự kiện mới làm thay đổi. Nhập cả đời số hoá trong một cuối tuần tạo ra một
+   đống đổ (dump), không phải wiki.
+6. **Link mọi thứ.** Mỗi wikilink là một cạnh nhìn thấy được. Một entity xuất
+   hiện trong năm trang mà không link tới đâu nghĩa là ingest lười. *Giá trị nằm
+   ở các cạnh, không ở các nút.* (Đây là lý do Obsidian làm front-end tốt: graph
+   view phơi ra cluster, hub, và orphan — xem [[wiki/obsidian-vs-llm-wiki]].)
+7. **Điều hướng bằng index.** Đi tới câu trả lời qua `index.md` → vài trang liên
+   quan → tổng hợp, chứ không nạp cả vault vào context. Nếu model brute-force cả
+   corpus mỗi câu hỏi, index đã ngừng phản ánh lãnh thổ.
+8. **Lint tri thức.** Đối xử với wiki như code. Một mâu thuẫn là *thông tin*,
+   không phải lỗi cần che — nó nghĩa là hai nguồn bất đồng và giờ bạn biết chỗ để
+   nhìn. Bỏ lint là cách wiki mục rữa âm thầm trong khi graph vẫn trông hoành tráng.
+9. **Bắt đầu nhỏ.** Mười nguồn, không phải mười nghìn. Làm cho ingest/query/lint
+   thành tự nhiên trước khi thêm search engine hay một schema hai mươi quy tắc.
+   Trang đầu sẽ lộn xộn và quy ước đặt tên sẽ đổi — đó là bình thường. *Một wiki
+   nhỏ bạn thật sự nuôi thắng một kiến trúc đẹp bạn bỏ vào tuần thứ ba.*
 
-## Architecture (three layers)
+## Kiến trúc (ba lớp)
 
-1. **Raw sources** — immutable inputs; the agent reads, never modifies.
-   (This brain names this folder `sources/` rather than Karpathy's `raw/`.)
-2. **The wiki** — agent-owned markdown: summaries, entity/concept pages,
-   syntheses, all cross-linked. The human does *not* hand-edit these.
-3. **The schema** — a config doc (`CLAUDE.md`; `AGENTS.md` also works)
-   defining conventions and the ingest/query/lint workflows.
+1. **Sources thô** — đầu vào bất biến; agent đọc, không bao giờ sửa. (Brain này
+   đặt tên thư mục là `sources/` thay vì `raw/` của Karpathy.)
+2. **Wiki** — markdown do agent sở hữu: summary, trang entity/concept, synthesis,
+   tất cả cross-link. Con người *không* hand-edit các trang này.
+3. **Schema** — một file config (`CLAUDE.md`; `AGENTS.md` cũng được) định nghĩa
+   quy ước và các workflow ingest/query/lint.
 
-Two control files keep it inspectable: `index.md` (one-line catalog, the
-navigation layer) and `log.md` (append-only, grep-parseable history).
+Hai file điều khiển giữ brain luôn soi được: `index.md` (catalog một dòng mỗi
+trang, là lớp điều hướng) và `log.md` (lịch sử append-only, grep được).
 
-## Operations
+## Các thao tác
 
-- **Ingest** — read → discuss takeaways with the user → file + cross-link,
-  one source at a time, tracing implications across the graph.
-- **Query** — route via `index.md`, read the few relevant pages, synthesize;
-  good answers become new pages, so using the brain grows the brain.
-- **Lint** — periodic health check: contradictions, stale claims, orphans,
-  missing pages/links, entities with two spellings.
+- **Ingest** — đọc → thảo luận takeaways với người dùng → filing + cross-link,
+  từng nguồn một, truy vết hệ quả xuyên đồ thị.
+- **Query** — định tuyến qua `index.md`, đọc vài trang liên quan, tổng hợp;
+  câu trả lời hay trở thành trang mới, nên dùng brain làm brain lớn lên.
+- **Lint** — health check định kỳ: mâu thuẫn, claim cũ, orphan, thiếu
+  trang/link, entity bị hai cách viết.
 
-## Design stance
+## Lập trường thiết kế
 
-No vector DB, no RAG, no embeddings — modern context windows hold a personal
-knowledge base as plain text. Evidence it scales: Karpathy's single-topic wiki
-reached ~100 articles / ~400k words with zero hand-written content.
+Không vector DB, không RAG, không embeddings — context window hiện đại chứa được
+một knowledge base cá nhân dưới dạng text thuần. Bằng chứng nó scale: wiki một
+chủ đề của Karpathy đạt ~100 bài / ~400k chữ với zero nội dung viết tay.
 
-## Related
+## Liên quan
 
-- [[wiki/andrej-karpathy]] — author of the pattern.
-- [[wiki/about-this-brain]] — how this repo implements it.
-- [[wiki/obsidian-vs-llm-wiki]] — Obsidian as a viewer over the same vault vs.
-  as a manual-maintenance tool.
+- [[wiki/andrej-karpathy]] — tác giả của pattern.
+- [[wiki/about-this-brain]] — cách repo này triển khai nó.
+- [[wiki/obsidian-vs-llm-wiki]] — Obsidian như một viewer trên cùng vault, so với
+  như một công cụ bảo trì thủ công.

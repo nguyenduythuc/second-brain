@@ -44,6 +44,15 @@ destroys the boundary that makes the system trustworthy.
   ---
   ```
 - Link between pages with `[[wiki/other-page]]` style references inline.
+- **Language: wiki content is in Vietnamese.** All `wiki/` pages, their prose,
+  and `index.md` descriptions are written in Vietnamese — this is the owner's
+  thinking language, and the discussion is the product. Exceptions: keep
+  established technical terms and direct quotes in their original English
+  *inline* (e.g. RAG, ingest, compile, frontmatter, "compiled compounds;
+  retrieved is rediscovered") rather than forcing awkward translations.
+  `sources/` is verbatim — never translated, kept in the source's own language.
+  This file (`CLAUDE.md`) and `.claude/commands/` stay in English: they are the
+  agent-facing "code" layer.
 - Prefer **many small linked pages** over one big page. When a page exceeds
   ~400 lines or covers two distinct ideas, split it and cross-link.
 
