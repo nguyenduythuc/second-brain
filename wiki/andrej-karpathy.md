@@ -8,20 +8,19 @@ sources: [sources/2026-06-12-karpathy-llm-wiki.md, sources/2026-06-29-karpathy-l
 
 # Andrej Karpathy
 
-Nhà nghiên cứu AI — founding member của OpenAI, cựu Director of AI tại Tesla.
-Liên quan ở đây với tư cách tác giả của [[wiki/llm-wiki-pattern]] (gist, tháng
-4/2026; sau được hệ thống hoá thành chín quy tắc trong tập field notes
-`llm-wiki.md` v040426), chính là pattern mà brain này triển khai.
+AI researcher — founding member of OpenAI, former Director of AI at Tesla.
+Relevant here as the author of the [[wiki/llm-wiki-pattern]] (gist, April
+2026; later formalized into nine rules as field notes `llm-wiki.md` v040426),
+the pattern this second brain implements.
 
-## Vì sao ông quan trọng với brain này
+## Why he matters to this brain
 
-Ông tái định khung quản trị tri thức cá nhân quanh agent: đẩy chi phí token vào
-việc để một LLM *bảo trì* một wiki có cấu trúc, thay vì trả lời từng câu hỏi rời
-rạc. Wiki nghiên cứu một chủ đề của chính ông đã lớn tới ~100 bài / ~400k chữ,
-toàn bộ do agent viết, được duyệt trong Obsidian.
+He reframed personal knowledge management around agents: push token spend into
+having an LLM *maintain* a structured wiki rather than answer one-off
+questions. His own single-topic research wiki grew to ~100 articles /
+~400k words, all agent-written, reviewed in Obsidian.
 
-## Hướng cần theo dõi
+## Threads to watch
 
-- Các ghi chú tiếp theo về context engineering và knowledge base do agent bảo trì.
-- Quan điểm "no RAG, chỉ long context" của ông sẽ già đi thế nào khi context
-  window ngày càng lớn.
+- Further notes on context engineering and agent-maintained knowledge bases.
+- How his "no RAG, just long context" stance ages as context windows grow.

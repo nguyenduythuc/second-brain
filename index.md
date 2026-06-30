@@ -1,20 +1,20 @@
 # Index
 
-Catalog mọi trang wiki, một dòng mỗi trang, nhóm theo loại.
-Agent cập nhật file này mỗi lần ingest.
+Catalog of every wiki page, one line each, grouped by category.
+The agent updates this on every ingest.
 
 ## Meta
-- [[wiki/about-this-brain]] — brain này là gì và được tổ chức ra sao.
+- [[wiki/about-this-brain]] — what this second brain is and how it's organized.
 
 ## Concepts
-- [[wiki/llm-wiki-pattern]] — pattern wiki do agent bảo trì của Karpathy (9 quy tắc); thiết kế brain này triển khai.
-- [[wiki/obsidian-vs-llm-wiki]] — Obsidian (PKM thủ công) vs agent-maintained markdown; dùng Obsidian làm viewer.
-- [[wiki/tam-quan]] — thế giới quan / giá trị quan / nhân sinh quan: khung ba tầng nhìn, kèm phản biện.
-- [[wiki/phan-tu-va-do-sau]] — phản tư (quá trình) và độ sâu nhận thức (cặn lắng); cách rèn.
-- [[wiki/hieu-vs-lam-duoc]] — vì sao thấy/hiểu mà không áp dụng được: kiến thức khai báo vs thủ tục, vai trò của reps.
+- [[wiki/llm-wiki-pattern]] — Karpathy's agent-maintained wiki pattern (9 rules); the design this brain implements.
+- [[wiki/obsidian-vs-llm-wiki]] — Obsidian (manual PKM) vs. agent-maintained markdown; using Obsidian as a viewer.
+- [[wiki/three-views]] — Three Views (Tam Quan): worldview / values / life outlook, with critique.
+- [[wiki/reflection-and-depth]] — reflection (phản tư, the process) and depth (độ sâu, the deposit); how to train them.
+- [[wiki/understanding-vs-doing]] — why you can see/understand yet not apply: declarative vs. procedural knowledge, the role of reps.
 
 ## Entities
-- [[wiki/andrej-karpathy]] — tác giả LLM Wiki pattern; founding member của OpenAI, cựu Director of AI tại Tesla.
+- [[wiki/andrej-karpathy]] — author of the LLM Wiki pattern; founding member of OpenAI, ex-Tesla AI director.
 
 ## Syntheses
-- [[wiki/cach-minh-muon-tu-duy]] — tấm thẻ thực hành cá nhân: động tác "fact hay đoán?", reps, dùng brain không thành nạng.
+- [[wiki/how-i-want-to-think]] — personal practice card: the "fact hay đoán?" move, reps, using the brain without it becoming a crutch.

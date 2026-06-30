@@ -6,42 +6,44 @@ updated: 2026-06-29
 sources: []
 ---
 
-# Về Brain Này
+# About This Brain
 
-Đây là một **LLM Wiki** cá nhân — một second brain được một agent AI (Claude
-Code) bảo trì, thay vì làm tay. Pattern là [[wiki/llm-wiki-pattern]] của
-[[wiki/andrej-karpathy]]: giữ mọi thứ dưới dạng markdown thuần, để agent đọc
-vào context, và để agent sở hữu lớp wiki có cấu trúc — nhờ vậy gánh nặng bảo
-trì không bao giờ rơi xuống mình.
+This is a personal **LLM Wiki** — a second brain maintained by an AI agent
+(Claude Code) rather than by hand. The pattern is the [[wiki/llm-wiki-pattern]]
+from [[wiki/andrej-karpathy]]: keep everything as plain markdown, let the agent
+read it into context, and have it own the structured wiki layer so the
+maintenance burden never falls on me.
 
-## Vì sao nó hiệu quả
+## Why it works
 
-Con người bỏ wiki vì công sức bảo trì tăng nhanh hơn giá trị nó tạo ra. Agent
-thì không chán, không quên một cross-reference nào, và chạm được nhiều file
-trong một lượt. Nhờ vậy wiki **compound** thay vì mục rữa.
+A human abandons a wiki because upkeep grows faster than the value. An agent
+doesn't get bored, doesn't forget a cross-reference, and can touch many files in
+one pass. So the wiki actually compounds instead of rotting.
 
-## Cách mình dùng
+## How I use it
 
-- **Capture** bất cứ thứ gì đáng giữ — một cuộc chat AI vừa "click", một ý
-  tưởng, một bài viết — rồi chạy `/ingest`.
-- **Thảo luận** takeaways với agent; cuộc nói chuyện đó mới là phần nghĩ thật
-  sự. File chỉ là cặn lắng lại của nó.
-- **Hỏi** brain bằng `/query` khi cần nhớ lại hoặc nối các thứ với nhau.
-- **Lint** định kỳ để bắt mâu thuẫn, claim cũ, và trang mồ côi.
+- **Capture** anything worth keeping — an AI chat that clicked, an idea, an
+  article — and run `/ingest`.
+- **Discuss** the takeaways with the agent; that conversation is the real
+  thinking. The files are what survive it.
+- **Ask** the brain with `/query` when I need to recall or connect things.
+- **Lint** periodically to catch contradictions, stale claims, and orphan pages.
 
-## Quy tắc giữ brain đáng tin
+## The rule that keeps it honest
 
-`sources/` là đầu vào thô, bất biến. `wiki/` là phần tổng hợp sống của agent.
-Mọi thứ link tới mọi thứ liên quan — **giá trị nằm ở đồ thị, không ở từng
-trang lẻ**. Con người sở hữu `sources/` và phán đoán; agent sở hữu `wiki/` và
-toàn bộ bookkeeping. Con người không hand-edit `wiki/`: muốn đổi một kết luận
-thì thêm một nguồn sửa lỗi hoặc bàn lại để agent viết.
+`sources/` is immutable raw input. `wiki/` is the agent's living synthesis.
+Everything links to everything related — **the value is in the graph, not any
+single page.** The human owns `sources/` and judgment; the agent owns `wiki/`
+and all bookkeeping. The human does not hand-edit `wiki/`: to change a
+conclusion, add a correcting source or discuss it so the agent rewrites the page.
 
-## Ngôn ngữ
+## Language
 
-Nội dung wiki viết bằng **tiếng Việt** (ngôn ngữ tư duy của người sở hữu).
-Thuật ngữ kỹ thuật và quote gốc giữ tiếng Anh inline. `sources/` giữ nguyên
-ngữ của nguồn. `CLAUDE.md` và `.claude/commands/` ở tiếng Anh — lớp "code"
-hướng tới agent.
+Wiki content is written in **English**, with **inline Vietnamese glosses** for
+terms English doesn't capture cleanly — e.g. *Three Views (Tam Quan)*,
+*worldview (thế giới quan)*, *reflection (phản tư)*. Signature personal
+self-talk phrases may stay in Vietnamese (e.g. the trigger *"fact hay đoán?"*).
+`sources/` stays verbatim in the source's own language. `CLAUDE.md` and
+`.claude/commands/` are in English — the agent-facing "code" layer.
 
-Xem `CLAUDE.md` ở gốc repo để biết schema vận hành đầy đủ.
+See `CLAUDE.md` at the repo root for the full operating schema.
