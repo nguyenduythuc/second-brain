@@ -1,0 +1,70 @@
+---
+title: Three Views (Tam Quan)
+type: concept
+created: 2026-06-17
+updated: 2026-06-29
+sources: [sources/2026-06-17-tam-quan-tu-duy.md]
+---
+
+# Three Views (Tam Quan)
+
+A framework that splits how a person "sees" into three layers. It comes from a
+familiar triad in Chinese popular philosophy (世界观 / 价值观 / 人生观), which
+later spread into everyday Vietnamese as **tam quan**.
+
+## The three layers
+
+- **Worldview (thế giới quan)** — how you see reality. Built by what you read,
+  see, and experience. *(metaphor: altitude / how high you stand)*
+- **Values (giá trị quan)** — what you hold to be right and worth doing; how you
+  rank priorities. Different people rank the same question differently (health
+  vs. money vs. knowledge). *(metaphor: angle / point of view)*
+- **Life outlook (nhân sinh quan)** — the meaning and purpose of life; your
+  dreams, who you want to become. *(metaphor: attitude)*
+
+## What the framework is actually good for
+
+It separates three layers that most people blur into one. When you disagree with
+someone or feel lost, you can **diagnose**: is this a *worldview* gap (different
+facts/experience), a *values* gap (different ranking of priorities), or a *life
+outlook* gap (a different sense of what life is for)? That diagnostic power is
+the part worth keeping.
+
+## Three things to be wary of (don't swallow it whole)
+
+1. **Causality isn't one-directional or automatic.** "Wider worldview → grander
+   life outlook" is too tidy. Reading and traveling a lot does *not*
+   automatically produce a deep life outlook — plenty of erudite, well-traveled
+   people stay cynical or adrift. Broad input is an **enabling condition**, not a
+   **determining cause**. What turns experience into maturity is
+   [[wiki/reflection-and-depth]], not volume.
+2. **It's a loop, not a ladder.** Your values decide *what* you choose to read
+   and where you go — so they shape the very input that forms your worldview.
+   The three layers feed back into each other.
+3. **Beware the "more is better" bias.** Reading 10 books deeply and reflecting
+   can build a sturdier worldview than skimming 200. Depth of integration
+   matters more than count.
+
+The "fill-in-the-blank / multiple-choice / pick-the-answer" metaphor is catchy
+but the line between "multiple-choice" and "pick-the-answer" is fuzzy — don't
+treat it as precise. The *altitude / angle / attitude* set is cleaner and more
+usable.
+
+## How to apply it
+
+- **Worldview:** be deliberate about inputs; prioritize depth + reflection over
+  volume.
+- **Values:** periodically audit — is the priority I'm ranking *actually mine*,
+  or just a default I inherited?
+- **Life outlook:** keep it an **open question you revisit periodically**, not an
+  answer locked once.
+
+**Warning:** don't use this framework to label and dismiss people ("our tam quan
+don't match"). It's a tool to *understand* difference, not to *judge*. Treat your
+own tam quan as a living draft, revised continuously.
+
+## Related
+
+- [[wiki/reflection-and-depth]] — the mechanism that turns input into depth.
+- [[wiki/understanding-vs-doing]] — why understanding this framework isn't the
+  same as living it.

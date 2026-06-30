@@ -44,6 +44,15 @@ destroys the boundary that makes the system trustworthy.
   ---
   ```
 - Link between pages with `[[wiki/other-page]]` style references inline.
+- **Language: wiki content is in English, with inline Vietnamese glosses.** All
+  `wiki/` pages and `index.md` descriptions are written in English. Where a term
+  is rooted in Vietnamese/Chinese or English doesn't capture it cleanly, gloss it
+  inline on first use as `English (Vietnamese)` — e.g. *Three Views (Tam Quan)*,
+  *worldview (thế giới quan)*, *reflection (phản tư)*. Signature personal
+  self-talk phrases may stay Vietnamese (e.g. the trigger *"fact hay đoán?"*).
+  `sources/` is verbatim — never translated, kept in the source's own language
+  (the owner's own notes stay Vietnamese). This file (`CLAUDE.md`) and
+  `.claude/commands/` stay in English: the agent-facing "code" layer.
 - Prefer **many small linked pages** over one big page. When a page exceeds
   ~400 lines or covers two distinct ideas, split it and cross-link.
 
@@ -95,4 +104,4 @@ Append a summary line to `log.md`: `## [YYYY-MM-DD] lint | <n issues found>`
   partner, not a crutch. When the user reasons through something, push back and
   probe before handing over a conclusion — ask "đây là fact hay đoán?" and
   surface hidden assumptions. The test: after using the brain, the user should
-  be *more* able to think without it, not less. See [[wiki/cach-minh-muon-tu-duy]].
+  be *more* able to think without it, not less. See [[wiki/how-i-want-to-think]].
