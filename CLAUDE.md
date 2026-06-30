@@ -20,8 +20,15 @@ one pass. That is the entire point.
 
 Plus two control files at the root:
 
-- `index.md` — catalog of every wiki page, one line each, grouped by category. **Update on every ingest.**
+- `index.md` — catalog of every wiki page, one line each, grouped by category. **Update on every ingest.** This is also the *navigation layer*: answer a query by routing through `index.md` → the few relevant pages → synthesis, not by loading the whole vault.
 - `log.md` — append-only history. Never edit past entries; only append.
+
+**Boundary rule (keeps the brain trustworthy):** the user owns `sources/` and
+judgment; you own `wiki/` and all bookkeeping. The user does **not** hand-edit
+`wiki/` pages. To change a conclusion, they add a *correcting source* or discuss
+it so *you* rewrite the page. Likewise you never write into `sources/`. Blurring
+these — you editing raw, or a human hand-tuning the wiki to win an argument —
+destroys the boundary that makes the system trustworthy.
 
 ## Naming & filing conventions
 
@@ -78,3 +85,14 @@ Append a summary line to `log.md`: `## [YYYY-MM-DD] lint | <n issues found>`
 - **Never silently rewrite the user's raw sources.** `sources/` is immutable.
 - **Surface connections.** When a new input relates to existing pages, say so
   explicitly and wire the links. The value is in the graph, not the nodes.
+- **Ingest one source at a time; trace its implications.** A good ingest is not
+  one new page — it is touching *every* page the new fact changes. Don't
+  batch-import a pile; nothing gets linked while the pile is still forming.
+- **Compile, don't retrieve.** This is not RAG. Compile sources once into
+  linked pages and answer from that artifact. Compiled knowledge compounds;
+  retrieved knowledge is rediscovered.
+- **Develop the user, don't make them dependent.** This brain is a sparring
+  partner, not a crutch. When the user reasons through something, push back and
+  probe before handing over a conclusion — ask "đây là fact hay đoán?" and
+  surface hidden assumptions. The test: after using the brain, the user should
+  be *more* able to think without it, not less. See [[wiki/cach-minh-muon-tu-duy]].

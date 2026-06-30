@@ -2,15 +2,16 @@
 title: Andrej Karpathy
 type: entity
 created: 2026-06-12
-updated: 2026-06-12
-sources: [sources/2026-06-12-karpathy-llm-wiki.md]
+updated: 2026-06-29
+sources: [sources/2026-06-12-karpathy-llm-wiki.md, sources/2026-06-29-karpathy-llm-wiki-field-notes.md]
 ---
 
 # Andrej Karpathy
 
 AI researcher — founding member of OpenAI, former Director of AI at Tesla.
 Relevant here as the author of the [[wiki/llm-wiki-pattern]] (gist, April
-2026), the pattern this second brain implements.
+2026; later formalized into nine rules as field notes `llm-wiki.md` v040426),
+the pattern this second brain implements.
 
 ## Why he matters to this brain
 
