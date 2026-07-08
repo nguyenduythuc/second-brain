@@ -18,3 +18,4 @@ The agent updates this on every ingest.
 
 ## Syntheses
 - [[wiki/how-i-want-to-think]] — personal practice card: the "fact hay đoán?" move, reps, using the brain without it becoming a crutch.
+- [[wiki/agent-org-multiplied-self]] — agent orgs multiply execution, not judgment; you're n× stronger only if the original is worth copying; encode/verify/retro set the multiplier.

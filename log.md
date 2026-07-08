@@ -10,3 +10,4 @@ entries — only append. Parseable with `grep '## \['`.
 ## [2026-06-29] ingest | Karpathy LLM-WIKI field notes (9 rules) | wiki: llm-wiki-pattern (→9 rules), andrej-karpathy, obsidian-vs-llm-wiki (new); index; CLAUDE.md (boundary rule, ingest-one-source, compile-not-retrieve)
 ## [2026-06-29] decision | ngôn ngữ wiki = tiếng Việt | CLAUDE.md (language convention); dịch about-this-brain, andrej-karpathy, llm-wiki-pattern sang tiếng Việt; index mô tả VN
 ## [2026-06-29] decision | REVERSED → wiki language = English + inline VN glosses | CLAUDE.md (convention); all wiki pages → English; renamed tam-quan→three-views, phan-tu-va-do-sau→reflection-and-depth, hieu-vs-lam-duoc→understanding-vs-doing, cach-minh-muon-tu-duy→how-i-want-to-think; sources stay verbatim (VN)
+## [2026-07-08] ingest | Agent orgs & the multiplied self | wiki: agent-org-multiplied-self (new); links: how-i-want-to-think, reflection-and-depth, understanding-vs-doing, llm-wiki-pattern; index
