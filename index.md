@@ -5,6 +5,7 @@ The agent updates this on every ingest.
 
 ## Meta
 - [[wiki/about-this-brain]] — what this second brain is and how it's organized.
+- [[wiki/thinking-roadmap]] — **VERY IMPORTANT**: three big questions (metacognition; fact vs. opinion; human org ↔ AI), solved strictly in sequence; live status board.
 
 ## Concepts
 - [[wiki/llm-wiki-pattern]] — Karpathy's agent-maintained wiki pattern (9 rules); the design this brain implements.
