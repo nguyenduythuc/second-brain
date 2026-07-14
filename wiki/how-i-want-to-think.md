@@ -2,8 +2,8 @@
 title: How I Want to Think (practice card)
 type: synthesis
 created: 2026-06-17
-updated: 2026-06-29
-sources: [sources/2026-06-17-tam-quan-tu-duy.md]
+updated: 2026-07-14
+sources: [sources/2026-06-17-tam-quan-tu-duy.md, sources/2026-07-14-metacognition-q1.md]
 ---
 
 # How I Want to Think
@@ -34,6 +34,18 @@ does). That's the part to train.
 
 This adds no knowledge to memorize — it **installs a pause**, the very pause my
 wife hands me from outside. The goal: build it on the inside.
+
+Two additions from the SpaceX incident (2026-07, see [[wiki/metacognition]]):
+
+> **Trigger 2 — speed + relish = red flag.** When a conclusion arrives
+> *instantly* and *feels good* (the "thốt lên" moment), that is exactly when
+> guess-probability peaks — real facts usually take effort to recall. Same
+> question: "fact hay đoán?" *(the "feels good" part is the agent's inference,
+> not yet confirmed by me)*
+>
+> **Move 2 — "nguồn đâu, search đã."** Before reasoning on top of a piece of
+> news: where is the source? search first. Verify the input before building
+> on it. (Learned verbatim from my wife: "thử search xem có thế thật không.")
 
 ## What my wife does (my highest-quality feedback source)
 

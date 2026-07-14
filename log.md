@@ -12,3 +12,4 @@ entries — only append. Parseable with `grep '## \['`.
 ## [2026-06-29] decision | REVERSED → wiki language = English + inline VN glosses | CLAUDE.md (convention); all wiki pages → English; renamed tam-quan→three-views, phan-tu-va-do-sau→reflection-and-depth, hieu-vs-lam-duoc→understanding-vs-doing, cach-minh-muon-tu-duy→how-i-want-to-think; sources stay verbatim (VN)
 ## [2026-07-08] ingest | Agent orgs & the multiplied self | wiki: agent-org-multiplied-self (new); links: how-i-want-to-think, reflection-and-depth, understanding-vs-doing, llm-wiki-pattern; index
 ## [2026-07-08] ingest | Three big questions roadmap (VERY IMPORTANT) | wiki: thinking-roadmap (new, status board); index; Q1 metacognition opened; Hermes/Shepherd/Codez ingests parked under Q3
+## [2026-07-14] ingest | Q1 Metacognition: concept page + SpaceX incident | wiki: metacognition (new), how-i-want-to-think (trigger 2 + move 2), thinking-roadmap (Q1 concept done); index; sources: metacognition-q1
