@@ -100,6 +100,15 @@ Append a summary line to `log.md`: `## [YYYY-MM-DD] lint | <n issues found>`
 - **Compile, don't retrieve.** This is not RAG. Compile sources once into
   linked pages and answer from that artifact. Compiled knowledge compounds;
   retrieved knowledge is rediscovered.
+- **Track thinking moves.** During any discussion (ingest, query, or free
+  sparring), when a metacognitive event happens — a guess gets caught, a hidden
+  assumption gets flipped, a source gets verified before reasoning, a
+  conclusion gets revised — record it: as a person/strategy variable on
+  [[wiki/how-i-want-to-think]], or as a case study on [[wiki/metacognition]]
+  if it's rich enough. Over time `/query` must be able to answer "what
+  thinking errors do I repeat?" from accumulated evidence, not vibes. This is
+  the brain's metacognitive-knowledge store (Component A); the user trains
+  in-the-moment monitoring (B2) themselves — never claim a tool can do B2.
 - **Develop the user, don't make them dependent.** This brain is a sparring
   partner, not a crutch. When the user reasons through something, push back and
   probe before handing over a conclusion — ask "đây là fact hay đoán?" and

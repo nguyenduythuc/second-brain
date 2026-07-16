@@ -2,8 +2,8 @@
 title: Metacognition
 type: concept
 created: 2026-07-14
-updated: 2026-07-14
-sources: [sources/2026-07-14-metacognition-q1.md, sources/2026-07-08-three-big-questions.md]
+updated: 2026-07-16
+sources: [sources/2026-07-14-metacognition-q1.md, sources/2026-07-08-three-big-questions.md, sources/2026-07-16-metacognition-own-words.md]
 ---
 
 # Metacognition
@@ -131,6 +131,36 @@ The autopsy, in framework terms:
   of news — *"nguồn đâu, search đã"* (where's the source? search first).
   Verify input before building on it — the sources-first principle of this
   very brain, applied to daily life.
+
+## Thức's working definition (closed the Feynman test, 2026-07-16)
+
+In his own words, kept verbatim (Vietnamese — his thinking language):
+
+> Nghĩ về những lập luận, tư duy mà nó đã tạo ra những quyết định trước đó —
+> nghĩ về lập luận chứ không phải nghĩ vào quyết định, vì quyết định là
+> output, nên nghĩ về tầng sâu hơn. Từ đó nhận ra lỗ hổng trong lập luận và
+> tìm cách fix. [\... ] Metacognition trong lúc đang nghĩ là mỗi khi có một
+> lập luận được sinh ra, tự hỏi: có bằng chứng hỗ trợ không, còn lỗ hổng nào
+> trong suy luận không.
+
+Two notes on this definition:
+
+- **His original contribution:** examine the *reasoning*, not the *decision* —
+  the decision is the return value, the reasoning is the function body. Fixing
+  the body fixes whole classes of future outputs; reviewing only decisions is
+  whack-a-mole. This came from him, not from the literature summary.
+- **Calibration added in discussion:** "every time a claim is born" is too
+  expensive — monitoring runs on *triggers* (red flags: instant + satisfying
+  conclusion, a flicker of unease, high stakes), not on polling every thought.
+  Like alerting vs. reading all logs at DEBUG level: the cost of observation
+  must stay below its value, or the observer gets abandoned (or worse, turns
+  into rumination).
+
+Closing evidence worth recording: in the very message that completed this
+definition, he labeled his own claim as inference ("tôi chỉ có thể tự suy
+diễn") and turned the monitor on his own sentence ("ngay cả những gì tôi đang
+nói, chúng ta cũng nên tự hỏi tôi nghĩ vậy có đúng không") — a live
+demonstration of in-flight monitoring, performed while defining it.
 
 ## Related
 

@@ -22,8 +22,8 @@ action.
 
 | # | Question | Status |
 |---|----------|--------|
-| 1 | Metacognition | **IN PROGRESS** — concept phase DONE 2026-07-14 ([[wiki/metacognition]] filed: philosophy + framework, SpaceX incident autopsy, tool/human split). Remaining to close: Thức restates it in his own words; reps begin on Trigger 2 + Move 2 |
-| 2 | Fact vs. opinion — and a mechanism for the brain | QUEUED |
+| 1 | Metacognition | **CLOSED (concept)** 2026-07-16 — [[wiki/metacognition]] filed; Feynman test passed in 3 rounds (own-words definition incl. in-flight monitoring, with a live demo of it); thinking-moves tracking added to CLAUDE.md. **Practice continues indefinitely:** reps on Trigger 2 + Move 2 |
+| 2 | Fact vs. opinion — and a mechanism for the brain | **NEXT UP** |
 | 3 | Human society ↔ AI structures | QUEUED (Hermes/Shepherd/Codez ingests wait here) |
 
 ## Question 1 — Metacognition (thinking about your thinking)
