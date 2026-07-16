@@ -102,10 +102,15 @@ with no facts as raw material.
 
 The autopsy, in framework terms:
 
-- **The conclusion failed at two fact layers:** (1) Zhuque-3's first recovery
-  attempt had *failed* (Dec 2025); a successful SpaceX-style recovery was a
-  plan, not an accomplished fact. (2) SpaceX is a private company — there is
-  no listed stock to crash. The premise died in a 5-second check.
+- **The conclusion failed at the input-fact layer:** Zhuque-3's first recovery
+  attempt had *failed* (Dec 2025; second flight still pending as of Jul 2026);
+  a successful SpaceX-style recovery was a plan, not an accomplished fact.
+  *(Correction 2026-07-16: the autopsy originally claimed a second failed
+  layer — "SpaceX is private, there is no listed stock" — but SpaceX had
+  IPO'd on 2026-06-12 (Nasdaq: SPCX), so that critique was itself a stale
+  fact, asserted by the agent from memory a month after it expired. See the
+  second case study below and
+  sources/2026-07-16-spacex-ipo-correction.md.)*
 - **Monitoring was external.** The alert fired in his wife, not in him — he
   received the webhook. The goal of reps: internalize her question so the
   pause fires *before* speaking. (She recurs as his highest-quality feedback
@@ -120,6 +125,31 @@ The autopsy, in framework terms:
   refined trigger: **speed + relish = red flag** — an instant, tasty
   conclusion is exactly when the guess-probability peaks, because real facts
   usually take effort to recall.
+
+## Case study 2 — the agent's stale fact (2026-07-16)
+
+The tool has failure modes too, and this one is now on record. While
+fact-checking the SpaceX incident, the agent *searched* the unfamiliar claim
+(Chinese rocket recovery) but answered the familiar one ("SpaceX is private")
+**from memory, with full confidence, without searching** — and it had been
+false for a month (SpaceX IPO'd 2026-06-12). Thức caught it during the Q2
+opening exercise by asserting the IPO and letting the agent verify.
+
+What this adds to the framework:
+
+- **Facts are time-indexed.** "SpaceX is private" was a fact until 2026-06-11,
+  then expired. A fact without a timestamp is a claim waiting to go stale —
+  this is the lint category "stale claims," demonstrated live.
+- **The agent's person variable:** training knowledge is a cache with no TTL.
+  The more familiar a fact feels, the less likely it gets re-checked — the
+  machine version of Thức's "instant + confident" signature. Time-sensitive
+  facts (company status, versions, prices, records) must be re-verified, not
+  recalled.
+- **The exchange posture works.** Thức demanded "trao đổi, không phó thác"
+  (exchange, not delegation) — both sides audit each other. First
+  user-catches-agent event; the trust boundary got stronger, not weaker,
+  because the correction went through the correcting-source protocol instead
+  of a silent edit.
 
 ## Practice hooks (what actually changes behavior)
 
