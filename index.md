@@ -14,6 +14,7 @@ The agent updates this on every ingest.
 - [[wiki/reflection-and-depth]] — reflection (phản tư, the process) and depth (độ sâu, the deposit); how to train them.
 - [[wiki/understanding-vs-doing]] — why you can see/understand yet not apply: declarative vs. procedural knowledge, the role of reps.
 - [[wiki/metacognition]] — thinking about your thinking: philosophy (fallibilism, observer layer) + framework (knowledge person/task/strategy; regulation plan/monitor/evaluate); tool/human split; SpaceX incident.
+- [[wiki/fact-vs-opinion]] — claim classification v0.2 (DRAFT): 3 types × 5 statuses, decay classes/TTL, weakest-link & quantifier rules, epistemic tags + lint mechanism.
 
 ## Entities
 - [[wiki/andrej-karpathy]] — author of the LLM Wiki pattern; founding member of OpenAI, ex-Tesla AI director.
