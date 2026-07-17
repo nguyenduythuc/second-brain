@@ -46,6 +46,21 @@ Two additions from the SpaceX incident (2026-07, see [[wiki/metacognition]]):
 > **Move 2 — "nguồn đâu, search đã."** Before reasoning on top of a piece of
 > news: where is the source? search first. Verify the input before building
 > on it. (Learned verbatim from my wife: "thử search xem có thế thật không.")
+>
+> **Move 3 — quantifier match check (so khớp lượng từ).** Before locking a
+> conclusion, compare its quantifier against the premise's: premise says "cho
+> tới giờ / thường / một số" but the conclusion says "luôn / mọi / không bao
+> giờ / chắc chắn" → an illicit widening cast happened mid-inference. Either
+> shrink the conclusion to the evidence's size, or name the inductive step out
+> loud. (From the sun example, 2026-07: I consciously hedged the premise "cho
+> tới giờ" yet wrote "luôn" in the conclusion without any alarm firing.)
+
+Person-variable refinement (2026-07): **my monitoring fires at the inputs —
+where I'm being deliberately careful — and stays silent where the conclusion
+is born.** Guarded entry, unguarded exit. Both the SpaceX incident (source
+remembered, conclusion launched) and the sun example (premise hedged,
+conclusion widened) share this exact shape. Training target: move the alarm
+from the premise to the cast site.
 
 ## What my wife does (my highest-quality feedback source)
 
