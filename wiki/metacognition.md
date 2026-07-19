@@ -26,7 +26,8 @@ profilers, logging, and monitoring. Two commitments follow:
    (see [[wiki/understanding-vs-doing]] — this is factory setting, not a moral
    failing). So the rational posture is not "try to be right" but "assume bugs,
    build an observer."
-2. **The meta-level is the highest-leverage level.** Improving metacognition
+2. **The meta-level is the highest-leverage level** {hypothesis — strong
+   face validity, no direct measurement yet}. Improving metacognition
    improves *every* other skill, because it governs when checking, learning,
    and strategy-switching happen at all. It is what turns experience into
    learning — [[wiki/reflection-and-depth]] is metacognition applied
@@ -132,7 +133,8 @@ The tool has failure modes too, and this one is now on record. While
 fact-checking the SpaceX incident, the agent *searched* the unfamiliar claim
 (Chinese rocket recovery) but answered the familiar one ("SpaceX is private")
 **from memory, with full confidence, without searching** — and it had been
-false for a month (SpaceX IPO'd 2026-06-12). Thức caught it during the Q2
+false for a month (SpaceX IPO'd 2026-06-12 {fact ✓2026-07-16 fast; 4
+independent outlets}). Thức caught it during the Q2
 opening exercise by asserting the IPO and letting the agent verify.
 
 What this adds to the framework:

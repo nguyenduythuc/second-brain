@@ -29,7 +29,8 @@ gates).
 
 The naive claim: *"n copies of me → n× my power."*
 
-The corrected claim: **what multiplies is *execution*, not *judgment* — so you
+The corrected claim {hypothesis — argued, survived one adversarial round,
+not yet measured}: **what multiplies is *execution*, not *judgment* — so you
 are n× stronger *only if* the original is worth copying.** Every clone is cast
 from the same mold: the knowledge you managed to encode. **The weaknesses of
 the original multiply exactly as fast as the strengths.** An orchestrator who

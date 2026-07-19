@@ -8,8 +8,10 @@ sources: [sources/2026-07-08-three-big-questions.md, sources/2026-07-16-spacex-i
 
 # Fact vs. Opinion — Claim Classification v0.2
 
-Deliverable of Question 2 on the [[wiki/thinking-roadmap]]. **STATUS: DRAFT —
-under Thức's review.** v0.1 (a naive fact/opinion binary, then a two-axis
+Deliverable of Question 2 on the [[wiki/thinking-roadmap]]. **STATUS: v0.2
+ACTIVE** — Thức delegated the open review decisions to the agent as an
+applied-reasoning challenge (2026-07-16); decisions and their justifying
+rules are recorded below. v0.1 (a naive fact/opinion binary, then a two-axis
 model) died under adversarial review; this version absorbs the five holes the
 independent verifier found plus the rules learned from live incidents (SpaceX
 IPO, the sun example).
@@ -92,8 +94,43 @@ For descriptive claims (analytic: proven/unproven; normative: argued/contested
    reasoning chain's anchoring) → merge. Proven in our own run: the cold
    agent found 4 holes the self-pass missed, *while aimed by* the self-pass's
    directions.
+7. **Rule of Three for knowledge** (Thức, 2026-07-16 — from React components /
+   custom hooks): a pattern appearing for the **3rd time** in
+   sources/discussions triggers a **"why does it recur?"** analysis before
+   extraction. Classify: *root cause* (one essence in many costumes → extract
+   a concept page or a practice-card Move) / *surface coincidence* (note,
+   don't extract — wrong abstraction costs more than duplication) /
+   *observer bias* (the repetition lives in the observer, not the world →
+   record as a person variable). Guards against Hermes's documented failure:
+   a flat library of one-off entries extracted without a why.
 
-## Mechanism for this brain (PROPOSED — CLAUDE.md amended only after review)
+## Review decisions (2026-07-16, made by the agent on delegation)
+
+Each decision cites the learned rule that justifies it. Epistemic status of
+all five: {normative-pragmatic, revisit when evidence accumulates}.
+
+1. **Tag density → load-bearing claims only.** Justification: the cost of
+   observation must stay below its value (the rumination lesson, and Hermes's
+   progressive disclosure). Tag noise kills the habit; sparse tags survive.
+2. **TTL defaults → fast: 30 days · medium: 6 months · slow: 3 years.**
+   Concrete numbers so lint can *compute* expiry instead of vibing it. Round
+   defaults now, tuned later by track record — process validated by
+   accumulated outcomes (rule 4), not designed perfectly upfront (start
+   small, LLM-wiki rule IX).
+3. **Calibration ledger → deferred to v0.3, accumulation starts now.** The
+   ledger is an abstraction over entries we barely have; extracting it today
+   is premature abstraction (rule 7's own warning). The log's thinking-move
+   lines are the raw table; build the ledger when ~10+ entries exist — the
+   Rule of Three applied to the ledger itself.
+4. **Thick claims → split-and-label, but only when load-bearing.** Consistent
+   with decision 1; in casual flow the default remains the cheap trigger
+   ("fact hay đoán?"), not taxonomy paperwork. Weakest link says the split
+   matters exactly where an argument stands on the claim.
+5. **Rule of Three → adopted as rule 7** and wired into ingest/lint (see
+   mechanism). It formalizes the process that already produced Move 3 by
+   hand.
+
+## Mechanism for this brain (ACTIVE — CLAUDE.md amended 2026-07-16)
 
 1. **Inline epistemic tags on load-bearing claims only** (not every sentence —
    tag noise kills the habit):

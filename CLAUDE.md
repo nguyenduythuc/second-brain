@@ -55,6 +55,20 @@ destroys the boundary that makes the system trustworthy.
   `.claude/commands/` stay in English: the agent-facing "code" layer.
 - Prefer **many small linked pages** over one big page. When a page exceeds
   ~400 lines or covers two distinct ideas, split it and cross-link.
+- **Epistemic tags on load-bearing claims** (full spec: [[wiki/fact-vs-opinion]]).
+  Tag only claims an argument stands on — not every sentence:
+  `{fact ✓YYYY-MM-DD <decay>}` · `{fact-from-memory <decay>}` · `{inference}` ·
+  `{guess}` · `{hypothesis}` · `{normative, revisited YYYY-MM}` ·
+  `{disputed: A vs B}` · `{reported}`. Decay classes and TTLs: `fast` = 30
+  days (company status, prices, records), `medium` = 6 months (roles,
+  versions), `slow` = 3 years (settled science). A verification must note its
+  method; memory assertions never get a bare ✓. Conclusions must not carry a
+  wider quantifier than their premises (no silent "cho tới giờ" → "luôn").
+- **Rule of Three for knowledge:** a pattern's 3rd appearance across
+  sources/discussions triggers a "why does it recur?" analysis → classify:
+  root cause (extract concept page / practice-card Move), surface coincidence
+  (note only), or observer bias (record as person variable). Don't extract on
+  first sight — wrong abstraction costs more than duplication.
 
 ## Operations
 
