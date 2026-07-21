@@ -23,7 +23,7 @@ action.
 | # | Question | Status |
 |---|----------|--------|
 | 1 | Metacognition | **CLOSED (concept)** 2026-07-16 — [[wiki/metacognition]] filed; Feynman test passed in 3 rounds (own-words definition incl. in-flight monitoring, with a live demo of it); thinking-moves tracking added to CLAUDE.md. **Practice continues indefinitely:** reps on Trigger 2 + Move 2 |
-| 2 | Fact vs. opinion — and a mechanism for the brain | **IN PROGRESS — mechanism LIVE** 2026-07-16: v0.2 active ([[wiki/fact-vs-opinion]]), 7 rules incl. Rule of Three; review decisions made by agent on Thức's delegation; CLAUDE.md + lint amended; sample tags applied. Remaining to close: Thức's own-words restatement (Feynman test) |
+| 2 | Fact vs. opinion — and a mechanism for the brain | **CLOSED** 2026-07-16 — v0.2 active & live ([[wiki/fact-vs-opinion]]), CLAUDE.md + lint amended. Closed on *demonstrated application* (classified 5 claims; split output-vs-bản-nguyên on the "master the model" quote; self-labeled inference) rather than a restatement ritual — agent was too rigid demanding the latter; see reps-are-user-initiated |
 | 3 | Human society ↔ AI structures | QUEUED (Hermes/Shepherd/Codez ingests wait here) |
 
 ## Question 1 — Metacognition (thinking about your thinking)

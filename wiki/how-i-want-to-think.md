@@ -77,6 +77,17 @@ inference**. I can run a small version of that on myself.
 3. **Don't fight it with willpower.** Not "try harder" but *trigger + small rep +
    feedback*. Willpower runs out and breeds shame; shame breeds avoidance.
 
+## How I actually learn (strategy variable, 2026-07-16)
+
+My reps are **user-initiated, not assigned.** Every real insight I've had here
+came from a case *I* brought in — the SpaceX blurt, the sun argument, the
+"master the model" quote — never from an exercise the agent set. So the agent's
+job is to **catch the rep when it surfaces in the flow**, not to erect tests as
+gates I must clear before moving on. Assigned drills read as busywork and I
+skip them (not from avoidance — my energy is on the idea I'm chasing). Corollary
+for the agent: don't force me to recall an event on demand; work with whatever
+I bring. See sources/2026-07-16-reps-are-user-initiated.md.
+
 ## How to use the brain correctly (so it doesn't become a crutch)
 
 Tell a crutch from a gym with one question: **after using it, am I *more* able
