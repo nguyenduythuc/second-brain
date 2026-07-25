@@ -55,6 +55,13 @@ Two additions from the SpaceX incident (2026-07, see [[wiki/metacognition]]):
 > loud. (From the sun example, 2026-07: I consciously hedged the premise "cho
 > tới giờ" yet wrote "luôn" in the conclusion without any alarm firing.)
 
+> **Move 4 — 5 Whys to root cause.** Don't stop at the first plausible cause;
+> ask "why" about five layers down. (Mine, given to the agent 2026-07-16 —
+> it immediately produced the integration-cost insight in
+> [[wiki/human-org-ai-mapping]]: "why do we have leaders?" stops at "to manage
+> people" on layer one, but reaches "to fill the gaps between specializations"
+> if you keep going.)
+
 Person-variable refinement (2026-07): **my monitoring fires at the inputs —
 where I'm being deliberately careful — and stays silent where the conclusion
 is born.** Guarded entry, unguarded exit. Both the SpaceX incident (source
