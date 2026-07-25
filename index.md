@@ -15,7 +15,7 @@ The agent updates this on every ingest.
 - [[wiki/understanding-vs-doing]] — why you can see/understand yet not apply: declarative vs. procedural knowledge, the role of reps.
 - [[wiki/metacognition]] — thinking about your thinking: philosophy (fallibilism, observer layer) + framework (knowledge person/task/strategy; regulation plan/monitor/evaluate); tool/human split; SpaceX incident.
 - [[wiki/human-org-ai-mapping]] — where agent=team-member / harness=tooling / loop=sprint holds and breaks; integration cost makes the orchestrator core; waterfall→agile as a map for agent tooling.
-- [[wiki/fact-vs-opinion]] — claim classification v0.2 (DRAFT): 3 types × 5 statuses, decay classes/TTL, weakest-link & quantifier rules, epistemic tags + lint mechanism.
+- [[wiki/fact-vs-opinion]] — claim classification v0.2 (ACTIVE): 3 types × 5 statuses, decay classes/TTL, weakest-link & quantifier & rule-of-three rules, epistemic tags + lint mechanism.
 
 ## Entities
 - [[wiki/andrej-karpathy]] — author of the LLM Wiki pattern; founding member of OpenAI, ex-Tesla AI director.
