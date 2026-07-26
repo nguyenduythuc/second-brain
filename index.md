@@ -17,6 +17,7 @@ The agent updates this on every ingest.
 - [[wiki/human-org-ai-mapping]] — where agent=team-member / harness=tooling / loop=sprint holds and breaks; integration cost makes the orchestrator core; waterfall→agile as a map for agent tooling.
 - [[wiki/self-improving-agent-systems]] — self-improvement is a property of the system, not the model; compound stack, 5-stage memory (fail→consult), verifier vs self-critique, tooling claims separated from architecture.
 - [[wiki/hermes-self-improvement-loop]] — how a retro loop is actually built: quantified triggers, signal-based reflection, patch-not-rewrite, provenance, reversible lifecycle; and its admitted failure (agents self-congratulate) fixed by trace-based reflection + automated gates + human PR.
+- [[wiki/shepherd-review-gates]] — turning review gates into system invariants: authority in the type signature, syscall jail with fail-closed probe, retained output (propose don't apply), reversibility weakest-link, typed effect boundary.
 - [[wiki/fact-vs-opinion]] — claim classification v0.2 (ACTIVE): 3 types × 5 statuses, decay classes/TTL, weakest-link & quantifier & rule-of-three rules, epistemic tags + lint mechanism.
 
 ## Entities
