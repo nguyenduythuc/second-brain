@@ -15,7 +15,8 @@ stop-conditions must be built.
 
 Ingested with the [[wiki/fact-vs-opinion]] kit — each claim labeled rather
 than swallowed, which is exactly the failure Thức feared when queueing these
-docs ("biết đâu ta đóng khung opinion thành fact").
+docs — *"biết đâu ta đóng khung opinion thành fact"* (what if we frame an
+opinion as a fact).
 
 ## Source trust
 
@@ -108,7 +109,9 @@ Two things make this valuable beyond the benchmark claims:
   which model runs it.
 - **Thức derived stages 1–4 independently** during the Q3 stress test:
   *"agent không thể chỉ nhớ, nó còn phải tự học, tự rút kinh nghiệm, tự
-  retro… lặp đi lặp lại rồi đưa ra được action"* — before reading the doc.
+  retro… lặp đi lặp lại rồi đưa ra được action"* (an agent cannot merely
+  remember — it must self-learn, draw lessons, run its own retro, repeatedly,
+  until it produces an action) — before reading the doc.
   {Second independent derivation of the same structure — one more and rule 7
   fires.}
 - It is [[wiki/metacognition]]'s regulation cycle installed in a machine:

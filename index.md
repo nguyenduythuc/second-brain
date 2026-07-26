@@ -25,4 +25,5 @@ The agent updates this on every ingest.
 
 ## Syntheses
 - [[wiki/how-i-want-to-think]] — personal practice card: the "fact hay đoán?" move, reps, using the brain without it becoming a crutch.
+- [[wiki/what-ai-structures-still-need]] — closing Q3 synthesis: three docs = three organs (learn / contain / human decides); five gaps still open — inter-agent contracts, in-flight self-monitoring, decomposition depth, memory TTL, graduated enforcement.
 - [[wiki/agent-org-multiplied-self]] — agent orgs multiply execution, not judgment; you're n× stronger only if the original is worth copying; encode/verify/retro set the multiplier.

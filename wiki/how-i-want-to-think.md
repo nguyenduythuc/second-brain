@@ -45,12 +45,14 @@ Two additions from the SpaceX incident (2026-07, see [[wiki/metacognition]]):
 >
 > **Move 2 — "nguồn đâu, search đã."** Before reasoning on top of a piece of
 > news: where is the source? search first. Verify the input before building
-> on it. (Learned verbatim from my wife: "thử search xem có thế thật không.")
+> on it. (Learned verbatim from my wife: *"thử search xem có thế thật không"*
+> — try searching whether that's actually true.)
 >
 > **Move 3 — quantifier match check (so khớp lượng từ).** Before locking a
 > conclusion, compare its quantifier against the premise's: premise says "cho
-> tới giờ / thường / một số" but the conclusion says "luôn / mọi / không bao
-> giờ / chắc chắn" → an illicit widening cast happened mid-inference. Either
+> tới giờ / thường / một số" (so far / usually / some) but the conclusion says
+> "luôn / mọi / không bao giờ / chắc chắn" (always / every / never / certainly)
+> → an illicit widening cast happened mid-inference. Either
 > shrink the conclusion to the evidence's size, or name the inductive step out
 > loud. (From the sun example, 2026-07: I consciously hedged the premise "cho
 > tới giờ" yet wrote "luôn" in the conclusion without any alarm firing.)

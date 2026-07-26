@@ -147,7 +147,7 @@ What this adds to the framework:
   machine version of Thức's "instant + confident" signature. Time-sensitive
   facts (company status, versions, prices, records) must be re-verified, not
   recalled.
-- **The exchange posture works.** Thức demanded "trao đổi, không phó thác"
+- **The exchange posture works.** Thức demanded *"trao đổi, không phó thác"*
   (exchange, not delegation) — both sides audit each other. First
   user-catches-agent event; the trust boundary got stronger, not weaker,
   because the correction went through the correcting-source protocol instead
@@ -166,14 +166,26 @@ What this adds to the framework:
 
 ## Thức's working definition (closed the Feynman test, 2026-07-16)
 
-In his own words, kept verbatim (Vietnamese — his thinking language):
+In English, with his verbatim Vietnamese kept below it (the original wording
+is evidence of what he actually owns, so it isn't discarded):
+
+> Thinking about the reasoning and the thought process that produced earlier
+> decisions — about the *reasoning*, not the decision, because the decision is
+> the output, so you should think one layer deeper. From there you spot the
+> holes in the reasoning and fix them. […] Metacognition *while* thinking is:
+> every time an argument gets generated, ask whether there is evidence
+> supporting it, and whether there is still a hole in the inference.
+
+<details><summary>Original (Vietnamese)</summary>
 
 > Nghĩ về những lập luận, tư duy mà nó đã tạo ra những quyết định trước đó —
 > nghĩ về lập luận chứ không phải nghĩ vào quyết định, vì quyết định là
 > output, nên nghĩ về tầng sâu hơn. Từ đó nhận ra lỗ hổng trong lập luận và
-> tìm cách fix. [\... ] Metacognition trong lúc đang nghĩ là mỗi khi có một
+> tìm cách fix. […] Metacognition trong lúc đang nghĩ là mỗi khi có một
 > lập luận được sinh ra, tự hỏi: có bằng chứng hỗ trợ không, còn lỗ hổng nào
 > trong suy luận không.
+
+</details>
 
 Two notes on this definition:
 
@@ -190,8 +202,10 @@ Two notes on this definition:
 
 Closing evidence worth recording: in the very message that completed this
 definition, he labeled his own claim as inference ("tôi chỉ có thể tự suy
-diễn") and turned the monitor on his own sentence ("ngay cả những gì tôi đang
-nói, chúng ta cũng nên tự hỏi tôi nghĩ vậy có đúng không") — a live
+diễn" — *I can only infer this*) and turned the monitor on his own sentence
+("ngay cả những gì tôi đang nói, chúng ta cũng nên tự hỏi tôi nghĩ vậy có
+đúng không" — *even what I am saying right now, we should ask whether it is
+correct*) — a live
 demonstration of in-flight monitoring, performed while defining it.
 
 ## Related
