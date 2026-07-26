@@ -16,6 +16,7 @@ The agent updates this on every ingest.
 - [[wiki/metacognition]] — thinking about your thinking: philosophy (fallibilism, observer layer) + framework (knowledge person/task/strategy; regulation plan/monitor/evaluate); tool/human split; SpaceX incident.
 - [[wiki/human-org-ai-mapping]] — where agent=team-member / harness=tooling / loop=sprint holds and breaks; integration cost makes the orchestrator core; waterfall→agile as a map for agent tooling.
 - [[wiki/self-improving-agent-systems]] — self-improvement is a property of the system, not the model; compound stack, 5-stage memory (fail→consult), verifier vs self-critique, tooling claims separated from architecture.
+- [[wiki/hermes-self-improvement-loop]] — how a retro loop is actually built: quantified triggers, signal-based reflection, patch-not-rewrite, provenance, reversible lifecycle; and its admitted failure (agents self-congratulate) fixed by trace-based reflection + automated gates + human PR.
 - [[wiki/fact-vs-opinion]] — claim classification v0.2 (ACTIVE): 3 types × 5 statuses, decay classes/TTL, weakest-link & quantifier & rule-of-three rules, epistemic tags + lint mechanism.
 
 ## Entities

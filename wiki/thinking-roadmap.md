@@ -24,7 +24,7 @@ action.
 |---|----------|--------|
 | 1 | Metacognition | **CLOSED (concept)** 2026-07-16 — [[wiki/metacognition]] filed; Feynman test passed in 3 rounds (own-words definition incl. in-flight monitoring, with a live demo of it); thinking-moves tracking added to CLAUDE.md. **Practice continues indefinitely:** reps on Trigger 2 + Move 2 |
 | 2 | Fact vs. opinion — and a mechanism for the brain | **CLOSED** 2026-07-16 — v0.2 active & live ([[wiki/fact-vs-opinion]]), CLAUDE.md + lint amended. Closed on *demonstrated application* (classified 5 claims; split output-vs-bản-nguyên on the "master the model" quote; self-labeled inference) rather than a restatement ritual — agent was too rigid demanding the latter; see reps-are-user-initiated |
-| 3 | Human society ↔ AI structures | **IN PROGRESS** — mapping stress-tested 2026-07-16 ([[wiki/human-org-ai-mapping]]): 4 seams, all 4 revised by Thức's pushback; key finding = integration cost makes the orchestrator a core structure, not people-management residue. Ingested 1/3: Codez → [[wiki/self-improving-agent-systems]] (2026-07-16). Next: Hermes, then Shepherd |
+| 3 | Human society ↔ AI structures | **IN PROGRESS** — mapping stress-tested 2026-07-16 ([[wiki/human-org-ai-mapping]]): 4 seams, all 4 revised by Thức's pushback; key finding = integration cost makes the orchestrator a core structure, not people-management residue. Ingested 2/3: Codez → [[wiki/self-improving-agent-systems]], Hermes → [[wiki/hermes-self-improvement-loop]] (2026-07-16). Next: Shepherd |
 
 ## Question 1 — Metacognition (thinking about your thinking)
 

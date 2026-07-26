@@ -105,7 +105,7 @@ Each patches a different seam — ingested one at a time (rule V):
 | Doc | Patches | Theme |
 |---|---|---|
 | Codez self-improving system | Seam 4 | agile-for-agents: loop, goal, stop-condition — **ingested 2026-07-16**: [[wiki/self-improving-agent-systems]] |
-| Hermes | Seam 3 | forgetting → self-learning, write lessons back into skills |
+| Hermes | Seam 3 | forgetting → self-learning, write lessons back into skills — **ingested 2026-07-16**: [[wiki/hermes-self-improvement-loop]] |
 | Shepherd | Seam 2 + trust | no accountability → enforced review gates and sandboxes |
 
 ## Related
