@@ -64,9 +64,20 @@ we sharpened together into [[wiki/agent-org-multiplied-self]].
   `claude/weekly-lint` branch on the remote, no routine-written lint entry in
   `log.md`. Cause unconfirmed {guess: permissions or expiry} — the
   trigger-management MCP server is not reachable from every session, so it
-  can't always be inspected. **Fallback in place:** `scripts/lint.sh` runs the
-  mechanical half locally with no scheduler and no LLM. Run it at the start of
-  a session if the routine still hasn't produced anything.
+  can't always be inspected — and the only cron tool reachable from *some*
+  sessions is session-only (in-memory, dies with the session, 7-day cap), so
+  a durable agent routine can't be re-created on demand. **Treat agent
+  routines as unreliable infrastructure.**
+
+  **Replaced by a two-part arrangement that has no single point of failure:**
+  1. *Mechanical half* → `.github/workflows/weekly-lint.yml` runs
+     `scripts/lint.sh --strict` on GitHub's own cron (Mondays 09:00 UTC),
+     opens/comments a `wiki-lint` issue on failure and closes it when clean.
+     No API key, no LLM, nothing to break.
+  2. *Judgment half* → triggered by **the session opening itself**: on reading
+     `STATE.md`, check the last `lint` line in `log.md`; if older than two
+     weeks, offer to run it. A human opening a session is the most reliable
+     scheduler available.
 - **Uploaded files are purged** when the container restarts. If an upload is
   gone, restore from context and prepend a provenance note — never pretend
   it's a byte-identical copy.
