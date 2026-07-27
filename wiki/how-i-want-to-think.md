@@ -2,8 +2,8 @@
 title: How I Want to Think (practice card)
 type: synthesis
 created: 2026-06-17
-updated: 2026-06-29
-sources: [sources/2026-06-17-tam-quan-tu-duy.md]
+updated: 2026-07-14
+sources: [sources/2026-06-17-tam-quan-tu-duy.md, sources/2026-07-14-metacognition-q1.md]
 ---
 
 # How I Want to Think
@@ -35,6 +35,42 @@ does). That's the part to train.
 This adds no knowledge to memorize — it **installs a pause**, the very pause my
 wife hands me from outside. The goal: build it on the inside.
 
+Two additions from the SpaceX incident (2026-07, see [[wiki/metacognition]]):
+
+> **Trigger 2 — speed + relish = red flag.** When a conclusion arrives
+> *instantly* and *feels good* (the "thốt lên" moment), that is exactly when
+> guess-probability peaks — real facts usually take effort to recall. Same
+> question: "fact hay đoán?" *(the "feels good" part is the agent's inference,
+> not yet confirmed by me)*
+>
+> **Move 2 — "nguồn đâu, search đã."** Before reasoning on top of a piece of
+> news: where is the source? search first. Verify the input before building
+> on it. (Learned verbatim from my wife: *"thử search xem có thế thật không"*
+> — try searching whether that's actually true.)
+>
+> **Move 3 — quantifier match check (so khớp lượng từ).** Before locking a
+> conclusion, compare its quantifier against the premise's: premise says "cho
+> tới giờ / thường / một số" (so far / usually / some) but the conclusion says
+> "luôn / mọi / không bao giờ / chắc chắn" (always / every / never / certainly)
+> → an illicit widening cast happened mid-inference. Either
+> shrink the conclusion to the evidence's size, or name the inductive step out
+> loud. (From the sun example, 2026-07: I consciously hedged the premise "cho
+> tới giờ" yet wrote "luôn" in the conclusion without any alarm firing.)
+
+> **Move 4 — 5 Whys to root cause.** Don't stop at the first plausible cause;
+> ask "why" about five layers down. (Mine, given to the agent 2026-07-16 —
+> it immediately produced the integration-cost insight in
+> [[wiki/human-org-ai-mapping]]: "why do we have leaders?" stops at "to manage
+> people" on layer one, but reaches "to fill the gaps between specializations"
+> if you keep going.)
+
+Person-variable refinement (2026-07): **my monitoring fires at the inputs —
+where I'm being deliberately careful — and stays silent where the conclusion
+is born.** Guarded entry, unguarded exit. Both the SpaceX incident (source
+remembered, conclusion launched) and the sun example (premise hedged,
+conclusion widened) share this exact shape. Training target: move the alarm
+from the premise to the cast site.
+
 ## What my wife does (my highest-quality feedback source)
 
 She asks "why" through several layers until one "why" makes me stall — that's
@@ -49,6 +85,17 @@ inference**. I can run a small version of that on myself.
    un-automated skill feels like from the inside.
 3. **Don't fight it with willpower.** Not "try harder" but *trigger + small rep +
    feedback*. Willpower runs out and breeds shame; shame breeds avoidance.
+
+## How I actually learn (strategy variable, 2026-07-16)
+
+My reps are **user-initiated, not assigned.** Every real insight I've had here
+came from a case *I* brought in — the SpaceX blurt, the sun argument, the
+"master the model" quote — never from an exercise the agent set. So the agent's
+job is to **catch the rep when it surfaces in the flow**, not to erect tests as
+gates I must clear before moving on. Assigned drills read as busywork and I
+skip them (not from avoidance — my energy is on the idea I'm chasing). Corollary
+for the agent: don't force me to recall an event on demand; work with whatever
+I bring. See sources/2026-07-16-reps-are-user-initiated.md.
 
 ## How to use the brain correctly (so it doesn't become a crutch)
 
