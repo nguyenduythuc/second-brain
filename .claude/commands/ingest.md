@@ -19,3 +19,6 @@ Steps (follow CLAUDE.md exactly):
 6. Update `index.md`.
 7. Append to `log.md`: `## [YYYY-MM-DD] ingest | <title> | wiki: <pages touched>`
 8. Clear the processed item out of `inbox/`.
+
+Finally, refresh `STATE.md` if this ingest changed an open thread, a working
+agreement, or where we left off.

@@ -25,4 +25,8 @@ Also verify mechanics: every wiki page is listed in `index.md`, frontmatter
 is present and well-formed, all `[[wiki/...]]` links resolve, `log.md` is
 parseable.
 
+Also check `STATE.md`: are its open threads, working agreements, and
+"last session" pointer still accurate? Stale continuity state is the most
+expensive kind of rot — it silently misinforms the next session.
+
 Append to `log.md`: `## [YYYY-MM-DD] lint | <n issues found>`
