@@ -1,0 +1,66 @@
+name: Weekly wiki lint
+
+# The mechanical half of /lint. No LLM, no API key, no external scheduler —
+# it runs on GitHub's infrastructure, so it survives whatever breaks the
+# agent Routine. Judgment-level checks (contradictions, gaps, rule-of-three)
+# still belong to the agent; see .claude/commands/lint.md.
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'   # Mondays 09:00 UTC (~16:00 Vietnam)
+  workflow_dispatch:       # manual run button
+  push:
+    branches: [main]
+    paths:
+      - 'wiki/**'
+      - 'index.md'
+      - 'log.md'
+      - 'STATE.md'
+      - 'scripts/lint.sh'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run mechanical lint
+        id: lint
+        run: |
+          set +e
+          ./scripts/lint.sh --strict | tee lint-output.txt
+          echo "status=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+
+      - name: Open an issue when lint finds something
+        if: steps.lint.outputs.status != '0' && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="Weekly lint: issues found ($(date -u +%Y-%m-%d))"
+          # Don't stack duplicates — reuse the open issue if one exists.
+          EXISTING=$(gh issue list --state open --label wiki-lint --limit 1 --json number --jq '.[0].number')
+          BODY=$'Mechanical lint reported issues.\n\n```\n'"$(cat lint-output.txt)"$'\n```\n\nJudgment-level checks still need an agent session — run `/lint`.'
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+          else
+            gh label create wiki-lint --color ededed --description "Automated wiki health checks" 2>/dev/null || true
+            gh issue create --title "$TITLE" --body "$BODY" --label wiki-lint
+          fi
+
+      - name: Close the lint issue when everything is clean
+        if: steps.lint.outputs.status == '0' && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          N=$(gh issue list --state open --label wiki-lint --limit 1 --json number --jq '.[0].number')
+          if [ -n "$N" ]; then
+            gh issue close "$N" --comment "Mechanical lint is clean again as of $(date -u +%Y-%m-%d)."
+          fi
+
+      - name: Fail the run so the status is visible
+        if: steps.lint.outputs.status != '0'
+        run: exit 1
