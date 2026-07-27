@@ -58,9 +58,15 @@ we sharpened together into [[wiki/agent-org-multiplied-self]].
 - **Branch:** work on `claude/blissful-feynman-gtk8wi`. Never push to `main`.
   He merges via PR himself. After a merge the remote branch is deleted —
   restart it from `origin/main` (`git checkout -B <branch> origin/main`).
-- **Weekly lint routine:** scheduled trigger `trig_0181W5WKJ37pcP8oqcntEBRb`,
-  Mondays 09:00 UTC (~16:00 Vietnam), fresh session, pushes to
-  `claude/weekly-lint`, never to main.
+- **Weekly lint routine: BROKEN — never fired.** Trigger
+  `trig_0181W5WKJ37pcP8oqcntEBRb` (Mondays 09:00 UTC) was created 2026-07-08
+  and should have run 07-13, 07-20 and 07-27. Evidence it never ran: no
+  `claude/weekly-lint` branch on the remote, no routine-written lint entry in
+  `log.md`. Cause unconfirmed {guess: permissions or expiry} — the
+  trigger-management MCP server is not reachable from every session, so it
+  can't always be inspected. **Fallback in place:** `scripts/lint.sh` runs the
+  mechanical half locally with no scheduler and no LLM. Run it at the start of
+  a session if the routine still hasn't produced anything.
 - **Uploaded files are purged** when the container restarts. If an upload is
   gone, restore from context and prepend a provenance note — never pretend
   it's a byte-identical copy.
@@ -131,3 +137,11 @@ English rendering, and created this file at his request.
 
 **Next:** nothing is blocking. Natural continuations — build one of the five
 brain upgrades, start Ring 2, or ingest whatever he brings next.
+
+**2026-07-27** — Thức reported the weekly lint wasn't working. Confirmed by
+evidence that it never fired at all (see the routine entry above). Wrote
+`scripts/lint.sh` (mechanical checks: links, index coverage, frontmatter,
+orphans, fact-tag TTL, quantifier widening, log parseability, disputed
+ledger) with a `<!-- lint-ok: quantifier -->` escape hatch, ran it — wiki is
+clean. **Open decision for him:** how to schedule it (re-create the routine,
+or a GitHub Action running the script on a cron).
