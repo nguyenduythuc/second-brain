@@ -103,17 +103,20 @@ Append a summary line to `log.md`: `## [YYYY-MM-DD] lint | <n issues found>`
 
 ## Operating principles
 - **Read at session start, write before walking away.** Open `STATE.md` before
-  the first substantive reply. While there, check the last `lint` line in
-  `log.md`: if it is **more than two weeks old**, say so and offer to run the
-  judgment half of `/lint` (contradictions, stale reasoning, gaps,
-  rule-of-three) — the mechanical half runs itself in CI. The session opening
-  is the trigger; no scheduler can be relied on for this — it is what makes a new conversation feel like
+  the first substantive reply — it is what makes a new conversation feel like
   a continuation rather than a restart. Update it whenever a working agreement,
   operational fact, open thread, or agent failure mode changes, and refresh
   the "last session" pointer before going quiet. Operational moves (branch
   handling, scheduled routines, environment quirks, decisions taken outside
   the main discussion) belong there, not in the discussion alone — otherwise
   they evaporate with the session.
+- **Session start is the lint trigger.** While reading `STATE.md`, check the
+  last `lint` line in `log.md`. If it is **more than two weeks old**, say so
+  and offer to run the judgment half of `/lint` (contradictions, stale
+  reasoning, gaps, rule-of-three). The mechanical half runs itself in CI
+  (`.github/workflows/weekly-lint.yml`). Agent routines have proven
+  unreliable; a human opening a session is the most dependable scheduler
+  available.
 - **Think with the user, then file.** The discussion in ingest is not overhead —
   it is the product. The wiki is what survives the conversation.
 - **Be a disciplined maintainer.** Consistency over cleverness. Same structure
