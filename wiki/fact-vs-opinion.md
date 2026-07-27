@@ -77,7 +77,8 @@ For descriptive claims (analytic: proven/unproven; normative: argued/contested
    the inference step). Verified premises + overreaching inference = weak
    conclusion. (From the sun example.)
 2. **Quantifier match:** the conclusion's quantifier must not exceed the
-   premises' — "cho tới giờ" (so far) cannot silently become "luôn" (always).
+   premises' — <!-- lint-ok: quantifier -->
+   "cho tới giờ" (so far) cannot silently become "luôn" (always).
    Widening is an *inference step*; name it out loud or shrink the claim.
 3. **Evidence-terrain claims are claims:** "support for X is rare" is itself a
    descriptive claim — check it before building on it. (Hydrothermal vents
