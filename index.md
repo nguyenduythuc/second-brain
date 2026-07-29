@@ -26,4 +26,5 @@ The agent updates this on every ingest.
 ## Syntheses
 - [[wiki/how-i-want-to-think]] — personal practice card: the "fact hay đoán?" move, reps, using the brain without it becoming a crutch.
 - [[wiki/what-ai-structures-still-need]] — closing Q3 synthesis: three docs = three organs (learn / contain / human decides); five gaps still open — inter-agent contracts, in-flight self-monitoring, decomposition depth, memory TTL, graduated enforcement.
+- [[wiki/ring-2-encoding-the-craft]] — plan for encoding 10+ yrs of monorepo craft into compounding skill files: mine the history first, grow existing skills, install a gated retro loop, declare blast radius. Kickoff brief: `scripts/ring2-kickoff.md`.
 - [[wiki/agent-org-multiplied-self]] — agent orgs multiply execution, not judgment; you're n× stronger only if the original is worth copying; encode/verify/retro set the multiplier.

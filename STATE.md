@@ -120,9 +120,14 @@ guarded entry, unguarded exit.
 - **Unverified tooling claims** carried forward from the Codez ingest
   (`/goal`, CMA/Outcomes, pricing, benchmark numbers) — re-check before
   relying on any of them.
-- **Ring 2 of the three-ring plan** (encode his frontend craft into skill
-  files in the *other* repo) hasn't started; Ring 1 (feeding this brain) is
-  what we've been doing.
+- **Ring 2 — designed 2026-07-27, not yet executed.** Plan:
+  [[wiki/ring-2-encoding-the-craft]]; portable brief to paste into a monorepo
+  session: `scripts/ring2-kickoff.md`. Precondition is met — he has been
+  agentic coding on the monorepo for months, so the retro material already
+  exists in its git history. **This session cannot reach that repo** (GitHub
+  access is scoped to second-brain and the repo-management tools aren't
+  available here), so Ring 2 work happens in a session opened on the monorepo.
+  Ask how it went when he returns.
 
 ## My own failure modes (agent, on record)
 
