@@ -14,8 +14,15 @@ judgment into artifacts an agent executes. Ring 2 of the three-ring plan in
 change.
 
 **Scope note:** the monorepo is *not* this repo. This page is the design; the
-work happens in a session opened on the monorepo itself. A portable kickoff
-brief lives at `scripts/ring2-kickoff.md` — paste it there.
+work happens in a session opened on the monorepo itself.
+
+**Two ways to carry it over, most direct first:**
+1. **`ring2-commands/`** — copy `mine-history.md` and `retro.md` into the
+   monorepo's `.claude/commands/` once, then it's `/mine-history` and
+   `/retro` forever. This is the real deliverable: the loop becomes typed
+   commands, not a document to re-read.
+2. `scripts/ring2-kickoff.md` — a self-contained brief to paste, if a one-off
+   conversation is preferred over installing commands.
 
 ## The precondition is already met
 

@@ -121,8 +121,9 @@ guarded entry, unguarded exit.
   (`/goal`, CMA/Outcomes, pricing, benchmark numbers) — re-check before
   relying on any of them.
 - **Ring 2 — designed 2026-07-27, not yet executed.** Plan:
-  [[wiki/ring-2-encoding-the-craft]]; portable brief to paste into a monorepo
-  session: `scripts/ring2-kickoff.md`. Precondition is met — he has been
+  [[wiki/ring-2-encoding-the-craft]]; carry-over kit: `ring2-commands/`
+  (copy `mine-history.md` + `retro.md` into the monorepo's `.claude/commands/`
+  — most direct), or `scripts/ring2-kickoff.md` as a paste-once brief. Precondition is met — he has been
   agentic coding on the monorepo for months, so the retro material already
   exists in its git history. **This session cannot reach that repo** (GitHub
   access is scoped to second-brain and the repo-management tools aren't
