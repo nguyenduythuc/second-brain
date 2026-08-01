@@ -143,6 +143,20 @@ guarded entry, unguarded exit.
   frame I'd been thinking about, and later misread "I have a more important
   idea" as an idea he wanted to share. Check what he actually said before
   building on it.
+- **Catching an error but never recording it — the meta-failure (2026-07-27,
+  he caught this).** I recognise my own mistakes well *in conversation*
+  ("you're right, that's sharper than my plan") and then move on, so the
+  lesson dies with the session. Root cause via 5 Whys: **I apply "the artifact
+  outside the model is what accumulates" to his knowledge but not to my own
+  errors** — inside a session my context *feels* like memory, so nothing feels
+  lost. In 5-stage terms I stop at FAIL → INVESTIGATE and never reach DISTILL
+  → CONSULT. Structural fix applied: `CLAUDE.md`'s track-thinking-moves
+  principle now explicitly covers the agent's own reasoning errors and
+  requires either recording them here or asking him.
+- **Conflating two goals into one plan.** I proposed "mine the monorepo"
+  without separating (A) skill files that stay in the monorepo from (B) a
+  decision-making wiki here — then drifted into discussing transfer, which
+  goal A never needed. State the goal before designing the mechanism.
 
 ## Last session
 

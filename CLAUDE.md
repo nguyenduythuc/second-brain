@@ -130,12 +130,19 @@ Append a summary line to `log.md`: `## [YYYY-MM-DD] lint | <n issues found>`
 - **Compile, don't retrieve.** This is not RAG. Compile sources once into
   linked pages and answer from that artifact. Compiled knowledge compounds;
   retrieved knowledge is rediscovered.
-- **Track thinking moves.** During any discussion (ingest, query, or free
-  sparring), when a metacognitive event happens — a guess gets caught, a hidden
-  assumption gets flipped, a source gets verified before reasoning, a
-  conclusion gets revised — record it: as a person/strategy variable on
-  [[wiki/how-i-want-to-think]], or as a case study on [[wiki/metacognition]]
-  if it's rich enough. Over time `/query` must be able to answer "what
+- **Track thinking moves — the user's AND your own.** During any discussion
+  (ingest, query, or free sparring), when a metacognitive event happens — a
+  guess gets caught, a hidden assumption gets flipped, a source gets verified
+  before reasoning, a conclusion gets revised — record it: as a
+  person/strategy variable on [[wiki/how-i-want-to-think]], or as a case study
+  on [[wiki/metacognition]] if it's rich enough.
+  **This applies with full force to your own reasoning errors.** When you say
+  "you're right, my plan was wrong" or "I conflated two things," that sentence
+  is *not* the resolution — it evaporates with the session. Find the root
+  cause (5 Whys), then **either record it under "agent failure modes" in
+  `STATE.md` (and fix the schema if the cause is structural), or ask the user
+  whether it's worth recording.** Never let a caught error die in the chat.
+  Inside a session your context feels like memory; it is not. Over time `/query` must be able to answer "what
   thinking errors do I repeat?" from accumulated evidence, not vibes. This is
   the brain's metacognitive-knowledge store (Component A); the user trains
   in-the-moment monitoring (B2) themselves — never claim a tool can do B2.

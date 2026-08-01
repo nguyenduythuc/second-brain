@@ -13,8 +13,11 @@ judgment into artifacts an agent executes. Ring 2 of the three-ring plan in
 [[wiki/agent-org-multiplied-self]] — the ring where the economics actually
 change.
 
-**Scope note:** the monorepo is *not* this repo. This page is the design; the
-work happens in a session opened on the monorepo itself.
+**Scope note — Goal A only.** This page covers skill files that live *in the
+monorepo* and require **no transfer to this brain**. The separate goal of
+building a decision-making wiki here is [[wiki/transcript-mining]]; conflating
+the two was a recorded agent error. The monorepo is not this repo — the work
+happens in a session opened on it.
 
 **Two ways to carry it over, most direct first:**
 1. **`ring2-commands/`** — copy `mine-history.md` and `retro.md` into the
