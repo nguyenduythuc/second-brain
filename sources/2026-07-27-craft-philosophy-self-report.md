@@ -38,3 +38,23 @@ một phần là claim mô tả về chính mình ("tôi luôn chú trọng perf
 loại thứ hai kiểm chứng được bằng code/PR thật, và đó chính là việc mà
 /mine-history + transcript mining sẽ làm. Nguồn này là **giả thuyết về nghề
 của Thức**; monorepo là **bằng chứng**.
+
+---
+
+## Bổ sung (cùng ngày) — cách gỡ xung đột "công nghệ mới vs. dễ đọc"
+
+Agent hỏi: nguyên tắc thì ai cũng phát biểu được, cách xử lý *xung đột giữa
+các nguyên tắc* mới là thứ 10 năm mua được. Thức trả lời:
+
+> Đúng vậy, nhìn nhận rất sắc, thường thì sẽ có một vài case.
+> - Dùng đc luôn, chẳng hạn như mmkv, nó viết các function/api tương đồng với
+>   async storage, do đó việc thay đổi nhanh và dễ
+> - Migrate dần, chẳng hạn như react 19 có cơ chế ko cần khai báo memorized
+>   hooks, tôi sẽ thí điểm vào các file mới và chỗ update của các feature. Ví
+>   dụ thứ 2 là test script, tôi chỉ bắt đầu với unit teét trước
+> - Chờ. Có những thứ ko sẵn sàng ngay, hồi mới ra new arch, tôi upgrade lên
+>   luôn để dùng thử, nhưng vì libs chưa support, tôi tắt ngay new arch chứ ko
+>   cố sửa, vì mất công nhiều
+>
+> Ngoài ra tôi còn nhớ thêm 1 ý. Cái gì lặp lại 3 lần, cần có tool thay thế.
+> Hoặc tự viết

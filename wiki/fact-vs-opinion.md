@@ -96,7 +96,7 @@ For descriptive claims (analytic: proven/unproven; normative: argued/contested
    agent found 4 holes the self-pass missed, *while aimed by* the self-pass's
    directions.
 7. **Rule of Three for knowledge** (Thức, 2026-07-16 — from React components /
-   custom hooks): a pattern appearing for the **3rd time** in
+   custom hooks; now generalised in [[wiki/rule-of-three]]): a pattern appearing for the **3rd time** in
    sources/discussions triggers a **"why does it recur?"** analysis before
    extraction. Classify: *root cause* (one essence in many costumes → extract
    a concept page or a practice-card Move) / *surface coincidence* (note,
