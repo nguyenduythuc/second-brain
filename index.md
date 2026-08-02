@@ -19,11 +19,17 @@ The agent updates this on every ingest.
 - [[wiki/hermes-self-improvement-loop]] — how a retro loop is actually built: quantified triggers, signal-based reflection, patch-not-rewrite, provenance, reversible lifecycle; and its admitted failure (agents self-congratulate) fixed by trace-based reflection + automated gates + human PR.
 - [[wiki/shepherd-review-gates]] — turning review gates into system invariants: authority in the type signature, syscall jail with fail-closed probe, retained output (propose don't apply), reversibility weakest-link, typed effect boundary.
 - [[wiki/fact-vs-opinion]] — claim classification v0.2 (ACTIVE): 3 types × 5 statuses, decay classes/TTL, weakest-link & quantifier & rule-of-three rules, epistemic tags + lint mechanism.
+- [[wiki/margin-and-leverage-risk]] — margin/margin call defined; margin's real cost is losing "the right to wait" (an option); three sizing rules (no stacked leverage, no essential funds, size off the downside scenario).
 
 ## Entities
 - [[wiki/andrej-karpathy]] — author of the LLM Wiki pattern; founding member of OpenAI, ex-Tesla AI director.
+- [[wiki/korea-2026-margin-call-crisis]] — July 2026: 1.2M+ Korean margin accounts hit call threshold via stacked leverage (margin → 2x/3x ETFs) on AI/semiconductor stocks; ~$1.45B in losses.
+- [[wiki/situational-awareness-margin-call-2026]] — Leopold Aschenbrenner's ~$20B+ AI hedge fund, 4x leverage, forced block-trade sale to Citadel after July 2026 AI/semiconductor rout.
 
 ## Syntheses
 - [[wiki/how-i-want-to-think]] — personal practice card: the "fact hay đoán?" move, reps, using the brain without it becoming a crutch.
 - [[wiki/what-ai-structures-still-need]] — closing Q3 synthesis: three docs = three organs (learn / contain / human decides); five gaps still open — inter-agent contracts, in-flight self-monitoring, decomposition depth, memory TTL, graduated enforcement.
 - [[wiki/agent-org-multiplied-self]] — agent orgs multiply execution, not judgment; you're n× stronger only if the original is worth copying; encode/verify/retro set the multiplier.
+
+## Summaries
+- [[wiki/doc-cham-margin-call-2026-08-02]] — summary of the "Đọc Chậm 2/8: Margin Call" excerpt; entry point into margin-and-leverage-risk and the two 2026 cases.

@@ -156,3 +156,19 @@ orphans, fact-tag TTL, quantifier widening, log parseability, disputed
 ledger) with a `<!-- lint-ok: quantifier -->` escape hatch, ran it — wiki is
 clean. **Open decision for him:** how to schedule it (re-create the routine,
 or a GitHub Action running the script on a cron).
+
+**2026-08-02** — Separate/parallel session (branch
+`claude/margin-call-leverage-risk-o4b96n`, not the `claude/blissful-feynman-gtk8wi`
+branch above — treat these as two live threads until merged). First
+**Finance-domain** ingest: "Đọc Chậm 2/8: Margin Call" — new concept
+[[wiki/margin-and-leverage-risk]] (margin's real cost = losing "the right to
+wait"), two 2026 case entities researched by the agent via web search since
+they weren't in the excerpt ([[wiki/korea-2026-margin-call-crisis]],
+[[wiki/situational-awareness-margin-call-2026]]) — note direct WebFetch to
+news sites 403'd across every domain tried (site-side bot blocking, not a
+proxy fault); facts sourced from WebSearch snippet synthesis instead, method
+noted in each `{fact ✓...}` tag. One unresolved discrepancy: Situational
+Awareness LP's peak AUM is reported as both $20-24B and $45B across outlets,
+not reconciled. This opens a new domain in `index.md` (Concepts/Entities got
+their first non-metacognition entries; added a `## Summaries` section for
+source-summary pages).
