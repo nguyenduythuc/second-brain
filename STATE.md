@@ -18,10 +18,17 @@ project (Clarify → Spec → Plan → Tasks → Implement, with `plan-creator` 
 `clean-clear-code` skills) that is *not* in this repo — he'll reference it,
 don't assume its files are here.
 
-**Language:** he thinks and talks in Vietnamese — **converse with him in
-Vietnamese**. Wiki content is written in English with Vietnamese glosses
-(see `CLAUDE.md`). Don't confuse the two: the conversation and the artifact
-have different language rules.
+**Language (revised 2026-07-27 — supersedes the earlier "converse in
+Vietnamese" rule):** **write to him in English.** He judged the agent's
+Vietnamese to be losing meaning on abstract and technical points and asked
+for the switch; his own principle decides it — optimise for the reader, and
+here he is the reader. **He keeps writing in Vietnamese**, and that stays:
+composing in a second language would add friction exactly where his thinking
+needs to be fluent. Reading his Vietnamese was never the problem; the loss
+was on the agent's output side. Signature phrases stay Vietnamese in both
+directions (*"fact hay đoán?"*, *"trao đổi, không phó thác"*, *"nguồn đâu,
+search đã"*) — those are the actual trigger words. Wiki content: English with
+Vietnamese glosses, unchanged (see `CLAUDE.md`).
 
 **Stated priority:** self-development first — job, salary, side income all
 follow from personal value. His frame for the AI era: one mind / memory /
