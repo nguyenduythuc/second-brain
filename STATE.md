@@ -30,6 +30,23 @@ directions (*"fact hay đoán?"*, *"trao đổi, không phó thác"*, *"nguồn 
 search đã"*) — those are the actual trigger words. Wiki content: English with
 Vietnamese glosses, unchanged (see `CLAUDE.md`).
 
+  **Refined the same day, after he said the English was also hard to follow
+  ("nhiều từ mới"):** the root problem was never the language — it was the
+  *writing*. Long sentences, abstract words, heavy metaphor. Vietnamese turned
+  that into mush; English turned it into unfamiliar vocabulary. **Format now
+  in force:**
+  1. **Simple English.** Short sentences, common words. No showing off.
+  2. **Technical terms stay English** — component, hook, commit, retro, blast
+     radius, trade-off. He uses these daily; they are easier than the plain
+     English around them.
+  3. **One Vietnamese line per section**, on the sentence that carries the
+     point — not on everything. Same principle as sparse epistemic tags:
+     annotate what is load-bearing, or the annotation becomes noise.
+
+  This was the agent writing for the writer instead of the reader — the exact
+  failure his own craft philosophy warns against
+  ([[wiki/craft-philosophy]]).
+
 **Stated priority:** self-development first — job, salary, side income all
 follow from personal value. His frame for the AI era: one mind / memory /
 body isn't enough, so having many capable "copies" multiplies him — a claim
