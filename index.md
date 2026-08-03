@@ -18,6 +18,7 @@ The agent updates this on every ingest.
 - [[wiki/self-improving-agent-systems]] — self-improvement is a property of the system, not the model; compound stack, 5-stage memory (fail→consult), verifier vs self-critique, tooling claims separated from architecture.
 - [[wiki/hermes-self-improvement-loop]] — how a retro loop is actually built: quantified triggers, signal-based reflection, patch-not-rewrite, provenance, reversible lifecycle; and its admitted failure (agents self-congratulate) fixed by trace-based reflection + automated gates + human PR.
 - [[wiki/shepherd-review-gates]] — turning review gates into system invariants: authority in the type signature, syscall jail with fail-closed probe, retained output (propose don't apply), reversibility weakest-link, typed effect boundary.
+- [[wiki/ratchet]] — block new debt, let old debt stay and shrink: baselines, grandfathered lists, release-gated checks; a working answer to the graduated-enforcement gap.
 - [[wiki/rule-of-three]] — one principle in three substrates (code / knowledge / tooling): the 3rd appearance justifies abstracting; classify why it recurs before extracting.
 - [[wiki/fact-vs-opinion]] — claim classification v0.2 (ACTIVE): 3 types × 5 statuses, decay classes/TTL, weakest-link & quantifier & rule-of-three rules, epistemic tags + lint mechanism.
 

@@ -3,7 +3,7 @@ title: Rule of Three — one principle, three substrates
 type: concept
 created: 2026-07-27
 updated: 2026-07-27
-sources: [sources/2026-07-27-craft-philosophy-self-report.md]
+sources: [sources/2026-07-27-craft-philosophy-self-report.md, sources/2026-07-27-lfvn-coding-convention.md]
 ---
 
 # Rule of Three
@@ -41,6 +41,20 @@ structure is identical in all three:
 Three is the smallest sample that separates *pattern* from *coincidence* while
 the cost of waiting is still low. That is why the same number surfaces
 independently in every domain where someone pays both costs.
+
+## The threshold is 3, not cost-adjusted — decided 2026-07-27
+
+His LFVN convention doc contains a different number: *"if a human catches the
+same class of error **twice** in review, write a rule for it."* Two, not three.
+
+The agent proposed a **cost-adjusted threshold** as the explanation: automate
+at 2 when automation is cheap (a lint rule), wait for 3 when it is expensive
+(building a tool). **Thức rejected this** and chose one consistent threshold:
+three. Recorded as a rejected hypothesis, not a confirmed one — the agent's
+guess did not survive contact with his judgment.
+
+Consequence: the "twice" line in the convention doc is the outlier and should
+move to three.
 
 ## The classification step is what makes it a rule rather than a reflex
 

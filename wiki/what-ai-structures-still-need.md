@@ -101,6 +101,13 @@ Shepherd's own ReversibilityLevel is the mechanism that would make this
 possible — the system knows which regime each operation belongs in — but no
 one has wired it to *variable* enforcement strength.
 
+**Partial answer found 2026-07-27:** Thức's monorepo runs a **ratchet** —
+old debt is listed in baseline files and does not block the build, new drift
+does; some checks run only at the release gate, not on the development branch.
+See [[wiki/ratchet]]. It grades strictness by *origin and timing* rather than
+by blast radius, so the two axes compose. The gap now reads: nobody has
+applied either axis to an agent system.
+
 ## The through-line
 
 Human organizations solved these five with soft, expensive machinery: middle

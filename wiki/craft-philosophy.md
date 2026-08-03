@@ -3,7 +3,7 @@ title: Craft Philosophy — how Thức engineers
 type: synthesis
 created: 2026-07-27
 updated: 2026-07-27
-sources: [sources/2026-07-27-craft-philosophy-self-report.md]
+sources: [sources/2026-07-27-craft-philosophy-self-report.md, sources/2026-07-27-lfvn-coding-convention.md]
 ---
 
 # Craft Philosophy
@@ -89,8 +89,53 @@ Structural echo: route 3 is [[wiki/shepherd-review-gates]]'s
 ceremony. He reached it through cost; Shepherd reached it through
 architecture.
 
+## Two practices visible in the real convention doc
+
+These come from his maintained LFVN convention page, not from memory — so they
+are {fact ✓2026-07-27 medium; method: read the artifact} rather than
+self-report.
+
+### The 4-tier review gate
+
+| Tier | Who | Cost | Catches |
+|---|---|---|---|
+| 1 | ESLint | seconds, pre-commit | banned imports, platform-specific globals |
+| 2 | CI scripts | seconds, pre-merge | i18n key drift, persist blacklist mismatch, route/enum mismatch, leftover mocks |
+| 3 | AI review | minutes | wrong layer, impure util, missing co-located test |
+| 4 | **Human** | expensive | **business logic / BRD only** |
+
+His stated reason: *cost of a bug rises the further it travels from where it
+was created*, and independent layers beat one layer (defence in depth). Each
+tier is cheaper than the next, so it goes first.
+
+**This is the same conclusion Hermes and Shepherd reached** — automated gates
+exist to protect scarce human attention, so the human reviews judgment and
+nothing else. He built it independently, from cost pressure rather than
+architecture. It is "be the bottleneck" implemented correctly: the human is
+the *last* gate, not the *only* gate.
+
+### Document a change so it can be undone
+
+> *"Khi gặp một sự thay đổi, tôi luôn document lại, làm sao để sau này dễ
+> recover, truy vết lịch sử."*
+
+The convention doc's temporarily-disabled-security section is the example of
+the shape (the security content itself is out of scope): what changed, why,
+when, a step-by-step restore checklist, and a gate that blocks release until
+the checklist is done.
+
+The important part: that change is **not** mechanically reversible — `git
+revert` cannot undo edits spread across six files, `Info.plist` and
+`package.json`. So he **manufactures** reversibility by writing the recovery
+procedure at the moment of the change, while the details are still in his
+head. In [[wiki/shepherd-review-gates]] terms, he converts a hard-to-undo
+change into a `COMPENSABLE` one by writing the compensation action down.
+
+*Anh tạo ra khả năng quay đầu cho những thay đổi vốn không tự quay đầu được.*
+
 ## Related
 
+- [[wiki/ratchet]] — how old debt is handled without blocking new work.
 - [[wiki/rule-of-three]] — his "three repetitions justify a tool" is the same
   principle he applies to components and to knowledge.
 - [[wiki/ring-2-encoding-the-craft]] — turning this hypothesis into verified

@@ -147,3 +147,22 @@ Phần dưới giải thích **tại sao** convention ở trên được thiết
 | **D. Tại sao Git Flow hiện tại "cắt từ main, không từ develop"** | **Tránh integration hell / silent coupling** | Nếu feature branch cắt từ 1 nhánh tích hợp (develop) đang chứa nhiều feature khác chưa release, merge riêng feature đó lên môi trường release (uat) sẽ vô tình kéo theo code feature khác — một dạng coupling ẩn giữa các thay đổi lẽ ra độc lập. | Cắt từ main (base sạch, chỉ chứa code đã lên PROD) đảm bảo mỗi feature branch độc lập tuyệt đối — muốn merge lên uat lúc nào cũng được mà không kéo rác. |
 | **Release gate bằng chọn lọc merge, không phải feature-flag** | Cách rẻ nhất để "bật/tắt" 1 tính năng ở 1 môi trường, khi chưa có hệ thống feature-flag, là kiểm soát ngay ở tầng merge — nhánh nào không merge thì môi trường đó không có code đó. | uat chỉ nhận feature đã pass SIT — quyết định merge = quyết định gate. Trade-off: phải test lại tổ hợp khác nhau giữa develop và uat (ghi rõ trong docs là "accepted trade-off"). |
 | **Reset develop mỗi milestone** | Nhánh tích hợp chứa MỌI thay đổi (kể cả bị từ chối) qua thời gian sẽ "trôi" khỏi trạng thái build thật — SIT test ra một tổ hợp code không giống bất kỳ bản PROD nào từng có, làm giảm giá trị của việc test. | Sau mỗi lần lên PROD, reset develop = main rồi merge lại đúng feature còn đang làm dở — đưa integration branch về lại trạng thái "sạch" định kỳ. |
+
+---
+
+## Bổ sung — Thức phản hồi sau khi agent đọc trang (2026-07-27)
+
+> Bạn không cần quan tâm tới vụ security, nó không nằm trong scope này, tuy
+> nhiên bạn có thể hiểu được cách tôi tư duy và cách làm, khi gặp một sự thay
+> đổi, tôi luôn document lại, làm sao để sau này dễ recover, truy vết lịch sử.
+> Ngoài ra tôi đồng ý nên theo rule of three
+
+Hai điều được chốt:
+
+1. **Nguyên tắc rút ra (không phải nội dung security):** mọi thay đổi đều được
+   document lại để sau này *recover* và *truy vết lịch sử*. Mục 11.1 là ví dụ:
+   nó chứa what/why/when + checklist restore 7 bước + một gate.
+2. **Ngưỡng Rule of Three:** Thức chọn **3, thống nhất**. Giả thuyết của agent
+   về "ngưỡng điều chỉnh theo chi phí" (2 cho automation rẻ, 3 cho tool đắt)
+   **bị bác** — anh ưu tiên một ngưỡng nhất quán. Dòng "2 lần" trong mục
+   "Automation trước, người sau" của trang là điểm cần chỉnh về 3.
