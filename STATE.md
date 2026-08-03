@@ -139,6 +139,16 @@ guarded entry, unguarded exit.
 - **Rule-of-Three watch:** "weakest-link composition" has appeared twice
   (argument strength; reversibility). A third sighting earns its own concept
   page.
+- **Open question put to him 2026-07-27, unanswered: is "keep the undo path
+  cheap" one principle at three sightings, or three things that merely look
+  alike?** The three: (1) Shepherd's reversibility levels + propose-don't-apply
+  ([[wiki/shepherd-review-gates]]), (2) his route-3 tech-adoption rule —
+  *"tắt ngay chứ ko cố sửa"*, abandon fast rather than fight
+  ([[wiki/craft-philosophy]]), (3) writing the recovery procedure at change
+  time, for changes `git revert` can't undo (same page). I deliberately did
+  **not** extract it: my over-pattern-matching failure mode fires exactly here,
+  one step after learning a rule. His call. If root cause → new concept page;
+  if surface coincidence → note it in [[wiki/rule-of-three]] and close.
 - **Calibration ledger** deferred to v0.3 of the claim framework — build when
   ~10+ thinking-move entries have accumulated in `log.md`.
 - **Unverified tooling claims** carried forward from the Codez ingest
@@ -193,10 +203,30 @@ English rendering, and created this file at his request.
 **Next:** nothing is blocking. Natural continuations — build one of the five
 brain upgrades, start Ring 2, or ingest whatever he brings next.
 
-**2026-07-27** — Thức reported the weekly lint wasn't working. Confirmed by
-evidence that it never fired at all (see the routine entry above). Wrote
-`scripts/lint.sh` (mechanical checks: links, index coverage, frontmatter,
-orphans, fact-tag TTL, quantifier widening, log parseability, disputed
-ledger) with a `<!-- lint-ok: quantifier -->` escape hatch, ran it — wiki is
-clean. **Open decision for him:** how to schedule it (re-create the routine,
-or a GitHub Action running the script on a cron).
+**2026-07-27** — A long session, four distinct pieces of work:
+
+1. **Lint scheduling fixed.** He reported the weekly lint wasn't working;
+   evidence showed it never fired at all. Wrote `scripts/lint.sh` (8
+   mechanical checks) and split scheduling in two — GitHub Actions cron for
+   the mechanical half, session-start for the judgment half. Decision made,
+   no longer open.
+2. **Ring 2 designed and packaged.** [[wiki/ring-2-encoding-the-craft]] plus
+   the portable `ring2-commands/`. Still not executed — needs a session on
+   the monorepo.
+3. **He caught my meta-failure** — I find my own errors but never record
+   them. Root-caused with 5 Whys and fixed structurally in `CLAUDE.md`.
+   This is the most important thing that happened that day.
+4. **Craft knowledge started flowing.** His verbal self-report, then the real
+   LFVN convention doc from Confluence. Produced [[wiki/craft-philosophy]],
+   [[wiki/rule-of-three]], [[wiki/ratchet]]. Along the way: the conversation
+   language switched to English, then the *writing format* was fixed (the
+   real root cause), and he rejected my cost-adjusted-threshold hypothesis in
+   favour of one consistent threshold of three.
+
+**Pattern worth noticing:** his craft material is the richest input this brain
+has had. The convention doc alone closed an open gap (graduated enforcement)
+that three published agent-architecture papers left open. When he offers more
+of it, take it.
+
+**Next:** his answer on the undo-path question (open threads above). Otherwise
+receive more craft material, or build one of the five brain upgrades.
