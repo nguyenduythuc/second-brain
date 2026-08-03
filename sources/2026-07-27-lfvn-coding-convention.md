@@ -166,3 +166,74 @@ Hai điều được chốt:
    về "ngưỡng điều chỉnh theo chi phí" (2 cho automation rẻ, 3 cho tool đắt)
    **bị bác** — anh ưu tiên một ngưỡng nhất quán. Dòng "2 lần" trong mục
    "Automation trước, người sau" của trang là điểm cần chỉnh về 3.
+
+---
+
+## Bổ sung 2 — Phần bôi vàng (đọc lại 2026-08-03)
+
+**Ghi chú provenance:** lần capture đầu chuyển trang sang markdown và **mất
+phần highlight** (`#ffc400`) — highlight là markup, không phải nội dung, nên
+nó rơi mất trong quá trình convert. Thức yêu cầu đọc lại đúng phần này. Dưới
+đây là **toàn bộ** các ô được bôi vàng, chép nguyên văn, trừ hai ô trong mục
+security (11.1) vì security nằm ngoài scope theo yêu cầu của anh.
+
+**1.1 Cấu trúc & quy tắc project**
+
+- **Platform-agnostic**: Logic dùng chung mobile+web đặt trong packages/shared,
+  KHÔNG import trực tiếp API platform-specific (@react-navigation/native,
+  __DEV__) — dùng abstraction (useConfigRouting, process.env.NODE_ENV).
+- **Util thuần (pure)**: utils/ phải pure — không gọi API, không side effect;
+  logic có side effect thuộc hooks/ hoặc api/.
+- **TypeScript**:
+  - Ưu tiên dùng enum hơn dùng type trong các trường hợp limited value
+  - Ưu tiên dùng lại các type đã được define rồi để đảm bảo consistent về mặt
+    logic và dữ liệu hoặc sử dụng tính kế thừa của typescript
+  - Toàn bộ biến và object phải được khai báo kiểu dữ liệu
+
+**2. UI Conventions**
+
+- **Cấu trúc components**: components/common/ = UI tái sử dụng chung, không
+  chứa business logic; components/<Feature>/ = composite theo tính năng.
+
+**6.1 Code Review Tier 2 — CI scripts** (cả 4 script đều được bôi vàng)
+
+- **check-i18n-sync.mjs**: vi.json và en.json phải khai báo cùng bộ key.
+- **check-persist-sync.mjs**: Mọi entry trong persistConfig.blacklist
+  (store.ts/storeWeb.ts) phải khớp key thật của rootReducer.
+- **check-screen-routes.mjs**: Mỗi route folder web (app/[locale]/) phải có
+  ScreenParamEnum tương ứng.
+- **check-no-mock-flags.mjs**: Không còn hằng số MOCK_* trong packages/shared —
+  chỉ chạy ở release gate (uat/main), không chạy ở develop.
+
+**6.2 / 6.3 — phạm vi review**
+
+- **Phạm vi review AI**: Đúng tầng kiến trúc (utils/hooks/screen)? Util có pure
+  không? Lỗi API có qua ErrorMessageService không? Thiếu test co-located không?
+- **Phạm vi còn lại (Tier 4 — người)**: Chỉ review đúng nghiệp vụ/BRD — phần cơ
+  chế (naming, wiring, convention) đã được Tier 1–3 xử lý trước đó.
+
+**8. CI/CD**
+
+- **Mobile CI-CD**: Chưa có job. Tuy nhiên sẽ bổ sung github action để auto
+  build cho các PR và deliver qua firebase app distribution. Dev ko phải build
+  trực tiếp app cho tester nữa.
+
+**Bảng lý thuyết** (mục A và C)
+
+- **Layered architecture** (utils/hooks/screens)
+- **Adapter / Strategy pattern**
+- **Atomic Design** (bản rút gọn)
+- **Automation trước, người sau**
+
+---
+
+## Bổ sung 3 — Thức phản hồi về phần bôi vàng (2026-08-03)
+
+> Vẫn là những gì tôi từng nói thôi, đây chỉ là mô tả chi tiết hơn về tư tưởng
+> code của tôi
+
+Chốt: **không phải kiến thức mới, mà là cùng một triết lý ở mức chi tiết hơn.**
+Agent đề xuất tách một concept page mới ("extend the type system with scripts")
+— **rút lại**. Giá trị thật của phần bôi vàng là *bằng chứng*: nó nâng trạng
+thái nhận thức của [[wiki/craft-philosophy]] từ self-report sang có artifact
+chống lưng, và cho thấy các giá trị đó được **thực thi bằng cơ chế gì**.

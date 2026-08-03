@@ -187,6 +187,18 @@ guarded entry, unguarded exit.
   → CONSULT. Structural fix applied: `CLAUDE.md`'s track-thinking-moves
   principle now explicitly covers the agent's own reasoning errors and
   requires either recording them here or asking him.
+- **Mistaking depth for novelty (2026-08-03, he corrected this).** On re-reading
+  the highlighted parts of his convention doc I proposed a new concept page
+  ("extend the type system with scripts"). He replied: *"Vẫn là những gì tôi
+  từng nói thôi, đây chỉ là mô tả chi tiết hơn về tư tưởng code của tôi."* Root
+  cause: **two sources describing the same thing at different altitudes look
+  like two findings to me** — a self-report and a maintained artifact arrive as
+  separate inputs, so I read the second as new knowledge instead of as evidence
+  for the first. Underneath that: a new page *feels* like progress, but node
+  count is not the graph. **Check before extracting: is this a new node, or an
+  existing node gaining evidence / a mechanism?** Related to but distinct from
+  over-pattern-matching — there I invented a pattern across unlike things; here
+  I split one thing into two. Both fail the Rule of Three's classification step.
 - **Conflating two goals into one plan.** I proposed "mine the monorepo"
   without separating (A) skill files that stay in the monorepo from (B) a
   decision-making wiki here — then drifted into discussing transfer, which

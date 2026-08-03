@@ -2,7 +2,7 @@
 title: Craft Philosophy — how Thức engineers
 type: synthesis
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-08-03
 sources: [sources/2026-07-27-craft-philosophy-self-report.md, sources/2026-07-27-lfvn-coding-convention.md]
 ---
 
@@ -132,6 +132,43 @@ head. In [[wiki/shepherd-review-gates]] terms, he converts a hard-to-undo
 change into a `COMPENSABLE` one by writing the compensation action down.
 
 *Anh tạo ra khả năng quay đầu cho những thay đổi vốn không tự quay đầu được.*
+
+### What he emphasised himself — values, and the mechanism under each
+
+On a second read of the convention doc (2026-08-03) the **highlighted** cells
+were recovered — the first capture converted the page to markdown and lost the
+highlighting. His verdict on them: *"Vẫn là những gì tôi từng nói thôi, đây chỉ
+là mô tả chi tiết hơn về tư tưởng code của tôi."* Same philosophy, lower
+altitude — **no new principle, but the mechanism that enforces each one.**
+
+| Stated principle (from memory) | Highlighted mechanism (from the artifact) |
+|---|---|
+| 2 — clean-clear | `utils/` must be pure; API errors go through `ErrorMessageService`; every variable typed |
+| 3 — clear = structured | Layered architecture utils → hooks → screens; `components/common` holds no business logic; Atomic Design cut to 2 levels |
+| 4 — reusability | Reuse types already defined, or inherit; prefer `enum` over union for limited values; Adapter/Strategy so business logic never sees the platform |
+| 6/8 — automation, retro | *Automation trước, người sau*; AI review scope and human review scope written down separately |
+
+**What this changes about this page: its epistemic status, not its content.**
+The header says this page is the hypothesis and the monorepo is the evidence.
+The highlighted cells are the first evidence to arrive — principles 2, 3 and 4
+are no longer only self-report; they are visible in a maintained artifact as
+enforced rules {fact ✓2026-08-03 medium; method: read his convention doc,
+highlighting included}. Principles 1, 5, 6, 7 remain self-report.
+
+Two details worth keeping:
+
+- **The four highlighted CI scripts sit exactly where the type system ends.**
+  Three of them check *two files that must agree but that TypeScript cannot
+  link*: `vi.json` ↔ `en.json`, `persistConfig.blacklist` ↔ `rootReducer` keys,
+  `app/[locale]/` folders ↔ `ScreenParamEnum`. The TypeScript highlights push
+  the other way — type everything, reuse types, use enums. One move from two
+  sides: **put as much as possible inside the type system, then write a script
+  for what falls outside it.** Filed here as a mechanism, not extracted as its
+  own concept — his call, and correct: it is principle 2 and 4 being enforced,
+  not a separate idea.
+- **Naming rules are not highlighted anywhere; boundary rules are.** Section
+  1.0 (camelCase, PascalCase, file suffixes) has zero highlights. Naming is
+  arbitrary — any consistent choice works. Boundaries are not {inference}.
 
 ## Related
 
