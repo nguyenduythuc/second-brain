@@ -55,9 +55,18 @@ we sharpened together into [[wiki/agent-org-multiplied-self]].
 
 ## Operational facts about this repo
 
-- **Branch:** work on `claude/blissful-feynman-gtk8wi`. Never push to `main`.
-  He merges via PR himself. After a merge the remote branch is deleted —
-  restart it from `origin/main` (`git checkout -B <branch> origin/main`).
+- **Branch:** work on `claude/brain-design-system-49mmj8` (as of 2026-08-10;
+  previously `claude/blissful-feynman-gtk8wi`, merged in PR #5). Never push to
+  `main`. He merges via PR himself. After a merge the remote branch is deleted
+  — restart from `origin/main` (`git checkout -B <branch> origin/main`).
+- **Derived data is generated, never typed.** `index.md` and every page's
+  "Linked from" block come from `scripts/derive.py`. Run it after any wiki
+  change, then `scripts/lint.sh` — lint fails if the derived layer is stale.
+  Editing `index.md` by hand is now a lint failure, not a style preference.
+- **The ownership boundary is enforced in CI** —
+  `.github/workflows/wiki-boundary.yml` fails a PR whose commits touch `wiki/`
+  or `index.md` without agent authorship. Escape hatch: a `Wiki-Override:
+  <reason>` commit trailer, which is permanent in the history by design.
 - **Weekly lint routine: BROKEN — never fired.** Trigger
   `trig_0181W5WKJ37pcP8oqcntEBRb` (Mondays 09:00 UTC) was created 2026-07-08
   and should have run 07-13, 07-20 and 07-27. Evidence it never ran: no
@@ -108,13 +117,26 @@ guarded entry, unguarded exit.
 
 ## Open threads (pick these up without being asked)
 
-- **Five brain upgrades identified, none built** — listed in
-  [[wiki/what-ai-structures-still-need]]: decay-tag retrofit on legacy pages,
-  growth limit per page, reversible page lifecycle, trace-based reflection,
-  declared blast radius per operation.
+- **Brain upgrades: 2 of 5 done, 1 partial** (2026-08-10) — see
+  [[wiki/what-ai-structures-still-need]]. Done: decay-tag retrofit on legacy
+  pages, growth limit per page. Partial: declared blast radius. **Still open:
+  reversible page lifecycle** (nothing is ever archived — the compaction gap)
+  and **trace-based reflection** (`log.md` stores verdicts, not reasoning).
+- **Bounded contexts by domain: deliberately deferred.** One domain today, so
+  splitting now is premature. Concrete trigger to revisit: the first term that
+  means two different things in two pages, or the first domain sharing no
+  vocabulary with this one — most likely when Ring 2 (frontend craft) starts.
+  Migrating 17 pages is cheap, 60 is not. **He hasn't said what he's feeding
+  in next; that answer decides whether this becomes urgent.**
 - **Rule-of-Three watch:** "weakest-link composition" has appeared twice
   (argument strength; reversibility). A third sighting earns its own concept
   page.
+- **Rule-of-Three watch (new):** *"a rule with no mechanism decays into a
+  wish"* — 2 independent sightings (07-27 weekly-lint routine never fired;
+  08-10 boundary rule + dead orphan check). Counted conservatively on purpose:
+  the 08-10 instances came from one investigation, and over-pattern-matching a
+  fresh rule is a recorded agent failure mode. A third from an unrelated
+  context earns a concept page.
 - **Calibration ledger** deferred to v0.3 of the claim framework — build when
   ~10+ thinking-move entries have accumulated in `log.md`.
 - **Unverified tooling claims** carried forward from the Codez ingest
@@ -133,6 +155,11 @@ guarded entry, unguarded exit.
 - **Over-pattern-matching a freshly learned rule.** Right after adopting Rule
   of Three I read avoidance into his skipped exercises; the real cause was
   format mismatch plus my own bias. New tools make everything look like a nail.
+- **Trusting a check I never tested.** I wrote the orphan check on 07-27, ran
+  it, and reported "wiki clean" — but it counted `index.md` as an inbound link,
+  and every page is in the index, so it could not fail. A green check proved
+  nothing. **Before trusting a pass, confirm the check can produce a fail**
+  (I now test each new gate against a deliberate violation).
 - **Assimilation.** I bent his "master the model" quote toward the agent-org
   frame I'd been thinking about, and later misread "I have a more important
   idea" as an idea he wanted to share. Check what he actually said before
@@ -156,3 +183,26 @@ orphans, fact-tag TTL, quantifier widening, log parseability, disputed
 ledger) with a `<!-- lint-ok: quantifier -->` escape hatch, ran it — wiki is
 clean. **Open decision for him:** how to schedule it (re-create the routine,
 or a GitHub Action running the script on a cron).
+
+**2026-08-10** — He applied metacognition to the brain itself: *"is the design
+system good yet — DDD, data-intensive?"* Checked his premise first and it was
+wrong in a useful way: storage is ~a year from mattering, but **ingest cost was
+already O(n)** (8–10 file writes per ingest at n=17). Built the fix and three
+more he approved: `scripts/derive.py` generates `index.md` + all backlinks
+(ingest → 1–2 writes); boundary rule enforced in CI; frontmatter migrated to
+`schema_version: 2` with a `summary:` field; growth-limit check added.
+
+The decay-tag retrofit **paid for itself immediately** — it found
+[[wiki/andrej-karpathy]] stale since June (described by roles he'd left; now
+re-verified by search) and caught [[wiki/understanding-vs-doing]] resting on
+ego depletion, which failed a 23-lab preregistered replication. That page's
+conclusion was rebuilt on premises that survive. Filed the analysis as
+[[wiki/brain-as-data-system]].
+
+**A note for me (agent):** the old orphan check had been dead code since it was
+written — it counted `index.md` as an inbound link while every page is in the
+index, so it could never fire. I wrote it *and* reported "wiki clean" from it
+on 07-27. **Verify that a check can fail before trusting that it passed.**
+
+**Next:** his answer to "what domain goes in next" decides whether bounded
+contexts move up the list. Otherwise: reversible page lifecycle, or Ring 2.

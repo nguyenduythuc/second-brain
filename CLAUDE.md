@@ -20,7 +20,7 @@ one pass. That is the entire point.
 
 Plus three control files at the root:
 
-- `index.md` — catalog of every wiki page, one line each, grouped by category. **Update on every ingest.** This is also the *navigation layer*: answer a query by routing through `index.md` → the few relevant pages → synthesis, not by loading the whole vault.
+- `index.md` — catalog of every wiki page, one line each, grouped by type. **Generated, never hand-written** — run `scripts/derive.py` (see *Derived data* below). This is also the *navigation layer*: answer a query by routing through `index.md` → the few relevant pages → synthesis, not by loading the whole vault.
 - `log.md` — append-only history. Never edit past entries; only append.
 - `STATE.md` — **session continuity: read it first, every session; update it before the session ends.** It holds what the wiki should not — working agreements with the user, operational facts (branch, routines, environment quirks), open threads, the agent's own recorded failure modes, and a "last session" pointer. Without the read, every conversation restarts from zero; without the write, the next one does. Keep it current but small — it is a pointer file, not an archive: details live in `wiki/`, history lives in `log.md`.
 
@@ -31,20 +31,41 @@ it so *you* rewrite the page. Likewise you never write into `sources/`. Blurring
 these — you editing raw, or a human hand-tuning the wiki to win an argument —
 destroys the boundary that makes the system trustworthy.
 
+This rule is **enforced, not merely stated**:
+`.github/workflows/wiki-boundary.yml` fails any PR whose commits touch `wiki/`
+or `index.md` without agent authorship. The escape hatch is a deliberate
+`Wiki-Override: <reason>` commit trailer — allowed, but permanent in the
+history. (A rule with no mechanism decays into a wish; see
+[[wiki/brain-as-data-system]].)
+
+**Derived data — never maintain by hand.** `index.md` and the "Linked from"
+block at the foot of each page are *computed* from page frontmatter and
+outbound links by `scripts/derive.py`. Run it after any wiki change; `lint`
+fails when the derived layer is stale. This is what keeps an ingest O(1)
+instead of O(n): write the page whose *claims* changed, and let backlinks fall
+out of the graph. Never type a backlink, and never edit `index.md` — change the
+page's `summary:` frontmatter and re-run the script.
+
 ## Naming & filing conventions
 
 - Wiki files: `wiki/<kebab-case-title>.md`. One concept/entity per file.
 - Every wiki page starts with frontmatter:
   ```
   ---
-  title: Human Readable Title
-  type: concept | entity | summary | synthesis
+  title: "Human Readable Title"
+  type: meta | concept | entity | synthesis | summary
+  summary: "one line — this is what index.md prints, so write it for routing"
   created: YYYY-MM-DD
   updated: YYYY-MM-DD
+  schema_version: 2
   sources: [sources/<file>.md, ...]
   ---
   ```
-- Link between pages with `[[wiki/other-page]]` style references inline.
+  `title` and `summary` are quoted (they contain colons); `type` decides which
+  section of `index.md` the page lands in. Bump `updated` when the *content*
+  changes — not when backlinks regenerate.
+- Link between pages with `[[wiki/other-page]]` style references inline. Write
+  only the links a page genuinely makes; the reverse direction is generated.
 - **Language: wiki content is in English, with inline Vietnamese glosses.** All
   `wiki/` pages and `index.md` descriptions are written in English. Where a term
   is rooted in Vietnamese/Chinese or English doesn't capture it cleanly, gloss it
@@ -79,8 +100,10 @@ destroys the boundary that makes the system trustworthy.
 3. Save the raw input to `sources/<date>-<slug>.md` (verbatim, immutable).
 4. Write or update the relevant wiki page(s): a summary page for the source,
    and update any **entity/concept pages** it touches (create them if missing).
-5. Add/repair cross-references across affected pages.
-6. Update `index.md`.
+5. Add forward cross-references from pages whose **claims** actually changed.
+   Do *not* hand-edit other pages just to point back — backlinks are generated.
+6. Run `scripts/derive.py` to regenerate `index.md` and every backlink block,
+   then `scripts/lint.sh`.
 7. Append one line to `log.md`: `## [YYYY-MM-DD] ingest | <title> | wiki: <pages touched>`
 8. Move/clear the processed item out of `inbox/`.
 
@@ -92,7 +115,9 @@ destroys the boundary that makes the system trustworthy.
 4. Append to `log.md`: `## [YYYY-MM-DD] query | <question>`
 
 ### Lint (`/lint`)
-Health-check the wiki. Report (and offer to fix):
+Run `scripts/lint.sh` first — it covers the mechanical half (links, derived
+layer freshness, frontmatter/schema, orphans, fact TTL, quantifier widening,
+page growth limit). Then do the judgment half, which no script can:
 - Contradictions between pages
 - Stale claims superseded by newer sources
 - Orphan pages (no inbound links)

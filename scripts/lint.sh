@@ -24,33 +24,35 @@ done < <(grep -rhoE '\[\[wiki/[a-z0-9-]+\]\]' wiki/ index.md CLAUDE.md STATE.md 
          | sed -E 's/\[\[wiki\/(.+)\]\]/\1/' | sort -u)
 [ "$BROKEN" -eq 0 ] && ok "all links resolve"
 
-say "== 2. Every wiki page is in index.md =="
-MISSING=0
-for f in wiki/*.md; do
-  b=$(basename "$f" .md)
-  grep -q "\[\[wiki/$b\]\]" index.md || { fail "not in index: $b"; MISSING=1; }
-done
-[ "$MISSING" -eq 0 ] && ok "index covers every page"
+# index.md and the per-page backlink blocks are derived data — they must be
+# generated, never hand-written, or they drift from the pages they describe.
+# This check also subsumes the old "every page is in index.md": a page missing
+# from the index means the index is stale.
+say "== 2. Derived layer (index.md + backlinks) is up to date =="
+python3 scripts/derive.py --check || ISSUES=$((ISSUES+1))
 
 say "== 3. Frontmatter present and well-formed =="
 BADFM=0
 for f in wiki/*.md; do
   head -1 "$f" | grep -q '^---$' || { fail "no frontmatter: $f"; BADFM=1; continue; }
-  for k in title type created updated sources; do
+  for k in title type summary created updated schema_version sources; do
     awk '/^---$/{n++; next} n==1' "$f" | grep -q "^$k:" \
       || { fail "missing '$k:' in $f"; BADFM=1; }
   done
+  v=$(awk '/^---$/{n++; next} n==1' "$f" | sed -n 's/^schema_version: *//p')
+  [ "$v" = "2" ] || { fail "schema_version is '$v', expected 2: $f"; BADFM=1; }
 done
 [ "$BADFM" -eq 0 ] && ok "frontmatter valid on all pages"
 
+# derive.py writes this marker into any page nothing else links to, so the
+# orphan lives on the page itself rather than only in a lint report.
 say "== 4. Orphan pages (no inbound links) =="
-ORPH=0
-for f in wiki/*.md; do
-  b=$(basename "$f" .md)
-  n=$(grep -rl "\[\[wiki/$b\]\]" wiki/ index.md STATE.md 2>/dev/null | grep -v "^wiki/$b.md$" | wc -l)
-  [ "$n" -eq 0 ] && { fail "orphan (no inbound links): $b"; ORPH=1; }
-done
-[ "$ORPH" -eq 0 ] && ok "no orphan pages"
+ORPH=$(grep -l "this page is an orphan" wiki/*.md 2>/dev/null || true)
+if [ -n "$ORPH" ]; then
+  for f in $ORPH; do fail "orphan (no inbound links): $(basename "$f" .md)"; done
+else
+  ok "no orphan pages"
+fi
 
 say "== 5. Stale epistemic tags past TTL (fast 30d / medium 180d / slow 1095d) =="
 python3 - <<'PY'
@@ -93,11 +95,27 @@ sys.exit(1 if found else 0)
 PY
 [ $? -ne 0 ] && ISSUES=$((ISSUES+1))
 
-say "== 7. log.md parseable =="
+# CLAUDE.md: split a page past ~400 lines. Nothing compacts on its own, so the
+# limit has to be enforced from outside or pages just keep accreting.
+say "== 7. Page growth limit (warn 320, fail 400 lines) =="
+BIG=0
+for f in wiki/*.md; do
+  n=$(wc -l < "$f")
+  if [ "$n" -gt 400 ]; then
+    fail "$f is $n lines — split it (CLAUDE.md: one concept per page, ~400 max)"
+    BIG=1
+  elif [ "$n" -gt 320 ]; then
+    say "  ! $f is $n lines — approaching the split threshold"
+    BIG=1
+  fi
+done
+[ "$BIG" -eq 0 ] && ok "every page under the growth limit"
+
+say "== 8. log.md parseable =="
 BAD=$(grep -c '^## \[' log.md)
 [ "$BAD" -gt 0 ] && ok "$BAD parseable log entries" || fail "log.md has no parseable entries"
 
-say "== 8. Disputed ledger =="
+say "== 9. Disputed ledger =="
 D=$(grep -rn '{disputed' wiki/ 2>/dev/null || true)
 [ -n "$D" ] && { say "$D"; } || ok "no disputed claims on record"
 
