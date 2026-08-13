@@ -1,9 +1,10 @@
 ---
 title: "The Brain as a Data System"
 type: synthesis
+domain: brain
 summary: "reading this repo through DDD and data-intensive lenses: it is already event-sourcing + a read model; the binding constraint is ingest cost O(n), not storage."
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-08-13
 schema_version: 2
 sources: []
 ---
@@ -129,15 +130,28 @@ recorded failure mode is precisely over-pattern-matching a freshly learned rule
 (07-27 routine, 08-10 boundary/checks). A third from an unrelated context earns
 it a concept page {inference — deliberately the conservative reading}.
 
-## What is deliberately not done
+## Bounded contexts: deferred, then built three days later
 
-**Splitting the wiki into bounded contexts by domain.** Everything here is one
-domain (thinking / AI architecture), so separating contexts now would be an
-abstraction built for traffic that does not exist. The trigger to revisit is
-concrete: **the first time a term means two different things in two pages**
-(e.g. "review gate" for agents vs. for frontend pull requests), or the first
-domain that shares no vocabulary with this one. Migrating 17 pages is cheap;
-migrating 60 is not — so this is worth watching, just not worth building.
+This page originally deferred domain separation as premature — one domain, no
+pain, don't build for traffic that does not exist. The trigger named for
+revisiting it was "the first domain that shares no vocabulary with this one."
+
+On 2026-08-13 Thức named four: thinking as the core, then programming craft,
+psychology, and economics. The trigger fired, so the split was built — as a
+`domain:` **frontmatter field**, not folders. The reasoning is the same one
+that runs through this page: the reader is an LLM, so a *physical* partition
+buys nothing, while a field keeps `[[wiki/...]]` links flat, lets a page be
+re-domained by editing one line, and lets `scripts/derive.py` group the index
+by domain for free.
+
+The index is now **domain-first, type-second**, and it prints empty domains
+explicitly — routing a question starts by choosing a domain, and what is
+missing should be as visible as what exists. See [[wiki/domain-map]].
+
+Worth recording as a small vindication of the discipline: deferring cost
+nothing, because the migration was ~20 lines of script and one pass over the
+frontmatter. Building it early would have cost the same and been guesswork
+about which domains existed.
 
 Related open items live in [[wiki/what-ai-structures-still-need]]: page
 lifecycle and compaction (now trigger-checked at 320/400 lines by the lint,
@@ -157,5 +171,5 @@ though nothing archives yet), and trace-based reflection.
 
 ---
 
-**Linked from:** [[wiki/about-this-brain]] · [[wiki/what-ai-structures-still-need]]
+**Linked from:** [[wiki/about-this-brain]] · [[wiki/domain-map]] · [[wiki/what-ai-structures-still-need]]
 <!-- backlinks:end -->

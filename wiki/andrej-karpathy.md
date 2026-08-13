@@ -1,6 +1,7 @@
 ---
 title: "Andrej Karpathy"
 type: entity
+domain: brain
 summary: "author of the LLM Wiki pattern; ex-OpenAI/Tesla, founded Eureka Labs; role re-verified 2026-08 after going stale."
 created: 2026-06-12
 updated: 2026-08-10

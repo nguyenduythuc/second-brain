@@ -1,6 +1,7 @@
 ---
 title: "Three Views (Tam Quan)"
 type: concept
+domain: thinking
 summary: "Three Views (Tam Quan): worldview / values / life outlook, with critique."
 created: 2026-06-17
 updated: 2026-08-10

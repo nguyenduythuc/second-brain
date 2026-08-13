@@ -35,7 +35,7 @@ say "== 3. Frontmatter present and well-formed =="
 BADFM=0
 for f in wiki/*.md; do
   head -1 "$f" | grep -q '^---$' || { fail "no frontmatter: $f"; BADFM=1; continue; }
-  for k in title type summary created updated schema_version sources; do
+  for k in title type domain summary created updated schema_version sources; do
     awk '/^---$/{n++; next} n==1' "$f" | grep -q "^$k:" \
       || { fail "missing '$k:' in $f"; BADFM=1; }
   done
@@ -111,11 +111,49 @@ for f in wiki/*.md; do
 done
 [ "$BIG" -eq 0 ] && ok "every page under the growth limit"
 
-say "== 8. log.md parseable =="
+# wiki/domain-map.md: thinking is the kernel, so dependencies should run
+# peripheral -> core. This REPORTS rather than fails: status boards legitimately
+# point at everything they track, and a check that cries wolf gets ignored.
+say "== 8. Core-domain coupling (thinking -> peripheral links) =="
+python3 - <<'PY'
+import pathlib, re
+LINK = re.compile(r'\[\[wiki/([a-z0-9-]+)\]\]')
+BL = re.compile(r'<!-- backlinks:start.*?<!-- backlinks:end -->', re.DOTALL)
+
+def meta(text, key):
+    end = text.find("\n---", 3)
+    for line in text[4:end].splitlines():
+        if line.startswith(key + ":"):
+            return line.split(":", 1)[1].strip().strip('"')
+    return ""
+
+pages = {p.stem: p.read_text() for p in sorted(pathlib.Path("wiki").glob("*.md"))}
+domain = {s: meta(t, "domain") for s, t in pages.items()}
+kind = {s: meta(t, "type") for s, t in pages.items()}
+
+edges = []
+for slug, text in pages.items():
+    if domain.get(slug) != "thinking" or kind.get(slug) == "meta":
+        continue  # only core pages; status boards are exempt
+    for target in sorted(set(LINK.findall(BL.sub("", text)))):
+        d = domain.get(target)
+        if d and d not in ("thinking", "brain"):
+            edges.append(f"{slug} -> {target} ({d})")
+
+if edges:
+    print(f"  ! {len(edges)} core->peripheral link(s) — fine in small numbers,")
+    print("    a growing list means the kernel is absorbing domain specifics:")
+    for e in edges:
+        print(f"      {e}")
+else:
+    print("  ✓ core domain depends on nothing peripheral")
+PY
+
+say "== 9. log.md parseable =="
 BAD=$(grep -c '^## \[' log.md)
 [ "$BAD" -gt 0 ] && ok "$BAD parseable log entries" || fail "log.md has no parseable entries"
 
-say "== 9. Disputed ledger =="
+say "== 10. Disputed ledger =="
 D=$(grep -rn '{disputed' wiki/ 2>/dev/null || true)
 [ -n "$D" ] && { say "$D"; } || ok "no disputed claims on record"
 

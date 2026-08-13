@@ -1,6 +1,7 @@
 ---
 title: "Obsidian vs. LLM Wiki (choosing the tool for a second brain)"
 type: concept
+domain: brain
 summary: "Obsidian (manual PKM) vs. agent-maintained markdown; using Obsidian as a viewer."
 created: 2026-06-29
 updated: 2026-06-29

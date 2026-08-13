@@ -1,6 +1,7 @@
 ---
 title: "What AI Structures Still Need"
 type: synthesis
+domain: agents
 summary: "closing Q3 synthesis: three docs = three organs (learn / contain / human decides); five gaps still open — inter-agent contracts, in-flight self-monitoring, decomposition depth, memory TTL, graduated enforcement."
 created: 2026-07-16
 updated: 2026-08-10
@@ -154,5 +155,5 @@ Collected from the three ingests, ordered by leverage. Status updated
 
 ---
 
-**Linked from:** [[wiki/brain-as-data-system]] · [[wiki/thinking-roadmap]]
+**Linked from:** [[wiki/brain-as-data-system]] · [[wiki/domain-map]] · [[wiki/thinking-roadmap]]
 <!-- backlinks:end -->

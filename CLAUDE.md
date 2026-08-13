@@ -54,6 +54,7 @@ page's `summary:` frontmatter and re-run the script.
   ---
   title: "Human Readable Title"
   type: meta | concept | entity | synthesis | summary
+  domain: thinking | agents | programming | psychology | economics | brain
   summary: "one line — this is what index.md prints, so write it for routing"
   created: YYYY-MM-DD
   updated: YYYY-MM-DD
@@ -61,9 +62,16 @@ page's `summary:` frontmatter and re-run the script.
   sources: [sources/<file>.md, ...]
   ---
   ```
-  `title` and `summary` are quoted (they contain colons); `type` decides which
-  section of `index.md` the page lands in. Bump `updated` when the *content*
-  changes — not when backlinks regenerate.
+  `title` and `summary` are quoted (they contain colons). `domain` picks the
+  `index.md` section and `type` the subsection. Bump `updated` when the
+  *content* changes — not when backlinks regenerate.
+- **Domains** (full map: [[wiki/domain-map]]). `thinking` is the **core**: the
+  other domains apply its instruments (fact-vs-opinion classification, *"fact
+  hay đoán?"*, quantifier match, 5 Whys). Dependencies run **peripheral →
+  core**; a core page should not accumulate links into `programming`/
+  `psychology`/`economics` specifics, or the kernel stops being stable. Lint
+  reports these edges rather than failing — status boards legitimately point
+  everywhere. Adding a domain means editing `DOMAINS` in `scripts/derive.py`.
 - Link between pages with `[[wiki/other-page]]` style references inline. Write
   only the links a page genuinely makes; the reverse direction is generated.
 - **Language: wiki content is in English, with inline Vietnamese glosses.** All
@@ -142,6 +150,19 @@ Append a summary line to `log.md`: `## [YYYY-MM-DD] lint | <n issues found>`
   (`.github/workflows/weekly-lint.yml`). Agent routines have proven
   unreliable; a human opening a session is the most dependable scheduler
   available.
+- **Capture continuously, develop sequentially.** Capture is cheap and runs
+  across *all* domains at once — anything worth keeping goes to `inbox/` or a
+  source regardless of which domain it belongs to. Development is expensive and
+  serial: **one active domain at a time**, holding one open question with a stop
+  condition. Inactive domains are not neglected, they are accumulating raw
+  material. Never push the user to advance several domains in parallel — that
+  reproduces the scattered feeling. See [[wiki/domain-map]].
+- **A domain is continuous; its questions are closable.** Thinking became solid
+  because Q1–Q3 *closed* — few questions, his own, strictly sequenced, closed on
+  demonstrated application rather than on having read enough. Copy that
+  mechanism into a new domain instead of opening a syllabus. When the user says
+  he feels directionless in a domain, check whether it has an open question with
+  a stop condition before treating it as a motivation problem.
 - **Think with the user, then file.** The discussion in ingest is not overhead —
   it is the product. The wiki is what survives the conversation.
 - **Be a disciplined maintainer.** Consistency over cleverness. Same structure

@@ -1,6 +1,7 @@
 ---
 title: "Hermes — The Self-Improvement Loop"
 type: concept
+domain: agents
 summary: "how a retro loop is actually built: quantified triggers, signal-based reflection, patch-not-rewrite, provenance, reversible lifecycle; and its admitted failure (agents self-congratulate) fixed by trace-based reflection + automated gates + human PR."
 created: 2026-07-16
 updated: 2026-07-16
@@ -185,5 +186,5 @@ Already present here: provenance boundary (rule II), progressive disclosure
 
 ---
 
-**Linked from:** [[wiki/human-org-ai-mapping]] · [[wiki/shepherd-review-gates]] · [[wiki/thinking-roadmap]] · [[wiki/what-ai-structures-still-need]]
+**Linked from:** [[wiki/domain-map]] · [[wiki/human-org-ai-mapping]] · [[wiki/shepherd-review-gates]] · [[wiki/thinking-roadmap]] · [[wiki/what-ai-structures-still-need]]
 <!-- backlinks:end -->

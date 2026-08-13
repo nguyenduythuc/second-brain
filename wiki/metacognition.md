@@ -1,6 +1,7 @@
 ---
 title: "Metacognition"
 type: concept
+domain: thinking
 summary: "thinking about your thinking: philosophy (fallibilism, observer layer) + framework (knowledge person/task/strategy; regulation plan/monitor/evaluate); tool/human split; SpaceX incident."
 created: 2026-07-14
 updated: 2026-07-16

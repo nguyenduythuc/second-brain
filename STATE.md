@@ -122,12 +122,19 @@ guarded entry, unguarded exit.
   pages, growth limit per page. Partial: declared blast radius. **Still open:
   reversible page lifecycle** (nothing is ever archived — the compaction gap)
   and **trace-based reflection** (`log.md` stores verdicts, not reasoning).
-- **Bounded contexts by domain: deliberately deferred.** One domain today, so
-  splitting now is premature. Concrete trigger to revisit: the first term that
-  means two different things in two pages, or the first domain sharing no
-  vocabulary with this one — most likely when Ring 2 (frontend craft) starts.
-  Migrating 17 pages is cheap, 60 is not. **He hasn't said what he's feeding
-  in next; that answer decides whether this becomes urgent.**
+- **Domains are live** (2026-08-13, [[wiki/domain-map]]): `thinking` (core),
+  `agents`, `programming`, `psychology`, `economics`, `brain` (meta). A
+  `domain:` frontmatter field, not folders. `index.md` routes domain-first.
+- **AWAITING HIS RULING — do not proceed without it:**
+  1. Is `agents` really its own domain, or part of `programming`? (I assigned
+     it provisionally; 6 pages currently sit there.)
+  2. Which domain goes **active** next — only one at a time.
+  3. Do the candidate questions in [[wiki/domain-map]] match his actual
+     questions? They are the agent's drafts and **none is adopted**. A domain's
+     questions must be his or the mechanism doesn't work.
+- **Psychology may not be a real domain** {hypothesis, 2026-08}: it may be the
+  same monitoring problem as the core applied to affect (his person variable —
+  guarded entry, unguarded exit). Test before granting it domain status.
 - **Rule-of-Three watch:** "weakest-link composition" has appeared twice
   (argument strength; reversibility). A third sighting earns its own concept
   page.
@@ -204,5 +211,27 @@ written — it counted `index.md` as an inbound link while every page is in the
 index, so it could never fire. I wrote it *and* reported "wiki clean" from it
 on 07-27. **Verify that a check can fail before trusting that it passed.**
 
-**Next:** his answer to "what domain goes in next" decides whether bounded
-contexts move up the list. Otherwise: reversible page lifecycle, or Ring 2.
+**2026-08-13** — He named the domain structure: thinking is the core every
+other domain draws on, then programming craft, psychology/emotion, economics —
+all continuous, never "done". He also said the non-core domains feel
+directionless (*mất phương hướng*).
+
+Checked that against the record and one part was wrong in a useful way: he
+counted thinking as his only developed domain, but the **agent-systems cluster
+is already 6 pages / 973 lines — larger by volume than thinking (7 / 900)**. It
+arrived as Q3 of the roadmap and was never named, so it stayed invisible in his
+own account. He is not starting from zero on the technical side.
+
+Built the bounded-context split (the 08-10 trigger fired): `domain:` field on
+all 19 pages, domain-first index, core-coupling report in lint, and
+[[wiki/domain-map]].
+
+**The directionlessness is a missing mechanism, not missing willpower** —
+thinking had a roadmap with few, self-chosen, strictly sequenced questions that
+closed on demonstrated application; no other domain has one. Two principles
+added to `CLAUDE.md`: *capture continuously, develop sequentially* (one active
+domain at a time) and *a domain is continuous, its questions are closable*.
+
+**Next:** blocked on his three rulings above (agents-as-domain, which domain
+goes active, whether the candidate questions are his). Nothing else should
+start until the active domain is picked.

@@ -1,6 +1,7 @@
 ---
 title: "Human Organization ↔ AI Structures"
 type: concept
+domain: agents
 summary: "where agent=team-member / harness=tooling / loop=sprint holds and breaks; integration cost makes the orchestrator core; waterfall→agile as a map for agent tooling."
 created: 2026-07-16
 updated: 2026-07-16

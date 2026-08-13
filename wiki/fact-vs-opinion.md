@@ -1,6 +1,7 @@
 ---
 title: "Fact vs. Opinion — Claim Classification v0.2"
 type: concept
+domain: thinking
 summary: "claim classification v0.2 (ACTIVE): 3 types × 5 statuses, decay classes/TTL, weakest-link & quantifier & rule-of-three rules, epistemic tags + lint mechanism."
 created: 2026-07-16
 updated: 2026-07-16
@@ -176,5 +177,5 @@ all five: {normative-pragmatic, revisit when evidence accumulates}.
 
 ---
 
-**Linked from:** [[wiki/andrej-karpathy]] · [[wiki/brain-as-data-system]] · [[wiki/hermes-self-improvement-loop]] · [[wiki/human-org-ai-mapping]] · [[wiki/self-improving-agent-systems]] · [[wiki/shepherd-review-gates]] · [[wiki/thinking-roadmap]] · [[wiki/what-ai-structures-still-need]]
+**Linked from:** [[wiki/andrej-karpathy]] · [[wiki/brain-as-data-system]] · [[wiki/domain-map]] · [[wiki/hermes-self-improvement-loop]] · [[wiki/human-org-ai-mapping]] · [[wiki/self-improving-agent-systems]] · [[wiki/shepherd-review-gates]] · [[wiki/thinking-roadmap]] · [[wiki/what-ai-structures-still-need]]
 <!-- backlinks:end -->

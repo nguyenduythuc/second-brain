@@ -1,6 +1,7 @@
 ---
 title: "Thinking Roadmap — Three Big Questions (VERY IMPORTANT)"
 type: meta
+domain: thinking
 summary: "**VERY IMPORTANT**: three big questions (metacognition; fact vs. opinion; human org ↔ AI), solved strictly in sequence; live status board."
 created: 2026-07-08
 updated: 2026-07-08
@@ -19,6 +20,12 @@ Origin note: these emerged when Thức judged he lacked the foundations to
 critique the Hermes/Shepherd/Codez architecture claims — and chose to step back
 to basics instead of nodding along. That move is itself metacognition in
 action.
+
+> **This page is the working model for every other domain.** All three
+> questions closed, and [[wiki/domain-map]] reconstructs *why* it worked —
+> few questions, his own, strictly sequenced, closed on demonstrated
+> application — so that programming, psychology and economics can copy the
+> mechanism instead of restarting from a blank page.
 
 ## Status board
 
@@ -95,5 +102,5 @@ Goal: discuss deeply enough to see where AI structures should evolve next.
 
 ---
 
-**Linked from:** [[wiki/fact-vs-opinion]] · [[wiki/hermes-self-improvement-loop]] · [[wiki/human-org-ai-mapping]] · [[wiki/metacognition]] · [[wiki/self-improving-agent-systems]] · [[wiki/shepherd-review-gates]] · [[wiki/what-ai-structures-still-need]]
+**Linked from:** [[wiki/domain-map]] · [[wiki/fact-vs-opinion]] · [[wiki/hermes-self-improvement-loop]] · [[wiki/human-org-ai-mapping]] · [[wiki/metacognition]] · [[wiki/self-improving-agent-systems]] · [[wiki/shepherd-review-gates]] · [[wiki/what-ai-structures-still-need]]
 <!-- backlinks:end -->

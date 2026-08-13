@@ -1,6 +1,7 @@
 ---
 title: "Shepherd — Review Gates as System Invariants"
 type: concept
+domain: agents
 summary: "turning review gates into system invariants: authority in the type signature, syscall jail with fail-closed probe, retained output (propose don't apply), reversibility weakest-link, typed effect boundary."
 created: 2026-07-16
 updated: 2026-07-16
@@ -184,5 +185,5 @@ Genuinely missing, and worth considering later:
 
 ---
 
-**Linked from:** [[wiki/brain-as-data-system]] · [[wiki/human-org-ai-mapping]] · [[wiki/thinking-roadmap]] · [[wiki/what-ai-structures-still-need]]
+**Linked from:** [[wiki/brain-as-data-system]] · [[wiki/domain-map]] · [[wiki/human-org-ai-mapping]] · [[wiki/thinking-roadmap]] · [[wiki/what-ai-structures-still-need]]
 <!-- backlinks:end -->

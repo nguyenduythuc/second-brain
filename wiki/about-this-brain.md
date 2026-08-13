@@ -1,6 +1,7 @@
 ---
 title: "About This Brain"
 type: meta
+domain: brain
 summary: "what this second brain is and how it's organized."
 created: 2026-06-12
 updated: 2026-08-10
@@ -47,6 +48,13 @@ terms English doesn't capture cleanly — e.g. *Three Views (Tam Quan)*,
 self-talk phrases may stay in Vietnamese (e.g. the trigger *"fact hay đoán?"*).
 `sources/` stays verbatim in the source's own language. `CLAUDE.md` and
 `.claude/commands/` are in English — the agent-facing "code" layer.
+
+## What's in it
+
+Knowledge is filed by **domain**: thinking (tư duy) is the core every other
+domain draws on, alongside agent systems, programming craft, psychology and
+economics. `index.md` routes domain-first. See [[wiki/domain-map]] for how they
+relate and which are still empty.
 
 ## How it's built underneath
 

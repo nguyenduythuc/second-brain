@@ -1,6 +1,7 @@
 ---
 title: "Reflection and Depth"
 type: concept
+domain: thinking
 summary: "reflection (phản tư, the process) and depth (độ sâu, the deposit); how to train them."
 created: 2026-06-17
 updated: 2026-08-10

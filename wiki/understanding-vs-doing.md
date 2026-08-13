@@ -1,6 +1,7 @@
 ---
 title: "Understanding vs. Doing (why you can see it but not apply it)"
 type: concept
+domain: thinking
 summary: "why you can see/understand yet not apply: declarative vs. procedural knowledge, the role of reps."
 created: 2026-06-17
 updated: 2026-08-10

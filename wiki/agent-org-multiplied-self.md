@@ -1,6 +1,7 @@
 ---
 title: "Agent Orgs and the Multiplied Self"
 type: synthesis
+domain: agents
 summary: "agent orgs multiply execution, not judgment; you're n× stronger only if the original is worth copying; encode/verify/retro set the multiplier."
 created: 2026-07-08
 updated: 2026-07-08

@@ -1,6 +1,7 @@
 ---
 title: "Self-Improving Agent Systems (Codez article)"
 type: concept
+domain: agents
 summary: "self-improvement is a property of the system, not the model; compound stack, 5-stage memory (fail→consult), verifier vs self-critique, tooling claims separated from architecture."
 created: 2026-07-16
 updated: 2026-07-16
@@ -210,5 +211,5 @@ then Shepherd (how to gate it safely).
 
 ---
 
-**Linked from:** [[wiki/hermes-self-improvement-loop]] · [[wiki/human-org-ai-mapping]] · [[wiki/shepherd-review-gates]] · [[wiki/thinking-roadmap]] · [[wiki/what-ai-structures-still-need]]
+**Linked from:** [[wiki/domain-map]] · [[wiki/hermes-self-improvement-loop]] · [[wiki/human-org-ai-mapping]] · [[wiki/shepherd-review-gates]] · [[wiki/thinking-roadmap]] · [[wiki/what-ai-structures-still-need]]
 <!-- backlinks:end -->

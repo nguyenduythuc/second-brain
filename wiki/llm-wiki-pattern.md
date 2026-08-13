@@ -1,6 +1,7 @@
 ---
 title: "LLM Wiki Pattern"
 type: concept
+domain: brain
 summary: "Karpathy's agent-maintained wiki pattern (9 rules); the design this brain implements."
 created: 2026-06-12
 updated: 2026-06-29

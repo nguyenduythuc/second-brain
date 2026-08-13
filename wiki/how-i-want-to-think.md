@@ -1,6 +1,7 @@
 ---
 title: "How I Want to Think (practice card)"
 type: synthesis
+domain: thinking
 summary: "personal practice card: the \"fact hay đoán?\" move, reps, using the brain without it becoming a crutch."
 created: 2026-06-17
 updated: 2026-07-14
@@ -118,5 +119,5 @@ ask it to think *for* me instead of *with* me.
 
 ---
 
-**Linked from:** [[wiki/agent-org-multiplied-self]] · [[wiki/fact-vs-opinion]] · [[wiki/hermes-self-improvement-loop]] · [[wiki/metacognition]] · [[wiki/reflection-and-depth]] · [[wiki/thinking-roadmap]] · [[wiki/understanding-vs-doing]]
+**Linked from:** [[wiki/agent-org-multiplied-self]] · [[wiki/domain-map]] · [[wiki/fact-vs-opinion]] · [[wiki/hermes-self-improvement-loop]] · [[wiki/metacognition]] · [[wiki/reflection-and-depth]] · [[wiki/thinking-roadmap]] · [[wiki/understanding-vs-doing]]
 <!-- backlinks:end -->
