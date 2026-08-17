@@ -102,6 +102,14 @@ we sharpened together into [[wiki/agent-org-multiplied-self]].
      `STATE.md`, check the last `lint` line in `log.md`; if older than two
      weeks, offer to run it. A human opening a session is the most reliable
      scheduler available.
+- **The local checkout can be reset to an old `main` between turns** (happened
+  2026-08-17: the working tree came back at a pre-craft-philosophy commit while
+  everything through `a6ab985` was safe on `origin/claude/blissful-feynman-gtk8wi`).
+  **Symptom:** files you wrote earlier in the session are missing, `git log`
+  shows a merge commit you don't recognise. **Fix:** `git fetch -f origin
+  <branch>:refs/remotes/origin/check && git reset --hard <sha>` — do NOT
+  re-create the work by hand, and check the remote before concluding anything
+  was lost.
 - **Uploaded files are purged** when the container restarts. If an upload is
   gone, restore from context and prepend a provenance note — never pretend
   it's a byte-identical copy.
@@ -136,9 +144,13 @@ guarded entry, unguarded exit.
   [[wiki/what-ai-structures-still-need]]: decay-tag retrofit on legacy pages,
   growth limit per page, reversible page lifecycle, trace-based reflection,
   declared blast radius per operation.
-- **Rule-of-Three watch:** "weakest-link composition" has appeared twice
-  (argument strength; reversibility). A third sighting earns its own concept
-  page.
+- **Rule-of-Three watch:**
+  - *weakest-link composition* — 2 sightings (argument strength in
+    [[wiki/fact-vs-opinion]]; reversibility in [[wiki/shepherd-review-gates]]).
+  - *the fake-edge test* — 1 sighting (graph engineering, 2026-08-17): **does
+    this step actually need the output of the step before it? If not, the wait
+    is free time thrown away.** Deliberately NOT extracted on first sight.
+    Watch for it in his own work — the pre-commit hook is a live candidate.
 - **Open question put to him 2026-07-27, unanswered: is "keep the undo path
   cheap" one principle at three sightings, or three things that merely look
   alike?** The three: (1) Shepherd's reversibility levels + propose-don't-apply
@@ -187,7 +199,7 @@ guarded entry, unguarded exit.
   → CONSULT. Structural fix applied: `CLAUDE.md`'s track-thinking-moves
   principle now explicitly covers the agent's own reasoning errors and
   requires either recording them here or asking him.
-- **Mistaking depth for novelty (2026-08-03, he corrected this).** On re-reading
+- **Mistaking depth for novelty (2026-08-17, he corrected this).** On re-reading
   the highlighted parts of his convention doc I proposed a new concept page
   ("extend the type system with scripts"). He replied: *"Vẫn là những gì tôi
   từng nói thôi, đây chỉ là mô tả chi tiết hơn về tư tưởng code của tôi."* Root

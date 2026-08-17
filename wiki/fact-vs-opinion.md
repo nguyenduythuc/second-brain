@@ -71,6 +71,15 @@ For descriptive claims (analytic: proven/unproven; normative: argued/contested
 - Rule of thumb: **memory is a cache with no TTL warning** — any fast-decay
   claim recalled from memory must be re-searched before use.
 
+**Decay class belongs to the claim's *shape*, not to its subject** (learned
+2026-08-17, the first time the stale-scan actually fired). The scan flagged
+"SpaceX IPO'd on 2026-06-12", which had been tagged `fast` because the SpaceX
+incident was a fast-decay failure. But that is a **dated event**: once it
+happened it stays happened. What was fast-decay was the *status* claim ("SpaceX
+is private"), not the *event* claim. Same subject, opposite class. Test to
+apply: **can this sentence become false without anything being wrong about it
+today?** Status claims can; dated events cannot.
+
 ## The rules (how claims combine into arguments)
 
 1. **Weakest link:** argument strength = min(status of premises, validity of
@@ -95,6 +104,14 @@ For descriptive claims (analytic: proven/unproven; normative: argued/contested
    reasoning chain's anchoring) → merge. Proven in our own run: the cold
    agent found 4 holes the self-pass missed, *while aimed by* the self-pass's
    directions.
+   **Independent convergence, 2026-08-17:** a practitioner write-up on agent
+   graphs reaches the same rule from production practice — *"a worker and its
+   verifier must never share a context"* — and adds a refinement this rule did
+   not have: **give each verifier a different lens** (is it correct? is it
+   current? is the source real?), because "three different lenses catch what ten
+   identical ones miss" (`sources/2026-08-17-graph-engineering-kopadze.md`).
+   Two independent derivations agreeing is **convergence of opinion, not
+   measurement** — it raises confidence, it does not verify.
 7. **Rule of Three for knowledge** (Thức, 2026-07-16 — from React components /
    custom hooks; now generalised in [[wiki/rule-of-three]]): a pattern appearing for the **3rd time** in
    sources/discussions triggers a **"why does it recur?"** analysis before
@@ -134,7 +151,7 @@ all five: {normative-pragmatic, revisit when evidence accumulates}.
 ## Mechanism for this brain (ACTIVE — CLAUDE.md amended 2026-07-16)
 
 1. **Inline epistemic tags on load-bearing claims only** (not every sentence —
-   tag noise kills the habit):
+   tag noise kills the habit): <!-- lint-ok: stale -->
    `{fact ✓2026-07-16 fast}` · `{fact-from-memory slow}` · `{inference}` ·
    `{guess}` · `{hypothesis}` · `{normative, revisited 2026-07}` ·
    `{disputed: A vs B}` · `{reported: source claims, unchecked}`

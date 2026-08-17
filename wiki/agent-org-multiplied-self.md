@@ -37,6 +37,12 @@ the original multiply exactly as fast as the strengths.** An orchestrator who
 concludes too fast and guesses (see [[wiki/how-i-want-to-think]]) gets
 industrial-scale guessing, with verification costs growing to match.
 
+> **Independent convergence, 2026-08-17.** A practitioner write-up on agent
+> graphs states the same conclusion almost word for word: *"A graph buys
+> breadth. It does not buy better judgment."*
+> (`sources/2026-08-17-graph-engineering-kopadze.md`.) Support from a second
+> derivation, not proof — the claim stays a {hypothesis}.
+
 Corollary: the quality of the "master copy" — you — matters *more* in the agent
 era, not less.
 

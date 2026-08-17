@@ -158,8 +158,10 @@ capability — is what it contributes.
 The article's architecture survives independently of its tooling claims. The
 tooling claims split cleanly:
 
-**Confirmed from this environment** {fact ✓2026-07-16 fast; method: direct
-observation of the tools available in this session — not documentation}:
+**Confirmed from this environment** {fact ✓2026-08-17 fast; method: direct
+observation of the tools available in this session — not documentation.
+Re-verified 2026-08-17 after the stale-scan expired the 2026-07-16 check; all
+three still present}:
 
 - Dynamic Workflows with `agent()`, `parallel()`, `pipeline()` primitives —
   exists.

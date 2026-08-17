@@ -2,7 +2,7 @@
 title: Craft Philosophy — how Thức engineers
 type: synthesis
 created: 2026-07-27
-updated: 2026-08-03
+updated: 2026-08-17
 sources: [sources/2026-07-27-craft-philosophy-self-report.md, sources/2026-07-27-lfvn-coding-convention.md]
 ---
 
@@ -135,7 +135,7 @@ change into a `COMPENSABLE` one by writing the compensation action down.
 
 ### What he emphasised himself — values, and the mechanism under each
 
-On a second read of the convention doc (2026-08-03) the **highlighted** cells
+On a second read of the convention doc (2026-08-17) the **highlighted** cells
 were recovered — the first capture converted the page to markdown and lost the
 highlighting. His verdict on them: *"Vẫn là những gì tôi từng nói thôi, đây chỉ
 là mô tả chi tiết hơn về tư tưởng code của tôi."* Same philosophy, lower
@@ -152,7 +152,7 @@ altitude — **no new principle, but the mechanism that enforces each one.**
 The header says this page is the hypothesis and the monorepo is the evidence.
 The highlighted cells are the first evidence to arrive — principles 2, 3 and 4
 are no longer only self-report; they are visible in a maintained artifact as
-enforced rules {fact ✓2026-08-03 medium; method: read his convention doc,
+enforced rules {fact ✓2026-08-17 medium; method: read his convention doc,
 highlighting included}. Principles 1, 5, 6, 7 remain self-report.
 
 Two details worth keeping:

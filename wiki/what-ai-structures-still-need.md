@@ -52,6 +52,22 @@ specialized agents, so an artifact's meaning is enforced rather than hoped for.
 Shepherd already has the primitive (typed effect boundary); nobody has pointed
 it *between two agents* yet.
 
+**Sighting 2026-08-17 — the prediction half-landed, and half-confirmed the gap
+instead.** The graph-engineering write-up
+(`sources/2026-08-17-graph-engineering-kopadze.md`) carries a **node contract**:
+one bounded job, defined input, defined output, *schema enforced — free text is
+rejected and retried*. That is the typed interface this gap asked for, one
+month after the prediction was written {reported: one practitioner article, not
+a survey; the brain did not verify its tooling claims}.
+
+But look at *where* the contract is enforced: by the **orchestrating script**,
+not negotiated between the two agents — the reduce step is plain code. So the
+orchestrator still absorbs the integration cost, which is exactly what this gap
+identifies as the bottleneck. **The graph pattern hardens the orchestrator role
+rather than removing it** {inference}. Gap 1 stands; what changed is that the
+*primitive* now exists in practice, so the open question is narrower: who holds
+the contract.
+
 ### 2. Honest self-assessment is unsolved, only routed around
 
 Hermes admits it: the agent almost always believes it did well. The fixes on

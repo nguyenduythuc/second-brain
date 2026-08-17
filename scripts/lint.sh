@@ -65,6 +65,12 @@ for f in sorted(pathlib.Path("wiki").glob("*.md")):
             d = datetime.date.fromisoformat(m.group(1)); cls = m.group(2)
             age = (today - d).days
             if age > TTL[cls]:
+                # escape hatch: '<!-- lint-ok: stale -->' on this line or the one above
+                # (for lines that *document* the tag syntax rather than assert a fact)
+                lines = f.read_text().splitlines()
+                ctx = line + (lines[i-2] if i >= 2 else "")
+                if "lint-ok: stale" in ctx:
+                    continue
                 print(f"  ✗ stale {cls} fact ({age}d old, TTL {TTL[cls]}d): {f}:{i}")
                 found += 1
 print("  ✓ no expired fact tags" if not found else f"  → {found} tag(s) need re-verification")
