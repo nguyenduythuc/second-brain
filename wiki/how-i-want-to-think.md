@@ -2,8 +2,8 @@
 title: How I Want to Think (practice card)
 type: synthesis
 created: 2026-06-17
-updated: 2026-07-14
-sources: [sources/2026-06-17-tam-quan-tu-duy.md, sources/2026-07-14-metacognition-q1.md]
+updated: 2026-08-22
+sources: [sources/2026-06-17-tam-quan-tu-duy.md, sources/2026-07-14-metacognition-q1.md, sources/2026-08-22-marriage-and-self-blame-chain.md]
 ---
 
 # How I Want to Think
@@ -63,6 +63,26 @@ Two additions from the SpaceX incident (2026-07, see [[wiki/metacognition]]):
 > [[wiki/human-org-ai-mapping]]: "why do we have leaders?" stops at "to manage
 > people" on layer one, but reaches "to fill the gaps between specializations"
 > if you keep going.)
+>
+> **Move 4b — 5 Whys has two preconditions** (2026-08, from
+> [[wiki/five-guess-chain]] — I ran Move 4 wrong on myself):
+> **(i) verify each layer before digging to the next.** A "why" answered with a
+> guess makes every layer below it a guess too; five hedged layers multiply out
+> to near-zero confidence while *feeling* like an investigation.
+> **(ii) point it at a system, not at a person.** On a process it converges on
+> something changeable (a missing check, an unowned handoff). On a character it
+> converges on an identity verdict — *"tôi trẻ con"* — which has no repair
+> handle. If the chain is terminating in a word about *what I am* rather than
+> *what happens*, it has left the rails.
+
+> **Move 5 — which way does the arrow point? (mũi tên chạy chiều nào?)**
+> Before building on "X causes Y", ask whether **Y causes X**, and whether the
+> evidence I have can even distinguish them. Correlation-vs-cause is the famous
+> error; **direction** is the quiet one. It hides best in self-directed
+> reasoning, because the self is always available as an explanation and
+> therefore gets picked first. (2026-08: I had "I'm deficient → we argue" and
+> never checked "we argue daily for years → I'm depleted → I make mistakes."
+> Same evidence, opposite intervention point.)
 
 Person-variable refinement (2026-07): **my monitoring fires at the inputs —
 where I'm being deliberately careful — and stays silent where the conclusion
@@ -71,11 +91,30 @@ remembered, conclusion launched) and the sun example (premise hedged,
 conclusion widened) share this exact shape. Training target: move the alarm
 from the premise to the cast site.
 
+**Third sighting → Rule of Three fired (2026-08).** The five-guess chain about
+my family life ([[wiki/five-guess-chain]]) has the same shape a third time:
+I quantified the observation ("mistakes a few times a day") and then emitted a
+global verdict ("I can't do anything right", "I'm childish") with no alarm.
+Classified as **root cause, not coincidence** — the monitor is *bound to the
+wrong event*: it fires on **receiving** a claim and is silent on **emitting**
+one. The new information is **domain generality**: two sightings could be read
+as "careless with news"; three, across news, formal logic and self-assessment,
+says the gap is structural and travels — including into the one subject where a
+wrong conclusion costs the most. Corollary I keep forgetting: **claims about
+myself are still claims.** The "fact hay đoán?" question applies to *"I am
+lazy"* exactly as it applies to *"SpaceX stock is done for"* — but self-claims
+never feel like claims, so the trigger doesn't fire.
+
 ## What my wife does (my highest-quality feedback source)
 
 She asks "why" through several layers until one "why" makes me stall — that's
 the layer where I *have no fact*. She is **separating observation from
 inference**. I can run a small version of that on myself.
+
+*(2026-08 — worth keeping in view: this is the same person I now argue with
+every day. See [[wiki/five-guess-chain]]. Whatever is wrong there, the
+relationship's capacity to sharpen my thinking is documented, not
+hypothetical.)*
 
 ## Three things to remember when stuck
 
@@ -111,3 +150,5 @@ ask it to think *for* me instead of *with* me.
 - [[wiki/reflection-and-depth]] — the toolbox to draw from when needed (but don't
   carry it all).
 - [[wiki/three-views]] — the framework that kicked off the discussion.
+- [[wiki/five-guess-chain]] — the 2026-08 case: these moves applied (and missed)
+  on my own family life; source of Move 4b, Move 5, and the third sighting.

@@ -52,10 +52,24 @@ we sharpened together into [[wiki/agent-org-multiplied-self]].
 6. **He reverses decisions and that's fine.** Language went VN → EN mid-stream;
    he delegated review decisions to me once as a challenge. Follow the latest
    call, record the reversal in `log.md`, don't re-litigate.
+7. **The brain now covers his personal life, not just work** (2026-08-22). He
+   brought in his marriage and self-assessment and said *"cứ ghi thoải mái"*
+   (write freely) when I asked before filing. Treat that as scope, not as a
+   standing licence: **ask before filing anything about his family**, keep
+   third parties (wife, child) described factually from what he reported —
+   no speculation about their motives or character — and write these pages as
+   thinking artifacts, not as a record of someone's distress.
+8. **On life problems, the practice card applies, but the care comes first.**
+   The sharp-metacognition mandate (#3) still holds — he explicitly wanted the
+   chain taken apart — but acknowledge the weight before doing the analysis,
+   and never let a clean catch substitute for the practical answer he asked
+   for. Where the real move is "go get facts the brain doesn't have"
+   (a doctor, a counsellor), say so plainly.
 
 ## Operational facts about this repo
 
-- **Branch:** work on `claude/blissful-feynman-gtk8wi`. Never push to `main`.
+- **Branch:** work on `claude/wiki-family-story-file-eh94m9` (current, 2026-08-22;
+  previous was `claude/blissful-feynman-gtk8wi`). Never push to `main`.
   He merges via PR himself. After a merge the remote branch is deleted —
   restart it from `origin/main` (`git checkout -B <branch> origin/main`).
 - **Weekly lint routine: BROKEN — never fired.** Trigger
@@ -112,9 +126,22 @@ guarded entry, unguarded exit.
   [[wiki/what-ai-structures-still-need]]: decay-tag retrofit on legacy pages,
   growth limit per page, reversible page lifecycle, trace-based reflection,
   declared blast radius per operation.
+- **LIVE — his family situation (opened 2026-08-22).** Two questions returned to
+  him, still unanswered: (1) what are the daily arguments *actually about* —
+  the repeating situation? (2) has the absence of drive always been there, or
+  did it **start** at some point? Also proposed and awaiting news: one week of
+  concrete error logging, a medical check-up, couples counselling. Pick this
+  up when he next appears — but per agreement #7, ask before filing more.
+  See [[wiki/five-guess-chain]].
 - **Rule-of-Three watch:** "weakest-link composition" has appeared twice
   (argument strength; reversibility). A third sighting earns its own concept
-  page.
+  page. — *"Guarded entry, unguarded exit" FIRED at three on 2026-08-22
+  (SpaceX → sun example → five-guess chain); classified root cause,
+  countermeasures now Moves 4b and 5 on the practice card.*
+- **Lint is overdue.** Last `lint` line in `log.md` is 2026-07-27 (26 days at
+  time of writing) — past the two-week trigger. Flagged to him 2026-08-22; the
+  judgment half was not run because the session was about something else.
+  Offer it again at the next session start.
 - **Calibration ledger** deferred to v0.3 of the claim framework — build when
   ~10+ thinking-move entries have accumulated in `log.md`.
 - **Unverified tooling claims** carried forward from the Codez ingest
@@ -148,6 +175,22 @@ English rendering, and created this file at his request.
 
 **Next:** nothing is blocking. Natural continuations — build one of the five
 brain upgrades, start Ring 2, or ingest whatever he brings next.
+
+**2026-08-22** — First personal-life ingest. Asked for a file to write his
+family story into; got `sources/2026-08-22-family-story.md` (template, still
+empty — the boundary rule sends hand-written material to `sources/`, not
+`wiki/`). He then brought the real thing: 10-year marriage, daily arguments,
+drifting toward divorce, young child, and a five-layer chain of unverified
+guesses concluding *"tôi trẻ con"*. Took the chain apart with his own moves
+(Move 4 run on character without verifying layers; Move 3 quantifier
+violation), flipped the causal arrow, raised the medical hypothesis, answered
+the question about the child with an honest {reported, unsearched} tag.
+Rule of Three fired on his core person variable. Filed with his explicit
+*"cứ ghi thoải mái"*.
+
+**Next:** his answers to the two open questions. Do not push — reps are
+user-initiated (#1), and this one is his life, not an exercise. If he comes
+back with the arguments' actual content, there is real pattern-finding to do.
 
 **2026-07-27** — Thức reported the weekly lint wasn't working. Confirmed by
 evidence that it never fired at all (see the routine entry above). Wrote

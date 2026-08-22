@@ -13,7 +13,7 @@ The agent updates this on every ingest.
 - [[wiki/three-views]] — Three Views (Tam Quan): worldview / values / life outlook, with critique.
 - [[wiki/reflection-and-depth]] — reflection (phản tư, the process) and depth (độ sâu, the deposit); how to train them.
 - [[wiki/understanding-vs-doing]] — why you can see/understand yet not apply: declarative vs. procedural knowledge, the role of reps.
-- [[wiki/metacognition]] — thinking about your thinking: philosophy (fallibilism, observer layer) + framework (knowledge person/task/strategy; regulation plan/monitor/evaluate); tool/human split; SpaceX incident.
+- [[wiki/metacognition]] — thinking about your thinking: philosophy (fallibilism, observer layer) + framework (knowledge person/task/strategy; regulation plan/monitor/evaluate); tool/human split; 3 case studies (SpaceX, agent's stale fact, five-guess chain).
 - [[wiki/human-org-ai-mapping]] — where agent=team-member / harness=tooling / loop=sprint holds and breaks; integration cost makes the orchestrator core; waterfall→agile as a map for agent tooling.
 - [[wiki/self-improving-agent-systems]] — self-improvement is a property of the system, not the model; compound stack, 5-stage memory (fail→consult), verifier vs self-critique, tooling claims separated from architecture.
 - [[wiki/hermes-self-improvement-loop]] — how a retro loop is actually built: quantified triggers, signal-based reflection, patch-not-rewrite, provenance, reversible lifecycle; and its admitted failure (agents self-congratulate) fixed by trace-based reflection + automated gates + human PR.
@@ -23,7 +23,10 @@ The agent updates this on every ingest.
 ## Entities
 - [[wiki/andrej-karpathy]] — author of the LLM Wiki pattern; founding member of OpenAI, ex-Tesla AI director.
 
+## Summaries
+- [[wiki/five-guess-chain]] — family life, Aug 2026: a 5-layer chain of unverified guesses ending in a self-verdict; two rule violations caught, the causal-arrow flip, the medical hypothesis, what was proposed.
+
 ## Syntheses
-- [[wiki/how-i-want-to-think]] — personal practice card: the "fact hay đoán?" move, reps, using the brain without it becoming a crutch.
+- [[wiki/how-i-want-to-think]] — personal practice card: the "fact hay đoán?" move, reps, using the brain without it becoming a crutch; Moves 1–5 incl. 5-Whys preconditions and arrow direction.
 - [[wiki/what-ai-structures-still-need]] — closing Q3 synthesis: three docs = three organs (learn / contain / human decides); five gaps still open — inter-agent contracts, in-flight self-monitoring, decomposition depth, memory TTL, graduated enforcement.
 - [[wiki/agent-org-multiplied-self]] — agent orgs multiply execution, not judgment; you're n× stronger only if the original is worth copying; encode/verify/retro set the multiplier.

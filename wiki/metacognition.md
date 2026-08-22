@@ -2,8 +2,8 @@
 title: Metacognition
 type: concept
 created: 2026-07-14
-updated: 2026-07-16
-sources: [sources/2026-07-14-metacognition-q1.md, sources/2026-07-08-three-big-questions.md, sources/2026-07-16-metacognition-own-words.md]
+updated: 2026-08-22
+sources: [sources/2026-07-14-metacognition-q1.md, sources/2026-07-08-three-big-questions.md, sources/2026-07-16-metacognition-own-words.md, sources/2026-08-22-marriage-and-self-blame-chain.md]
 ---
 
 # Metacognition
@@ -153,6 +153,45 @@ What this adds to the framework:
   because the correction went through the correcting-source protocol instead
   of a silent edit.
 
+## Case study 3 — the five-guess chain (2026-08)
+
+Full write-up: [[wiki/five-guess-chain]]. Thức analyzed a painful real-life
+situation (10-year marriage, daily arguments, drifting toward divorce) with a
+five-layer causal chain in which **every layer was hedged with "maybe because"
+and none was verified** — ending in a verdict about his own character. He was
+running Move 4 (5 Whys), his own tool, on himself.
+
+What this adds to the framework, beyond a third data point:
+
+- **The monitor is bound to the wrong event.** Three sightings now share one
+  shape (SpaceX, the sun example, this chain): the alarm fires on *receiving* a
+  claim and stays silent on *emitting* one. Rule of Three classifies this as
+  root cause, not coincidence. Guarded entry, unguarded exit — and now shown to
+  be **domain-general**: news, formal logic, and self-assessment.
+- **Self-claims don't feel like claims.** *"I am lazy"* and *"SpaceX stock is
+  done for"* are both unverified assertions, but only the second one presents
+  itself to the monitor as something to check. This is a *task variable* the
+  framework was missing: the self is a domain where the trigger reliably fails
+  to fire, because introspective output arrives labeled as observation rather
+  than inference. The collapse named in [[wiki/how-i-want-to-think]] — observed
+  and inferred fused in one instant — is at its most complete here.
+- **A method can be valid and still be pointed at the wrong object.** 5 Whys on
+  a *process* converges on something repairable; on a *character* it converges
+  on an identity verdict with no repair handle. The failure wasn't in the tool
+  or in the rigor — it was in target selection, which is a *planning* (B1)
+  failure, not a monitoring (B2) one. First recorded instance in this brain of
+  metacognition failing at the plan phase rather than mid-flight.
+- **Direction of causation is a monitoring blind spot** {inference}. "I am
+  deficient → we argue" was never tested against "we argue daily → I am
+  depleted → I make mistakes." Both fit the evidence; they imply opposite
+  interventions. Now Move 5 on the practice card.
+
+Boundary worth stating plainly: nothing here is a claim about what is actually
+true of his marriage or his health. The brain can classify the *reasoning*; it
+cannot verify the *facts*, and the highest-value action proposed (see a doctor,
+see a counsellor) is precisely the move of going to get facts the brain does
+not have. That is Move 2 — *"nguồn đâu, search đã"* — applied inward.
+
 ## Practice hooks (what actually changes behavior)
 
 - Trigger 1 (existing): about to lock a conclusion + a flicker of unease →
@@ -216,3 +255,5 @@ demonstration of in-flight monitoring, performed while defining it.
   without reps; monitoring is procedural, not declarative.
 - [[wiki/agent-org-multiplied-self]] — why B2 must stay human.
 - [[wiki/thinking-roadmap]] — Q1 status board.
+- [[wiki/five-guess-chain]] — case study 3 in full; the self as the domain
+  where the trigger fails to fire.
