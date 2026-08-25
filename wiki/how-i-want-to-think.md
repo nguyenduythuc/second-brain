@@ -3,7 +3,7 @@ title: How I Want to Think (practice card)
 type: synthesis
 created: 2026-06-17
 updated: 2026-08-22
-sources: [sources/2026-06-17-tam-quan-tu-duy.md, sources/2026-07-14-metacognition-q1.md, sources/2026-08-22-marriage-and-self-blame-chain.md]
+sources: [sources/2026-06-17-tam-quan-tu-duy.md, sources/2026-07-14-metacognition-q1.md, sources/2026-08-22-marriage-and-self-blame-chain.md, sources/2026-08-22-trust-breach-disclosure.md]
 ---
 
 # How I Want to Think
@@ -74,6 +74,12 @@ Two additions from the SpaceX incident (2026-07, see [[wiki/metacognition]]):
 > converges on an identity verdict — *"tôi trẻ con"* — which has no repair
 > handle. If the chain is terminating in a word about *what I am* rather than
 > *what happens*, it has left the rails.
+> **(iii) don't dig when the proximate cause is already known and verified —
+> act on it.** 5 Whys always digs toward *deeper* causes, i.e. **away from** the
+> concrete event. When I already know what happened, that motion is avoidance
+> wearing the costume of rigour. Digging is for when the cause is unknown.
+> (2026-08, [[wiki/trust-repair]]: I ran a five-layer excavation of my
+> character while the actual cause sat eight months back, fully known to me.)
 
 > **Move 5 — which way does the arrow point? (mũi tên chạy chiều nào?)**
 > Before building on "X causes Y", ask whether **Y causes X**, and whether the
@@ -152,3 +158,18 @@ ask it to think *for* me instead of *with* me.
 - [[wiki/three-views]] — the framework that kicked off the discussion.
 - [[wiki/five-guess-chain]] — the 2026-08 case: these moves applied (and missed)
   on my own family life; source of Move 4b, Move 5, and the third sighting.
+- [[wiki/trust-repair]] — the event that case was missing, and the guard below.
+
+## Guard on this card (2026-08)
+
+These moves test **inferences**. They do not dissolve **events**.
+
+"Fact hay đoán?", the quantifier check and the arrow-direction check all exist
+to stop me concluding beyond my evidence. Turned the wrong way, the same moves
+become a machine for reasoning my way out of something I actually did. The tell
+is easy: if applying a move makes a *specific thing that happened* get smaller
+or vaguer, I am using it backwards.
+
+The correct target is always the **inference layer** — *"therefore I am X"* —
+never the **event layer** — *"on that day I did Y."* Drop the identity label,
+keep the event. An identity label has no repair handle; an event does.

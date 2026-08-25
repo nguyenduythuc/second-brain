@@ -24,9 +24,10 @@ The agent updates this on every ingest.
 - [[wiki/andrej-karpathy]] — author of the LLM Wiki pattern; founding member of OpenAI, ex-Tesla AI director.
 
 ## Summaries
-- [[wiki/five-guess-chain]] — family life, Aug 2026: a 5-layer chain of unverified guesses ending in a self-verdict; two rule violations caught, the causal-arrow flip, the medical hypothesis, what was proposed.
+- [[wiki/five-guess-chain]] — family life, Aug 2026: a 5-layer chain of unverified guesses ending in a self-verdict; two rule violations caught, the causal-arrow flip, the medical hypothesis; partly superseded by trust-repair the same day.
 
 ## Syntheses
+- [[wiki/trust-repair]] — after a breach and a lie told when repair was offered: why the second event is load-bearing, proof vs. audit trail, inverting who investigates, staged disclosure, and the boundary that keeps this brain from becoming a rationalisation engine.
 - [[wiki/how-i-want-to-think]] — personal practice card: the "fact hay đoán?" move, reps, using the brain without it becoming a crutch; Moves 1–5 incl. 5-Whys preconditions and arrow direction.
 - [[wiki/what-ai-structures-still-need]] — closing Q3 synthesis: three docs = three organs (learn / contain / human decides); five gaps still open — inter-agent contracts, in-flight self-monitoring, decomposition depth, memory TTL, graduated enforcement.
 - [[wiki/agent-org-multiplied-self]] — agent orgs multiply execution, not judgment; you're n× stronger only if the original is worth copying; encode/verify/retro set the multiplier.

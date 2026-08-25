@@ -59,7 +59,16 @@ we sharpened together into [[wiki/agent-org-multiplied-self]].
    third parties (wife, child) described factually from what he reported —
    no speculation about their motives or character — and write these pages as
    thinking artifacts, not as a record of someone's distress.
-8. **On life problems, the practice card applies, but the care comes first.**
+8. **NEVER use the epistemic moves to dissolve a verified event.** Added
+   2026-08-22 after the trust-breach disclosure. The moves (fact-hay-đoán,
+   quantifier check, arrow direction) exist to stop him concluding past his
+   evidence — pointed the other way they become a rationalisation engine for
+   real harm he caused. Target the **inference** ("therefore I am tệ bạc"),
+   never the **event** ("on that day I did Y"). Tell: if applying a move makes
+   a specific thing that happened get smaller or vaguer, it is being used
+   backwards. Equally: don't swing to moralising — he came for help, not a
+   verdict. See the Boundary section of [[wiki/trust-repair]].
+9. **On life problems, the practice card applies, but the care comes first.**
    The sharp-metacognition mandate (#3) still holds — he explicitly wanted the
    chain taken apart — but acknowledge the weight before doing the analysis,
    and never let a clean catch substitute for the practical answer he asked
@@ -126,13 +135,18 @@ guarded entry, unguarded exit.
   [[wiki/what-ai-structures-still-need]]: decay-tag retrofit on legacy pages,
   growth limit per page, reversible page lifecycle, trace-based reflection,
   declared blast radius per operation.
-- **LIVE — his family situation (opened 2026-08-22).** Two questions returned to
-  him, still unanswered: (1) what are the daily arguments *actually about* —
-  the repeating situation? (2) has the absence of drive always been there, or
-  did it **start** at some point? Also proposed and awaiting news: one week of
-  concrete error logging, a medical check-up, couples counselling. Pick this
-  up when he next appears — but per agreement #7, ask before filing more.
-  See [[wiki/five-guess-chain]].
+- **LIVE — his family situation (opened 2026-08-22).** Question 1 answered the
+  same day: a trust breach ~8 months ago (Zalo chats with ~100 women; then,
+  asked directly whether anything else was hidden, he said no — she later found
+  hidden porn apps). **[[wiki/trust-repair]] is the operative page**;
+  [[wiki/five-guess-chain]] is the reasoning-error record.
+  Still open: (2) did the absence of drive *start* at some point — candidate
+  date ≈ Dec 2025, testable against his memory. Proposed and awaiting news:
+  full one-pass disclosure if anything remains, a medical check-up, couples
+  counselling, one week of concrete error logging.
+  **When he returns, the highest-value question is whether anything else is
+  still unsaid** — a third discovery-by-her would most likely end the marriage.
+  Ask gently; do not interrogate. Per agreement #7, ask before filing more.
 - **Rule-of-Three watch:** "weakest-link composition" has appeared twice
   (argument strength; reversibility). A third sighting earns its own concept
   page. — *"Guarded entry, unguarded exit" FIRED at three on 2026-08-22
@@ -188,9 +202,18 @@ the question about the child with an honest {reported, unsearched} tag.
 Rule of Three fired on his core person variable. Filed with his explicit
 *"cứ ghi thoải mái"*.
 
-**Next:** his answers to the two open questions. Do not push — reps are
-user-initiated (#1), and this one is his life, not an exercise. If he comes
-back with the arguments' actual content, there is real pattern-finding to do.
+Then, hours later, he disclosed the actual event (see the LIVE thread above)
+and said *"hãy lưu vào wiki nếu cần"*. Filed as `trust-breach-disclosure` +
+[[wiki/trust-repair]]; revised the morning's page rather than leaving it
+standing as if still current. Told him plainly that the second event — the lie
+told when she offered the repair path — is the load-bearing one, that "how do
+I prove it" is a continuation of the same pattern, and that the one instrument
+he still has is being askable indefinitely without resentment.
+
+**Next:** whether anything else is still unsaid, and his answer to open
+question 2. Do not push — reps are user-initiated (#1), and this is his life,
+not an exercise. He is carrying shame plus the demoralisation cluster; keep
+the medical check-up on the table without nagging.
 
 **2026-07-27** — Thức reported the weekly lint wasn't working. Confirmed by
 evidence that it never fired at all (see the routine entry above). Wrote

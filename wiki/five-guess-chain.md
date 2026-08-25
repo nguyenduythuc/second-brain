@@ -3,10 +3,18 @@ title: The Five-Guess Chain
 type: summary
 created: 2026-08-22
 updated: 2026-08-22
-sources: [sources/2026-08-22-marriage-and-self-blame-chain.md]
+sources: [sources/2026-08-22-marriage-and-self-blame-chain.md, sources/2026-08-22-trust-breach-disclosure.md]
 ---
 
 # The Five-Guess Chain
+
+> **Superseded in part, same day.** Thức afterwards disclosed the concrete
+> event behind the daily arguments — a trust breach 8 months earlier, and a
+> lie told when he was asked directly whether anything else remained hidden.
+> See [[wiki/trust-repair]], which is now the operative page. This one stands
+> as the record of the *reasoning error*: the analysis below was run on a
+> character, in the absence of the fact that explained everything. Read the two
+> together — the second is why the first went where it went.
 
 **2026-08-22.** Thức brought in a real-life problem — a 10-year marriage,
 daily arguments, drifting toward divorce, a young child — and the way he
@@ -83,9 +91,21 @@ The entire chain assumes one direction, never checked:
   loss of drive, global self-blame.
 - **C:** a loop — both directions running at once.
 
-{inference} Nothing in the reported evidence distinguishes A from B. If B or C
-holds, "fix my character" is **the wrong intervention point** — turning one gear
-while the whole loop spins.
+{inference} Nothing in the *then-reported* evidence distinguished A from B. If B
+or C holds, "fix my character" is **the wrong intervention point** — turning one
+gear while the whole loop spins.
+
+**Resolved later the same day.** A fourth direction now dominates, and it was
+withheld from the evidence set at the time this was written:
+
+> **D — a specific, verified breach of trust 8 months prior → daily conflict +
+> sustained shame → loss of drive, frequent mistakes, global self-blame.**
+
+D accounts for the entire first message without recourse to "I'm childish."
+See [[wiki/trust-repair]]. The lesson for the method: **the arrow-direction
+check is only as good as the evidence set it runs on.** Move 5 correctly
+flagged that direction was unverified — but no amount of careful reasoning
+recovers a fact that was never put on the table.
 
 Generalizable form, and the reason it earned a place on the card: *for any
 "X causes Y" you are about to build on, ask whether Y causes X, and whether
@@ -145,12 +165,31 @@ source"** ([[wiki/how-i-want-to-think]]) — she is the origin of Move 2, from
 person he documented as the best thinking partner he has. Whatever is broken,
 it is not the relationship's capacity.
 
-## Open — awaiting his answer
+## The two questions, and what happened to them
 
-1. What are the arguments **actually about** — what is the repeating situation?
+1. ~~What are the arguments **actually about**?~~ **Answered the same day** —
+   see [[wiki/trust-repair]]. Worth noting how: he answered it unprompted, a
+   few hours later, having not mentioned it at all in the original analysis.
    <!-- lint-ok: quantifier -->
 2. Has the absence of drive **always been there, or did it start at some
-   point?** If it *started*, there is a cause, and causes are findable.
+   point?** Still open — but hypothesis D supplies an obvious candidate start
+   date (≈ Dec 2025), which is now testable against his own memory.
+
+## Postscript — abstraction upward as avoidance
+
+The gap between the two messages is itself the finding. The morning's version
+was five layers of abstraction about *character*, with the concrete event
+absent; the afternoon's was the event. {inference} Abstracting upward is a way
+to discuss the pain without touching its cause — not deception, but a
+predictable human move.
+
+**Move 4 made it worse.** 5 Whys always digs toward *deeper* causes, which
+means digging **away from** the concrete event. Applied to a situation whose
+proximate cause is already known and verified, the method reliably points in
+the wrong direction — and it feels like rigour the whole way down. Hence the
+addition to Move 4b on the practice card: *when you already have a specific,
+verified proximate cause, don't dig — act on it. Digging is for when the cause
+is unknown.*
 
 ## Related
 
@@ -159,3 +198,5 @@ it is not the relationship's capacity.
 - [[wiki/metacognition]] — case study 3; monitoring bound to the wrong event.
 - [[wiki/fact-vs-opinion]] — the quantifier rule and epistemic tags applied here.
 - [[wiki/understanding-vs-doing]] — why knowing the moves didn't make them fire.
+- [[wiki/trust-repair]] — the operative page: the event this analysis was
+  missing, and what repair actually requires.
