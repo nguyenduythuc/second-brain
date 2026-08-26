@@ -198,5 +198,7 @@ is unknown.*
 - [[wiki/metacognition]] — case study 3; monitoring bound to the wrong event.
 - [[wiki/fact-vs-opinion]] — the quantifier rule and epistemic tags applied here.
 - [[wiki/understanding-vs-doing]] — why knowing the moves didn't make them fire.
-- [[wiki/trust-repair]] — the operative page: the event this analysis was
-  missing, and what repair actually requires.
+- [[wiki/trust-repair]] — the event this analysis was missing, and what repair
+  actually requires.
+- [[wiki/the-conflict-loop]] — the ten-year mechanism underneath all of it;
+  the operative page as of the third disclosure.

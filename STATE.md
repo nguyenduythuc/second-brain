@@ -68,7 +68,20 @@ we sharpened together into [[wiki/agent-org-multiplied-self]].
    a specific thing that happened get smaller or vaguer, it is being used
    backwards. Equally: don't swing to moralising — he came for help, not a
    verdict. See the Boundary section of [[wiki/trust-repair]].
-9. **On life problems, the practice card applies, but the care comes first.**
+9. **Don't build the family analysis on partial disclosure.** Added 2026-08-22
+   after being wrong twice in one day: the morning's chain was analysed without
+   the event, then the event was analysed without its ten-year context and with
+   a collapsed timeline. Both times the framing was confidently wrong in a way
+   that mattered. **On this thread, state the evidence set the analysis rests
+   on, and expect it to be incomplete.** Correct the pages openly rather than
+   quietly patching — the correcting-source protocol applies to his life as
+   much as to SpaceX.
+10. **Never write a page that reads as a case against his wife.** Structure
+   family pages around **mechanism**, not fault. A blame-shaped page would be
+   less accurate *and* would hand him a document to return to for
+   reinforcement. Label every characterisation of her as single-source and
+   uncorroborated, and state plainly that she would tell a different story.
+11. **On life problems, the practice card applies, but the care comes first.**
    The sharp-metacognition mandate (#3) still holds — he explicitly wanted the
    chain taken apart — but acknowledge the weight before doing the analysis,
    and never let a clean catch substitute for the practical answer he asked
@@ -135,18 +148,25 @@ guarded entry, unguarded exit.
   [[wiki/what-ai-structures-still-need]]: decay-tag retrofit on legacy pages,
   growth limit per page, reversible page lifecycle, trace-based reflection,
   declared blast radius per operation.
-- **LIVE — his family situation (opened 2026-08-22).** Question 1 answered the
-  same day: a trust breach ~8 months ago (Zalo chats with ~100 women; then,
-  asked directly whether anything else was hidden, he said no — she later found
-  hidden porn apps). **[[wiki/trust-repair]] is the operative page**;
-  [[wiki/five-guess-chain]] is the reasoning-error record.
-  Still open: (2) did the absence of drive *start* at some point — candidate
-  date ≈ Dec 2025, testable against his memory. Proposed and awaiting news:
-  full one-pass disclosure if anything remains, a medical check-up, couples
-  counselling, one week of concrete error logging.
-  **When he returns, the highest-value question is whether anything else is
-  still unsaid** — a third discovery-by-her would most likely end the marriage.
-  Ask gently; do not interrogate. Per agreement #7, ask before filing more.
+- **LIVE — his family situation (opened 2026-08-22, three disclosures in one
+  day, each one revising the last).** **[[wiki/the-conflict-loop]] is the
+  operative page**; [[wiki/trust-repair]] is the lie/repair analysis with a
+  corrected timeline; [[wiki/five-guess-chain]] is the reasoning-error record.
+
+  **Safety facts, recorded because they outrank everything else:** violence in
+  **both directions** (his wife hit him hard and often over years; he hit her at
+  least once), and the child both witnesses the fighting and is pulled into it.
+  Single-source throughout — his account only. **Do not adjudicate relative
+  severity, do not side, and do not let either direction be minimised.**
+
+  Live items awaiting news: TSH/FT4 + endocrinology follow-up (strongest
+  concrete lead — post-thyroidectomy hormone dosing matches his whole opening
+  symptom list); a safety-floor rule both commit to; individual therapy before
+  any couples work; full one-pass disclosure if anything remains unsaid.
+
+  He said *"đây mới chỉ ở tầng bên ngoài"* (this is only the surface layer) and
+  offered to keep going — **he is mid-telling; let him continue at his pace.**
+  Per agreement #7, ask before filing more.
 - **Rule-of-Three watch:** "weakest-link composition" has appeared twice
   (argument strength; reversibility). A third sighting earns its own concept
   page. — *"Guarded entry, unguarded exit" FIRED at three on 2026-08-22
@@ -210,10 +230,19 @@ told when she offered the repair path — is the load-bearing one, that "how do
 I prove it" is a continuation of the same pattern, and that the one instrument
 he still has is being askable indefinitely without resentment.
 
-**Next:** whether anything else is still unsaid, and his answer to open
-question 2. Do not push — reps are user-initiated (#1), and this is his life,
-not an exercise. He is carrying shame plus the demoralisation cluster; keep
-the medical check-up on the table without nagging.
+Then a third disclosure: the full ten-year history — her escalating severity,
+his concealment as conflict-avoidance, thyroid cancer during the birth of their
+child, caring for a newborn alone days after surgery while on radioiodine,
+years of being hit, the retaliatory Zalo episode (years earlier, days long,
+deleted — only *discovered* this year), him hitting her, the child pulled into
+fights. Corrected my own two prior framings openly, filed a correcting source,
+and built [[wiki/the-conflict-loop]] around the mechanism rather than fault.
+
+**Next:** he is mid-telling — *"đây mới chỉ ở tầng bên ngoài"*. Let him
+continue. Do not push (#1). Highest-value concrete lead is the thyroid
+work-up; highest-priority fact is the child's exposure to violence. He is
+carrying shame, years of being hit that he has never named as abuse, and a
+demoralisation cluster with a plausible medical cause.
 
 **2026-07-27** — Thức reported the weekly lint wasn't working. Confirmed by
 evidence that it never fired at all (see the routine entry above). Wrote

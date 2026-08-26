@@ -3,10 +3,20 @@ title: Trust Repair
 type: synthesis
 created: 2026-08-22
 updated: 2026-08-22
-sources: [sources/2026-08-22-trust-breach-disclosure.md, sources/2026-08-22-marriage-and-self-blame-chain.md]
+sources: [sources/2026-08-22-trust-breach-disclosure.md, sources/2026-08-22-marriage-and-self-blame-chain.md, sources/2026-08-22-ten-year-history-correcting-source.md]
 ---
 
 # Trust Repair
+
+> **CORRECTED the same day.** This page was first written on an implicit and
+> wrong picture: that the Zalo chatting happened ~8 months ago. It did not —
+> it happened **years earlier**, lasted **days**, was deleted by him, and was
+> retaliatory; what happened 8 months ago is that his wife **discovered** it.
+> The full ten-year context (including violence in both directions) came out
+> afterwards and is in [[wiki/the-conflict-loop]], **which should be read
+> first** — it outranks this page. What survives here is the analysis of the
+> **lie told when she asked whether anything else was hidden**; that event is
+> unchanged by any of the new context.
 
 **2026-08-22.** The content behind "we argue every day" — absent from the
 morning's analysis, volunteered by Thức the same day with *"hãy lưu vào wiki
@@ -18,14 +28,22 @@ and the page's job is to be useful — not to prosecute and not to console.
 
 ## What happened
 
-1. Chatted with ~100 women on Zalo. His wife found out.
-2. She asked him directly: **"còn gì giấu nữa không?"** (is there anything else
+1. **Years earlier** (≈ year 4–5 of the relationship), during a period in which
+   he was being hit and had developed a wish to retaliate, he chatted with
+   ~100 women on Zalo. It lasted **a few days**; he deleted everything.
+   Motive by his own account: revenge — *"sometimes I even wanted her to see
+   it."* See [[wiki/the-conflict-loop]] for why that detail matters.
+2. **Early 2026 (~8 months ago): his wife discovered it.**
+3. She asked him directly: **"còn gì giấu nữa không?"** (is there anything else
    you're hiding?) — he answered **no**.
-3. She later discovered he had hidden porn apps. So (2) was a lie.
-4. ~8 months ago (≈ Dec 2025). She periodically returns to it, and has asked
-   whether he slept with anyone; he says no
-   {reported — his own account, not independently verifiable}.
-5. He does not know how to answer, and feels he has nothing left to prove with.
+4. She later discovered he had hidden porn apps. So (3) was a lie.
+5. She periodically returns to it, and has asked whether he slept with anyone;
+   he says no {reported — his own account, not independently verifiable}.
+6. He does not know how to answer, and feels he has nothing left to prove with.
+
+**The gap between (1) and (2) is the correction.** The act and its discovery
+are separated by years — the original version of this page collapsed them, and
+built its framing on the collapse.
 
 ## The second event is the load-bearing one
 
@@ -107,9 +125,14 @@ to say this"*, no scorekeeping.
 usually measured in one to two years of active work. Her not being over it is
 not unfairness. {reported, from memory — to be verified}
 
-Couples counselling stops being generic advice here: betrayal repair has a
-known structure, and it is very hard to run alone — especially when the person
-who would have to lead the process is the one who caused the breach.
+~~Couples counselling stops being generic advice here.~~ **Corrected the same
+day:** while physical violence is ongoing — which the later disclosure
+established in both directions — conventional couples counselling is typically
+**contraindicated**, because it can escalate risk and the person in the weaker
+position cannot speak freely when both go home together afterwards.
+{reported, from memory — verify} Correct ordering: **safety floor → individual
+work for both → only then couples work**, and with a practitioner experienced
+in intimate partner violence. See [[wiki/the-conflict-loop]].
 
 ## What this revises
 
@@ -118,6 +141,12 @@ dominates:
 
 > **D — a specific, verified breach of trust 8 months ago → daily conflict +
 > sustained shame → loss of drive, frequent mistakes, global self-blame.**
+
+**D is itself superseded later the same day.** The conflict predates the breach
+by years, and a concrete medical candidate emerged — mis-dosed thyroid hormone
+replacement after thyroidectomy for cancer — which matches the symptom list
+almost item for item. D remains a contributing factor, not the root. See
+[[wiki/the-conflict-loop]].
 
 D accounts for the whole of the first message without needing *"I'm childish"*
 or *"I have no aspiration"*. Living for eight months as a suspect in your own
@@ -154,3 +183,5 @@ with.
 - [[wiki/fact-vs-opinion]] — why the identity label and the two events are
   different classes of claim.
 - [[wiki/metacognition]] — the self as the domain where the monitor fails.
+- [[wiki/the-conflict-loop]] — the ten-year mechanism this page sat inside;
+  read it first.
