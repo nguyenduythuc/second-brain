@@ -176,6 +176,15 @@ guarded entry, unguarded exit.
   available here), so Ring 2 work happens in a session opened on the monorepo.
   Ask how it went when he returns.
 
+- **The brain now compiles itself into executables** (opened 2026-08-17).
+  `portable-skills/` is build output: `CORE.md` (always-on, goes in a target
+  repo's `CLAUDE.md`) + `reasoning-gates/SKILL.md` (on demand). Rule:
+  **recompile, never hand-edit** — the wiki stays the source of truth.
+  Design + why "no intervention" is the wrong target:
+  [[wiki/ring-2-encoding-the-craft]]. **Awaiting his edit of the escalation
+  list** — that list is tier 4, and it is the only part the agent cannot
+  derive for him.
+
 ## My own failure modes (agent, on record)
 
 - **Stale facts from memory.** I asserted "SpaceX is private" a month after
