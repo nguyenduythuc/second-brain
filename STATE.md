@@ -103,7 +103,7 @@ we sharpened together into [[wiki/agent-org-multiplied-self]].
      weeks, offer to run it. A human opening a session is the most reliable
      scheduler available.
 - **The local checkout can be reset to an old `main` between turns** (happened
-  2026-08-17: the working tree came back at a pre-craft-philosophy commit while
+  2026-09-01: the working tree came back at a pre-craft-philosophy commit while
   everything through `a6ab985` was safe on `origin/claude/blissful-feynman-gtk8wi`).
   **Symptom:** files you wrote earlier in the session are missing, `git log`
   shows a merge commit you don't recognise. **Fix:** `git fetch -f origin
@@ -147,7 +147,7 @@ guarded entry, unguarded exit.
 - **Rule-of-Three watch:**
   - *weakest-link composition* — 2 sightings (argument strength in
     [[wiki/fact-vs-opinion]]; reversibility in [[wiki/shepherd-review-gates]]).
-  - *the fake-edge test* — 1 sighting (graph engineering, 2026-08-17): **does
+  - *the fake-edge test* — 1 sighting (graph engineering, 2026-09-01): **does
     this step actually need the output of the step before it? If not, the wait
     is free time thrown away.** Deliberately NOT extracted on first sight.
     Watch for it in his own work — the pre-commit hook is a live candidate.
@@ -176,7 +176,14 @@ guarded entry, unguarded exit.
   available here), so Ring 2 work happens in a session opened on the monorepo.
   Ask how it went when he returns.
 
-- **The brain now compiles itself into executables** (opened 2026-08-17).
+- **The compile pipeline is signal-triggered, not scheduled** (2026-09-01).
+  Thức asked for a weekly master-skill/master-agent build. Built as: weekly
+  *check* (`scripts/check-skill-drift.sh` + `weekly-skill-drift.yml`, mechanical,
+  silent when clean) → `/compile` rebuilds only stale targets → PR → he merges.
+  **A weekly recompile was rejected**: most weeks nothing changes, and an agent
+  given a build job with no input change will invent one. Same two-half shape
+  as the lint fix, and the same reason.
+- **The brain now compiles itself into executables** (opened 2026-09-01).
   `portable-skills/` is build output: `CORE.md` (always-on, goes in a target
   repo's `CLAUDE.md`) + `reasoning-gates/SKILL.md` (on demand). Rule:
   **recompile, never hand-edit** — the wiki stays the source of truth.
@@ -208,7 +215,7 @@ guarded entry, unguarded exit.
   → CONSULT. Structural fix applied: `CLAUDE.md`'s track-thinking-moves
   principle now explicitly covers the agent's own reasoning errors and
   requires either recording them here or asking him.
-- **Mistaking depth for novelty (2026-08-17, he corrected this).** On re-reading
+- **Mistaking depth for novelty (2026-09-01, he corrected this).** On re-reading
   the highlighted parts of his convention doc I proposed a new concept page
   ("extend the type system with scripts"). He replied: *"Vẫn là những gì tôi
   từng nói thôi, đây chỉ là mô tả chi tiết hơn về tư tưởng code của tôi."* Root
@@ -220,6 +227,15 @@ guarded entry, unguarded exit.
   existing node gaining evidence / a mechanism?** Related to but distinct from
   over-pattern-matching — there I invented a pattern across unlike things; here
   I split one thing into two. Both fail the Rule of Three's classification step.
+- **Trusting a tool reading over a harness-supplied fact (2026-09-01).** I
+  stamped the wrong date twice in one session — first 2026-08-03 from nothing,
+  then "corrected" it to 2026-08-17 from a container clock that was itself
+  wrong. The session context had given the right date, 2026-09-01, from the
+  start. Root cause: **when two sources disagreed I picked one silently.** The
+  brain's own rule says a disagreement is `{disputed}` — information to
+  surface, not an error to resolve quietly. Check that the clock and the
+  supplied date agree before writing any date; dates here are load-bearing
+  because TTLs compute off them.
 - **Conflating two goals into one plan.** I proposed "mine the monorepo"
   without separating (A) skill files that stay in the monorepo from (B) a
   decision-making wiki here — then drifted into discussing transfer, which

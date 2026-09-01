@@ -2,7 +2,7 @@
 title: Ring 2 — Encoding the Craft (monorepo plan)
 type: synthesis
 created: 2026-07-27
-updated: 2026-08-17
+updated: 2026-09-01
 sources: [sources/2026-07-08-agent-org-multiplied-self.md, sources/2026-07-16-hermes-self-improvement.md, sources/2026-07-16-shepherd-architecture.md]
 ---
 
@@ -120,7 +120,7 @@ a plausible-looking library nobody's work actually depends on — exactly the
 flat one-off library Hermes warns about. **Every entry must be traceable to
 something that really happened.**
 
-## The layer above Ring 2: the brain as compiler (opened 2026-08-17)
+## The layer above Ring 2: the brain as compiler (opened 2026-09-01)
 
 Thức's ask: *"khi tôi yêu cầu agent làm việc gì, bạn sẽ là bộ não đưa ý chí,
 kiến thức của mình thành bộ khung công cụ, cách tư duy, cách tìm hiểu, cách ra

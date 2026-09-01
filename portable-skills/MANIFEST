@@ -1,0 +1,23 @@
+# Build manifest for portable-skills/
+#
+# `compiled_from` is the commit the current build output was made from.
+# Every line below maps a build target to one wiki page it was compiled from.
+# scripts/check-skill-drift.sh diffs those pages since `compiled_from` and
+# reports which targets are behind. That diff is the ONLY trigger for a
+# recompile — not the calendar.
+#
+# Format:  <target>|<source page>
+
+compiled_from: d0e25bd
+
+CORE.md|wiki/fact-vs-opinion.md
+CORE.md|wiki/how-i-want-to-think.md
+CORE.md|wiki/metacognition.md
+reasoning-gates/SKILL.md|wiki/fact-vs-opinion.md
+reasoning-gates/SKILL.md|wiki/how-i-want-to-think.md
+reasoning-gates/SKILL.md|wiki/metacognition.md
+reasoning-gates/SKILL.md|wiki/rule-of-three.md
+reasoning-gates/SKILL.md|wiki/craft-philosophy.md
+reasoning-gates/SKILL.md|wiki/agent-org-multiplied-self.md
+reasoning-gates/SKILL.md|wiki/what-ai-structures-still-need.md
+reasoning-gates/SKILL.md|wiki/ratchet.md

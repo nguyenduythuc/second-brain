@@ -169,7 +169,7 @@ Hai điều được chốt:
 
 ---
 
-## Bổ sung 2 — Phần bôi vàng (đọc lại 2026-08-17)
+## Bổ sung 2 — Phần bôi vàng (đọc lại 2026-09-01)
 
 **Ghi chú provenance:** lần capture đầu chuyển trang sang markdown và **mất
 phần highlight** (`#ffc400`) — highlight là markup, không phải nội dung, nên
@@ -227,7 +227,7 @@ security (11.1) vì security nằm ngoài scope theo yêu cầu của anh.
 
 ---
 
-## Bổ sung 3 — Thức phản hồi về phần bôi vàng (2026-08-17)
+## Bổ sung 3 — Thức phản hồi về phần bôi vàng (2026-09-01)
 
 > Vẫn là những gì tôi từng nói thôi, đây chỉ là mô tả chi tiết hơn về tư tưởng
 > code của tôi

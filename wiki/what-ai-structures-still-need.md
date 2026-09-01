@@ -52,9 +52,9 @@ specialized agents, so an artifact's meaning is enforced rather than hoped for.
 Shepherd already has the primitive (typed effect boundary); nobody has pointed
 it *between two agents* yet.
 
-**Sighting 2026-08-17 — the prediction half-landed, and half-confirmed the gap
+**Sighting 2026-09-01 — the prediction half-landed, and half-confirmed the gap
 instead.** The graph-engineering write-up
-(`sources/2026-08-17-graph-engineering-kopadze.md`) carries a **node contract**:
+(`sources/2026-09-01-graph-engineering-kopadze.md`) carries a **node contract**:
 one bounded job, defined input, defined output, *schema enforced — free text is
 rejected and retried*. That is the typed interface this gap asked for, one
 month after the prediction was written {reported: one practitioner article, not

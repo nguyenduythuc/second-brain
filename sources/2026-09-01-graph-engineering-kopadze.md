@@ -2,7 +2,7 @@
 title: "Graph Engineering explained: what it is, when to use it and when not to"
 author: Anatoli Kopadze (@AnatoliKopadze)
 published: 2026-07-24 (X / newsletter)
-captured: 2026-08-17
+captured: 2026-09-01
 provenance: Pasted verbatim by Thức. Not fetched by the agent — no independent
   check of the numbers or of the Bun case study was performed at capture time.
 note: This is content marketing (the piece asks the reader to follow the

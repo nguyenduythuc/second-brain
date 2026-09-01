@@ -1,0 +1,68 @@
+name: Weekly skill drift check
+
+# Asks one mechanical question every week: are the compiled skills in
+# portable-skills/ behind the wiki pages they were built from?
+#
+# It deliberately does NOT recompile. Recompiling is a judgment job that runs
+# in an agent session (/compile) and lands as a PR Thức merges. This workflow
+# only decides whether that job has anything to do — no LLM, no API key,
+# nothing to break, same design as weekly-lint.yml.
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'   # Mondays 09:00 UTC (~16:00 Vietnam)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'wiki/**'
+      - 'portable-skills/**'
+      - 'scripts/check-skill-drift.sh'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # the check diffs against an older commit
+
+      - name: Check whether compiled skills are behind the wiki
+        id: drift
+        run: |
+          set +e
+          ./scripts/check-skill-drift.sh --strict | tee drift-output.txt
+          echo "status=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+
+      - name: Open an issue when the skills are stale
+        if: steps.drift.outputs.status != '0' && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="Compiled skills are behind the wiki ($(date -u +%Y-%m-%d))"
+          EXISTING=$(gh issue list --state open --label skill-drift --limit 1 --json number --jq '.[0].number')
+          BODY=$'The wiki moved; `portable-skills/` did not.\n\n```\n'"$(cat drift-output.txt)"$'\n```\n\nRun `/compile` in an agent session. It rebuilds only the stale targets and opens a PR — it never pushes to main.'
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+          else
+            gh label create skill-drift --color ededed --description "Compiled skills out of date with the wiki" 2>/dev/null || true
+            gh issue create --title "$TITLE" --body "$BODY" --label skill-drift
+          fi
+
+      - name: Close the issue once the skills are current again
+        if: steps.drift.outputs.status == '0' && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          N=$(gh issue list --state open --label skill-drift --limit 1 --json number --jq '.[0].number')
+          if [ -n "$N" ]; then
+            gh issue close "$N" --comment "Compiled skills are current again as of $(date -u +%Y-%m-%d)."
+          fi
+
+      - name: Fail the run so the status is visible
+        if: steps.drift.outputs.status != '0'
+        run: exit 1

@@ -18,6 +18,25 @@ Two layers because the cost of a check must stay below its value. A rule that
 must never be unloaded goes in `CORE.md`; everything else waits until the task
 is judgment-heavy.
 
+## How a rebuild happens
+
+**The calendar is not the trigger. A changed source page is.**
+
+1. `MANIFEST` records the commit these files were compiled from, and which
+   wiki page feeds which target.
+2. `scripts/check-skill-drift.sh` diffs those pages since that commit. Purely
+   mechanical — no LLM. It runs weekly on GitHub
+   (`.github/workflows/weekly-skill-drift.yml`) and opens one issue when a
+   target falls behind.
+3. `/compile` in an agent session rebuilds **only the stale targets**, patches
+   rather than rewrites, deletes any rule it cannot trace to a page, and opens
+   a PR.
+4. Thức merges. That merge is the gate.
+
+A weekly *recompile* would be wrong: most weeks nothing changed, and an agent
+handed a job it has no input for will invent one. A weekly *check* is right —
+it costs nothing and stays silent when there is nothing to do.
+
 ## Install
 
 ```bash
