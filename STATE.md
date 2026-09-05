@@ -251,6 +251,16 @@ guarded entry, unguarded exit.
   surface, not an error to resolve quietly. Check that the clock and the
   supplied date agree before writing any date; dates here are load-bearing
   because TTLs compute off them.
+- **Treating tool output *about* a document as the document (2026-09-05, he
+  caught this).** Could not fetch Ng's article; used `WebSearch`, then wrapped
+  the search engine's *summary* in quotation marks and blockquotes — creating
+  quote-shaped text of unverified wording, inside `sources/`, the layer whose
+  whole job is fidelity. Root cause: **a tool answered in the voice of the
+  source, and that voice was copied instead of the provenance.** Same family as
+  the clock error four days earlier — trusting what a tool returns without
+  asking what it actually is. **Rule: quotation marks require a document you
+  read. If it came from a search summary, write "paraphrased, not verified" and
+  drop the marks.**
 - **Conflating two goals into one plan.** I proposed "mine the monorepo"
   without separating (A) skill files that stay in the monorepo from (B) a
   decision-making wiki here — then drifted into discussing transfer, which

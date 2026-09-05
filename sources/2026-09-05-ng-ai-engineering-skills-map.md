@@ -10,6 +10,14 @@ provenance: >
   is assembled from web-search result snippets — second-hand paraphrase,
   possibly reworded, possibly incomplete. Every claim here is {reported}.
   Replace this file with the real text if it is ever pasted in.
+
+  **Correction, same day, after Thức asked whether the page had actually been
+  read:** it had not. The first version of this file used quotation marks and
+  blockquotes around text taken from a *search engine's summary* of the
+  article, not from the article. That is quote-shaped text of unverified
+  wording. All such marks are removed below and replaced with "as paraphrased
+  by search results". Nothing here should be quoted back to anyone as Ng's
+  words.
 ---
 
 # The AI Engineering Skills Map (secondary capture)
@@ -21,23 +29,24 @@ synthesised from **over 10,000 job postings** plus expert interviews
 ## The four pillars
 
 1. **Building and deploying AI applications** — the building blocks (LLMs,
-   context engineering, RAG, agentic workflows, ML/DL) and *"how to use
-   statistical techniques to measure, steer, and govern AI systems so that they
-   behave more predictably."*
-2. **Software engineering fundamentals** — *"When you deeply understand how
-   software works, you can build much more effectively, requiring making
-   tradeoffs between cost, scalability, reliability, speed, and more."*
+   context engineering, RAG, agentic workflows, ML/DL) and how to use statistical
+   techniques to measure, steer and govern AI systems so they behave more
+   predictably (paraphrased)
+2. **Software engineering fundamentals** — deeply understanding how software
+   works lets you build more effectively, making tradeoffs between cost,
+   scalability, reliability and speed (paraphrased)
 3. **Using coding agents** — the pillar Thức's link points at.
-4. **Shaping the build** — *"Given a clear spec, coding agents are rapidly
-   improving at delivering to it, thus shifting engineers' work toward deciding
-   what should be in the spec."*
+4. **Shaping the build** — given a clear spec, coding agents are rapidly
+   improving at delivering to it, shifting engineers' work toward deciding what
+   belongs in the spec (paraphrased)
 
 ## Pillar 3 — Using coding agents (as reported)
 
-> "a good mental model for how agents work, understanding their limitations and
-> how to work around them, and are able to quickly steer them — knowing how much
-> to intervene and how much to leave them alone — to build robust software
-> without wasting excessive time or tokens."
+As paraphrased by search results (wording NOT verified against the article):
+a good mental model for how agents work, understanding their limitations and
+how to work around them, and being able to quickly steer them — knowing how
+much to intervene and how much to leave them alone — to build robust software
+without wasting excessive time or tokens.
 
 The named sub-skills, as paraphrased in search results:
 
@@ -54,15 +63,15 @@ The named sub-skills, as paraphrased in search results:
 
 ## The cross-link between pillars 2 and 3 (the sharpest claim reported)
 
-> "Understanding software engineering fundamentals lets you make good tradeoffs
-> by steering coding agents using the precise language of software engineering.
-> Poor outcomes result from inexperienced developers who vibe code without
-> knowing the tradeoffs their coding agent is making, because they don't know
-> what context to give their coding agent."
+As paraphrased by search results (wording NOT verified): software engineering
+fundamentals let you make good tradeoffs by steering coding agents in the
+precise language of software engineering; poor outcomes come from inexperienced
+developers who vibe code without knowing the tradeoffs their agent is making,
+because they don't know what context to give it.
 
-And: *"These skills expose the latency, availability, consistency,
-maintainability, simplicity, and cost tradeoffs that coding agents need humans
-to frame."*
+Also paraphrased: these skills expose the latency, availability, consistency,
+maintainability, simplicity and cost tradeoffs that coding agents need humans
+to frame.
 
 ## Secondary sources used
 

@@ -45,9 +45,10 @@ industrial-scale guessing, with verification costs growing to match.
 >
 > **Third sighting, 2026-09-05** {reported — secondary capture, the primary
 > article was unreachable}: Ng's AI Engineering Skills Map makes software
-> fundamentals a pillar *because* of agents, not despite them — *"inexperienced
-> developers who vibe code without knowing the tradeoffs their coding agent is
-> making … don't know what context to give."* Same shape: the operator's own
+> fundamentals a pillar *because* of agents, not despite them: developers who
+> vibe code without knowing the tradeoffs their agent is making don't know what
+> context to give it (paraphrase from search results — **the article itself was
+> never read**, so this is not a quotation). Same shape: the operator's own
 > judgment sets the ceiling. Three independent derivations now; still
 > convergence of opinion, still not measurement.
 
