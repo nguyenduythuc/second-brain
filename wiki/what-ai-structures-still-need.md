@@ -2,8 +2,8 @@
 title: What AI Structures Still Need
 type: synthesis
 created: 2026-07-16
-updated: 2026-07-16
-sources: [sources/2026-07-16-q3-org-mapping-stress-test.md, sources/2026-07-16-codez-self-improving-agent-system.md, sources/2026-07-16-hermes-self-improvement.md, sources/2026-07-16-shepherd-architecture.md]
+updated: 2026-09-05
+sources: [sources/2026-07-16-q3-org-mapping-stress-test.md, sources/2026-07-16-codez-self-improving-agent-system.md, sources/2026-07-16-hermes-self-improvement.md, sources/2026-07-16-shepherd-architecture.md, sources/2026-09-05-ng-using-coding-agents.md]
 ---
 
 # What AI Structures Still Need
@@ -93,6 +93,14 @@ a tireless agent lacks. No document addresses when a plan is decomposed
 *enough*. Recursion without a base case is a known failure mode in every other
 field of engineering; here it is unnamed.
 
+**Candidate answer, 2026-09-05:** Ng lists *"how to decompose the work into
+**verifiable** steps"* among the operator's core skills. Read as a stopping
+rule — **split until each piece can be checked** — that is a real criterion,
+and it composes with rule 6: a step you cannot verify is one whose output must
+be taken on the agent's word. {inference — the article names verifiable steps
+as the target; it does not state this as a stopping rule.} See
+[[wiki/agent-operating-model]].
+
 ### 4. Memory is timeless, and therefore rots
 
 Every memory design ingested treats a stored fact as durable. None carries a
@@ -148,6 +156,9 @@ Collected from the three ingests, ordered by leverage:
    A `max_growth vs. baseline` check is the cheapest missing gate.
 3. **Reversible lifecycle for pages** (from Hermes): lint reports orphans but
    no page ever ages to stale/archived; nothing is ever recoverably retired.
+   **Priority raised 2026-09-05** — Ng names pruning as an operator skill in
+   its own right (*"prune them when they are no longer necessary, such as when
+   a new model obviates an old skill"*), so this is not just a Hermes idea.
 4. **Trace-based reflection** (from Hermes + Shepherd): `log.md` records *what
    was decided*, not the reasoning that produced it. Honest retro needs the
    trail, not the verdict.

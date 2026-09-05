@@ -176,6 +176,12 @@ guarded entry, unguarded exit.
      when not to bother doing so". His Clarify → Spec → Plan → Tasks →
      Implement pipeline is where he already decides this dozens of times.
   Offer the rep; don't assign it.
+- **Five holes from the operator frame** (new page
+  [[wiki/agent-operating-model]], 2026-09-05): nothing evaluates the verifier
+  (`scripts/lint.sh` has never been audited against its own purpose); no
+  retirement path for pages or skills; human attention across concurrent
+  sessions is unmanaged; **no team dimension** (he works in a team, the brain
+  models one person + one agent); agent-generated debt is unnamed.
 - **Evals and error analysis loops** — Ng calls this a *core* skill of pillar 1.
   The brain's whole epistemic layer is qualitative. Still judged out of scope
   (that pillar is about building AI products), with one exception: the
