@@ -161,6 +161,21 @@ guarded entry, unguarded exit.
   **not** extract it: my over-pattern-matching failure mode fires exactly here,
   one step after learning a rule. His call. If root cause → new concept page;
   if surface coincidence → note it in [[wiki/rule-of-three]] and close.
+- **Two operator skills the brain does not cover** (found 2026-09-05 by using
+  Ng's skills map as a gap check, not as content):
+  1. **Balancing planning against execution** — when to plan more vs. just let
+     the agent run. Adjacent to gap 3 in [[wiki/what-ai-structures-still-need]]
+     (decomposition has no stopping rule) but not the same question.
+  2. **Knowing when a clear spec is worth the effort** — a cost/benefit call
+     about specification itself.
+  He has direct evidence for both: his Clarify → Spec → Plan → Tasks →
+  Implement pipeline is exactly where these get decided. **Offer the rep, don't
+  assign it** — reps are user-initiated.
+- **No quantitative layer.** The brain's epistemics are entirely qualitative;
+  Ng's pillar 1 names "statistical techniques to measure, steer and govern".
+  Judged **out of scope** unless he says otherwise — that pillar is about
+  building AI products, which is not his stated goal. The one place it would
+  bite is the deferred calibration ledger, which is an eval mechanism.
 - **Calibration ledger** deferred to v0.3 of the claim framework — build when
   ~10+ thinking-move entries have accumulated in `log.md`.
 - **Unverified tooling claims** carried forward from the Codez ingest

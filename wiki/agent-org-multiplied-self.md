@@ -2,8 +2,8 @@
 title: Agent Orgs and the Multiplied Self
 type: synthesis
 created: 2026-07-08
-updated: 2026-07-08
-sources: [sources/2026-07-08-agent-org-multiplied-self.md]
+updated: 2026-09-05
+sources: [sources/2026-07-08-agent-org-multiplied-self.md, sources/2026-09-01-graph-engineering-kopadze.md, sources/2026-09-05-ng-ai-engineering-skills-map.md]
 ---
 
 # Agent Orgs and the Multiplied Self
@@ -42,6 +42,14 @@ industrial-scale guessing, with verification costs growing to match.
 > breadth. It does not buy better judgment."*
 > (`sources/2026-09-01-graph-engineering-kopadze.md`.) Support from a second
 > derivation, not proof — the claim stays a {hypothesis}.
+>
+> **Third sighting, 2026-09-05** {reported — secondary capture, the primary
+> article was unreachable}: Ng's AI Engineering Skills Map makes software
+> fundamentals a pillar *because* of agents, not despite them — *"inexperienced
+> developers who vibe code without knowing the tradeoffs their coding agent is
+> making … don't know what context to give."* Same shape: the operator's own
+> judgment sets the ceiling. Three independent derivations now; still
+> convergence of opinion, still not measurement.
 
 Corollary: the quality of the "master copy" — you — matters *more* in the agent
 era, not less.
