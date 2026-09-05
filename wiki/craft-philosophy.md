@@ -2,8 +2,8 @@
 title: Craft Philosophy — how Thức engineers
 type: synthesis
 created: 2026-07-27
-updated: 2026-09-01
-sources: [sources/2026-07-27-craft-philosophy-self-report.md, sources/2026-07-27-lfvn-coding-convention.md]
+updated: 2026-09-05
+sources: [sources/2026-07-27-craft-philosophy-self-report.md, sources/2026-07-27-lfvn-coding-convention.md, sources/2026-09-05-ng-ai-engineering-skills-map-verbatim.md]
 ---
 
 # Craft Philosophy
@@ -169,6 +169,54 @@ Two details worth keeping:
 - **Naming rules are not highlighted anywhere; boundary rules are.** Section
   1.0 (camelCase, PascalCase, file suffixes) has zero highlights. Naming is
   arbitrary — any consistent choice works. Boundaries are not {inference}.
+
+## Two gaps this page has — found by gap-checking against Ng's skills map
+
+Ng's AI Engineering Skills Map (2026-08-14, `sources/…-verbatim.md`) is a
+taxonomy, not new knowledge — most of it restates things this brain covers
+more deeply. Its use was as an **index to check against**, and it exposed two
+holes in this page {fact ✓2026-09-05 slow; method: read the full text}.
+
+### 1. Every principle here is execution-side. None is about deciding *what* to build.
+
+All eight stated principles answer *how to build well*. Ng's fourth pillar is
+**Shaping the build**: *"Engineers should no longer expect to be given a
+pixel-perfect design and asked only to implement it. Instead, effective AI
+engineering requires having product sense and understanding business context
+and customer goals."*
+
+That sentence is aimed squarely at his position. His 4-tier gate already ends
+at *"Tier 4 human — business logic / BRD only"* — so he reviews **against** the
+BRD. The claim is that the work moves toward **shaping** it. Whether he already
+does this and simply never reported it is unknown: this page is self-report,
+and self-report is biased toward what one thinks of as craft. **Open question
+for him, not an assertion.**
+
+*Tám nguyên tắc đều là "làm thế nào cho tốt", không cái nào là "nên làm cái gì".*
+
+### 2. He has a decision rule for new technology, but no scanning routine.
+
+Ng names a skill this page has no equivalent of: *"having routines to keep
+trying new tools and evolve your workflows as best practices change."*
+
+His three-route rule above is excellent at **deciding** once something is in
+front of him — adopt now, migrate gradually, or turn it off. It says nothing
+about **when to go looking**. Those are different mechanisms: one is a
+classifier, the other is a trigger. Without the trigger, the classifier only
+fires on whatever happens to cross his path.
+
+This is the same shape as the fix already applied to the brain's own lint and
+compile pipelines — a good judgment step is worthless if nothing reliably
+invokes it.
+
+### Watch, not extracted
+
+Ng's *"knowing when to quickly build an MVP … and when to slow down and take
+longer in order to build more carefully"* may be the same principle as his
+three-route tech adoption rule — both route by how expensive it is to be wrong.
+**Not extracted**: first sighting, and over-pattern-matching right after
+reading something new is a recorded agent failure mode. On the rule-of-three
+watch.
 
 ## Related
 

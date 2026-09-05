@@ -20,7 +20,21 @@ provenance: >
   words.
 ---
 
-# The AI Engineering Skills Map (secondary capture)
+> **SUPERSEDED 2026-09-05** by
+> `sources/2026-09-05-ng-ai-engineering-skills-map-verbatim.md`, which Thức
+> pasted. Kept only as the record of what a search-summary capture gets wrong.
+> **What this file missed or distorted, measured against the real text:**
+> (1) it omitted an entire named skill — *"having routines to keep trying new
+> tools and evolve your workflows as best practices change"*; (2) it reduced
+> "Shaping the build" to specs, dropping product sense, business context,
+> ownership, and the MVP-vs-build-carefully call; (3) it dropped *"a core skill
+> … is knowing how to drive disciplined evals and error analysis loops"*;
+> (4) it added "and fail" to the mental-model skill, which the article does not
+> say; (5) the numbered list of ten sub-skills was the agent's own
+> enumeration — the article does not number them.
+> **Do not cite this file. Cite the verbatim one.**
+
+# The AI Engineering Skills Map (secondary capture — SUPERSEDED)
 
 Published 2026-08-14 by Andrew Ng / DeepLearning.AI. Methodology as reported:
 synthesised from **over 10,000 job postings** plus expert interviews

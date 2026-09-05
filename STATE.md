@@ -161,21 +161,25 @@ guarded entry, unguarded exit.
   **not** extract it: my over-pattern-matching failure mode fires exactly here,
   one step after learning a rule. His call. If root cause → new concept page;
   if surface coincidence → note it in [[wiki/rule-of-three]] and close.
-- **Two operator skills the brain does not cover** (found 2026-09-05 by using
-  Ng's skills map as a gap check, not as content):
-  1. **Balancing planning against execution** — when to plan more vs. just let
-     the agent run. Adjacent to gap 3 in [[wiki/what-ai-structures-still-need]]
-     (decomposition has no stopping rule) but not the same question.
-  2. **Knowing when a clear spec is worth the effort** — a cost/benefit call
-     about specification itself.
-  He has direct evidence for both: his Clarify → Spec → Plan → Tasks →
-  Implement pipeline is exactly where these get decided. **Offer the rep, don't
-  assign it** — reps are user-initiated.
-- **No quantitative layer.** The brain's epistemics are entirely qualitative;
-  Ng's pillar 1 names "statistical techniques to measure, steer and govern".
-  Judged **out of scope** unless he says otherwise — that pillar is about
-  building AI products, which is not his stated goal. The one place it would
-  bite is the deferred calibration ledger, which is an eval mechanism.
+- **Gap check against Ng's skills map — REDONE 2026-09-05 on the real text**
+  (the first pass ran on a search summary and missed things). Standing items:
+  1. **[[wiki/craft-philosophy]] has no product-sense principle.** All eight are
+     execution-side. Ng: engineers shift toward *shaping* the spec, not
+     receiving it. His 4-tier gate ends at "review against BRD" — the question
+     is whether he shapes it. **Ask, don't assume** — the page is self-report.
+  2. **He has no routine for scanning new tools**, only a rule for judging one
+     once it appears. Ng names the routine as its own skill. Same lesson as the
+     lint and compile pipelines: judgment with no trigger rarely fires.
+  3. **Balancing planning against execution** — named by Ng, absent here;
+     adjacent to gap 3 in [[wiki/what-ai-structures-still-need]].
+  4. **When a clear spec is worth the effort** — Ng's exact phrasing is "and
+     when not to bother doing so". His Clarify → Spec → Plan → Tasks →
+     Implement pipeline is where he already decides this dozens of times.
+  Offer the rep; don't assign it.
+- **Evals and error analysis loops** — Ng calls this a *core* skill of pillar 1.
+  The brain's whole epistemic layer is qualitative. Still judged out of scope
+  (that pillar is about building AI products), with one exception: the
+  **calibration ledger** deferred to v0.3 is exactly an eval mechanism.
 - **Calibration ledger** deferred to v0.3 of the claim framework — build when
   ~10+ thinking-move entries have accumulated in `log.md`.
 - **Unverified tooling claims** carried forward from the Codez ingest
