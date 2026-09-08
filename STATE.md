@@ -144,6 +144,10 @@ guarded entry, unguarded exit.
   [[wiki/what-ai-structures-still-need]]: decay-tag retrofit on legacy pages,
   growth limit per page, reversible page lifecycle, trace-based reflection,
   declared blast radius per operation.
+- **Falsification pass owed on [[wiki/four-roots]].** Sixteen chains landed on
+  four roots; "four covers everything" is unearned until a deliberate search
+  for a load-bearing claim that fits *none* of them comes back empty. R1 says
+  the page cannot validate itself — it needs his outside reading.
 - **Rule-of-Three watch:**
   - *weakest-link composition* — 2 sightings (argument strength in
     [[wiki/fact-vs-opinion]]; reversibility in [[wiki/shepherd-review-gates]]).
@@ -151,16 +155,11 @@ guarded entry, unguarded exit.
     this step actually need the output of the step before it? If not, the wait
     is free time thrown away.** Deliberately NOT extracted on first sight.
     Watch for it in his own work — the pre-commit hook is a live candidate.
-- **Open question put to him 2026-07-27, unanswered: is "keep the undo path
-  cheap" one principle at three sightings, or three things that merely look
-  alike?** The three: (1) Shepherd's reversibility levels + propose-don't-apply
-  ([[wiki/shepherd-review-gates]]), (2) his route-3 tech-adoption rule —
-  *"tắt ngay chứ ko cố sửa"*, abandon fast rather than fight
-  ([[wiki/craft-philosophy]]), (3) writing the recovery procedure at change
-  time, for changes `git revert` can't undo (same page). I deliberately did
-  **not** extract it: my over-pattern-matching failure mode fires exactly here,
-  one step after learning a rule. His call. If root cause → new concept page;
-  if surface coincidence → note it in [[wiki/rule-of-three]] and close.
+- **"Keep the undo path cheap" — now derived, still unconfirmed.** Open since
+  2026-07-27, when the agent refused to extract it on resemblance alone. The
+  2026-09-08 5-Whys pass reaches it as **R4** in [[wiki/four-roots]] via a
+  shared derivation (reduce the cost of being wrong instead of trying to be
+  right in advance), not a resemblance. **Still his call to confirm.**
 - **Gap check against Ng's skills map — REDONE 2026-09-05 on the real text**
   (the first pass ran on a search summary and missed things). Standing items:
   1. **[[wiki/craft-philosophy]] has no product-sense principle.** All eight are

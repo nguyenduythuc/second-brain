@@ -28,6 +28,7 @@ The agent updates this on every ingest.
 ## Syntheses
 - [[wiki/craft-philosophy]] — how he engineers: thinking over tools, clean-clear for non-coders, the unstated through-line (optimise for the reader), and the adopt-now / migrate-gradually / wait routing that resolves new-tech vs. readability.
 - [[wiki/how-i-want-to-think]] — personal practice card: the "fact hay đoán?" move, reps, using the brain without it becoming a crutch.
+- [[wiki/four-roots]] — **the distillation**: 5 Whys run across Ng's claims and the brain's own; sixteen chains land on four roots (outside standard / triggers / cheap enough to survive / cheap to undo).
 - [[wiki/agent-operating-model]] — the operator's layer: Ng's plan/execute/monitor workflow and five skills, mapped onto what this brain already answers; five holes it exposes; a candidate stopping rule for decomposition.
 - [[wiki/what-ai-structures-still-need]] — closing Q3 synthesis: three docs = three organs (learn / contain / human decides); five gaps still open — inter-agent contracts, in-flight self-monitoring, decomposition depth, memory TTL, graduated enforcement.
 - [[wiki/transcript-mining]] — Goal B: mining local session transcripts for how he decides; anchor on the post-plan correction zone, classify 4 kinds of correction (only one is craft knowledge), filter-not-pipe.
