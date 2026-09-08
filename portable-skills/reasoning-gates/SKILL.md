@@ -110,21 +110,48 @@ Then fix the structure, not the instance.
 
 ## Gate 7 — Turning a principle into rules that actually run
 
-This is the method for making a value operational. Do not skip to the answer.
+The method for making any value operational — in code, and outside it. Do not
+skip to the answer.
 
-1. **Define the value by an observer, not an adjective.** Not "clean code" —
-   *a tester who cannot code can still read it*. Now it is testable.
-2. **List what makes that observer fail.** Each failure becomes one rule: its
-   negation.
-3. **Push each rule to the cheapest checker that can catch it** — linter, then
-   script, then AI review, then human. Cheaper goes first.
-4. **Where no checker exists, build one.** This is where the invention
-   happens: by this step the problem is stated precisely enough that writing
-   the check is almost mechanical.
-5. **Old violations get a ratchet** — list them, block new ones, never block
-   the build for debt outside the current change.
+**First, pick the branch.** Ask: *can I state, before starting, what would show
+me I am wrong?*
+- **Yes** → run the seven steps below.
+- **No** → you cannot verify in advance. Go to gate 7b and buy reversibility
+  instead.
 
-*Giá trị → người đọc cụ thể → cái gì làm họ thất bại → luật → ai check rẻ nhất.*
+1. **Name the observer, not the adjective.** Never "clean code", "good
+   decision", "really understanding it" — name the person or event outside you
+   that must succeed. *A tester who cannot code can still read it.* This is the
+   step everything else rests on, and it is pure judgment; the rest is
+   mechanical.
+2. **Write the failing test.** What does that observer do, and how would you
+   see them fail? If you cannot describe the failure, the observer is still too
+   abstract — go back to 1.
+3. **List the failure modes.** Concretely, what makes them fail?
+4. **Turn each failure mode into its negation — a rule.** Rules, not
+   principles. "Utils must be pure", not "keep things clean".
+5. **Give every rule a trigger.** What event fires it — a commit, a merge, a
+   date, a threshold, a sentence you catch yourself saying? **A rule with no
+   trigger is decoration. Delete it or give it one.**
+6. **Push each rule to the cheapest checker that can catch it** — mechanical,
+   then script, then AI, then human. Then ask: *would I bypass this when busy?*
+   If yes it is too expensive; make it cheaper or drop it. **A gate people
+   bypass is worse than no gate — it looks like coverage.** Old violations get
+   a ratchet: block new drift, never block work for existing debt.
+7. **Name what you cannot check in advance and buy the undo instead.** Make it
+   reversible, or write the recovery procedure at the moment of the change,
+   while the details are still in your head.
+
+*Giá trị → người quan sát cụ thể → cái gì làm họ thất bại → luật → cái gì kích hoạt → ai check rẻ nhất.*
+
+### Gate 7b — when no standard exists yet
+
+Early research, an unfamiliar market, a new library, an unclear goal. You
+cannot state what would prove you wrong, so verification-in-advance is not
+available. **Optimise for the cost of being wrong instead of the odds of being
+right:** keep the position small, the change revertible, the commitment short.
+Then re-run the branch test as evidence arrives — most unknowable things become
+checkable eventually, and the moment they do you are back on the main branch.
 
 ## Gate 8 — Record what you learn, or it evaporates
 
