@@ -150,6 +150,19 @@ keeping reversal cheap rather than by trying to be right in advance.
 They are not independent. **R1 says what to build, R2 says what makes it run,
 R3 says what keeps it alive, R4 says what to do when you cannot know.**
 
+## The roots are not independent — R1 and R3 fight
+
+Found 2026-09-08 by running the generator across three domains
+([[wiki/framework-generator]]). **The cost of an outside check varies enormously
+by domain, and R3 says an expensive check gets skipped.** In code the two roots
+agree — an automated test is cheap *and* external. In learning they conflict
+hard: every cheap substitute for a real outside reader sits inside your own
+head, so it satisfies R3 by violating R1.
+
+**This is the structural cause of self-deception in slow-feedback domains.**
+Rule of thumb, not a solution: buy the cheapest *real* external check rather
+than a cheap fake one.
+
 ## Where this could be wrong
 
 - The chains were drilled by the same agent that wrote most of these pages —

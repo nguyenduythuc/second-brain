@@ -144,7 +144,20 @@ guarded entry, unguarded exit.
   [[wiki/what-ai-structures-still-need]]: decay-tag retrofit on legacy pages,
   growth limit per page, reversible page lifecycle, trace-based reflection,
   declared blast radius per operation.
-- **Falsification pass owed on [[wiki/four-roots]].** Sixteen chains landed on
+- **The /loop goal is met (2026-09-08).** Network + seven steps +
+  three domains run: [[wiki/framework-generator]]. Loop stopped. To extend it,
+  point the seven steps at a new domain — the generator is the deliverable, the
+  domain tables are just its output.
+- **Two things the generator produced that Thức should judge:** (a) his
+  principle 1 *"thinking over tools"* comes out as a **consequence** of R4, not
+  an axiom; (b) the **R1–R3 tension** — external checks are cheap in code and
+  expensive in learning/investing, which is where self-deception structurally
+  comes from. Neither has his sign-off.
+- **Falsification pass on [[wiki/four-roots]] — partly done.**
+  Three domains ran without a claim landing outside the four roots; the
+  investing run independently reproduced R1. Not a deliberate hunt for a
+  counter-example, so "four covers everything" is still unearned.
+- ~~Old item:~~ Sixteen chains landed on
   four roots; "four covers everything" is unearned until a deliberate search
   for a load-bearing claim that fits *none* of them comes back empty. R1 says
   the page cannot validate itself — it needs his outside reading.

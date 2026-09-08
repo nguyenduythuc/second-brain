@@ -126,6 +126,70 @@ from. That is the falsification test passing.
 
 ---
 
+## Second run: learning
+
+The domain where the brain already had half the answer
+([[wiki/understanding-vs-doing]]).
+
+**Step 1 forces a split the other domains did not.** Learning has *two*
+observers, because it has two goals:
+
+| Goal | Observer | Failing test |
+|---|---|---|
+| **Understand** (declarative) | someone who does not know the subject | you stall when they ask "why?" one level down |
+| **Do** (procedural) | the task itself, unaided, under real conditions | you cannot start without the tutorial open |
+
+**Choosing the wrong observer is the classic failure.** You test by re-reading
+— which measures recognition — when the goal was to do.
+
+| Step | Applied |
+|---|---|
+| **3. Failure modes** | re-reading feels like learning · recognition mistaken for recall · consuming input, never producing output · learning the tool instead of the transferable idea · no spacing · never being wrong in front of anyone · picking material by comfort instead of by gap |
+| **4. Rules** | retrieval before re-reading · one produced output per session · explain it to someone who does not know · separate the concept from the tool and label which is which · schedule the second look before leaving the first · pick next material from what you failed |
+| **5. Triggers** | **"I just read that and felt I understood it"** → immediate retrieval test · end of session → write one line: *what can I now do that I could not before?* · a real task at work touching the topic — the natural test firing on its own · the scheduled review date |
+| **6. Cheapest checker** | can I write it from memory in five lines (retrieval, not recognition) → does the thing actually run → a person who does not know it reads my explanation and can act on it |
+| **7. Undo** | when you cannot tell whether a field will matter, **learn the transferable layer before the tool layer** — the concept survives the tool dying |
+
+Two things fell out that were not put in.
+
+**The trigger is already on his practice card.** *"I just read that and felt I
+understood"* is Trigger 2 — speed plus satisfaction is a red flag — in a
+different domain. Derived independently here, which is what a real generator
+should do.
+
+**Step 7 reproduces his oldest principle.** *Thinking over tools* is not an
+assertion in this run; it is what R4 outputs when you cannot know in advance
+whether a technology will last. His principle 1 falls out as a **consequence**.
+
+*Nguyên tắc đầu tiên của anh — tư duy hơn công cụ — không phải tiên đề, nó là kết quả của R4.*
+
+## The network gains one thing from the third domain
+
+Running all three exposed something two domains could not: **R1 and R3 pull
+against each other, and how hard depends on the domain.**
+
+| Domain | External check | Cost | Tension |
+|---|---|---|---|
+| **Code** | a test that ran | near zero | **none** — cheap *and* external |
+| **Investing** | realised outcome | high (time) | real |
+| **Learning** | a person who does not know it | high (needs a person) | **severe** |
+
+In code, R1 and R3 are aligned, which is why the discipline feels natural
+there. In learning they conflict directly: the outside standard is expensive,
+so R3 pushes toward cheap substitutes — and every cheap substitute
+(re-reading, nodding along, "I get it") is **inside** the system and therefore
+fails R1.
+
+**That is the mechanism behind self-deception in slow-feedback domains.** Not
+weak character; a structural conflict between two roots.
+
+**The resolution:** when external checks are expensive, buy the cheapest *real*
+external check — never a cheap fake one. Teach one person. Ship one small thing
+publicly. Make one decision with something at stake. One real check beats ten
+comfortable ones.
+
+*Chỗ nào kiểm chứng từ bên ngoài đắt, chỗ đó người ta tự lừa mình — vì cái rẻ thì nằm bên trong.*
+
 ## Where the method strains
 
 Honest limits, found while running it:
@@ -139,8 +203,10 @@ Honest limits, found while running it:
   the right observer is judgment. Everything after it is mechanical. So the
   generator does not remove the need for taste — it concentrates it into one
   place, which is arguably its main value.
-- **Not yet run on: learning.** Next iteration. Until then this page claims
-  transfer to one non-code domain, not to all.
+- **Run on three domains: code, investing, learning.** That is the scope of
+  the claim — three domains, not "any domain". A fourth could still break it.
+- **The R1–R3 tension has no clean fix**, only a rule of thumb (one real check
+  beats ten comfortable ones). How to price "real enough" is unresolved.
 
 ## Consequence for this brain
 
