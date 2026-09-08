@@ -8,7 +8,7 @@
 #
 # Format:  <target>|<source page>
 
-compiled_from: d8d1ff8
+compiled_from: 1c9aec2
 
 CORE.md|wiki/fact-vs-opinion.md
 CORE.md|wiki/how-i-want-to-think.md
