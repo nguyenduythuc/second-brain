@@ -138,11 +138,27 @@ me I am wrong?*
    If yes it is too expensive; make it cheaper or drop it. **A gate people
    bypass is worse than no gate — it looks like coverage.** Old violations get
    a ratchet: block new drift, never block work for existing debt.
+   **This also applies inside a single task, not only across stages.** Reading
+   one document, reviewing one PR, evaluating one option: make several passes
+   over the same thing, cheapest first, with a **bail-out between passes** —
+   title and figures before the prose, prose before the math. Most things are
+   rejected by a pass that costs almost nothing.
+   And before going deep on any one candidate, **skim all of them cheaply
+   first**: a cheap survey is how you decide where the expensive attention goes.
 7. **Name what you cannot check in advance and buy the undo instead.** Make it
    reversible, or write the recovery procedure at the moment of the change,
    while the details are still in your head.
 
 *Giá trị → người quan sát cụ thể → cái gì làm họ thất bại → luật → cái gì kích hoạt → ai check rẻ nhất.*
+
+### Gate 7c — grading a method someone else hands you
+
+The seven steps also work backwards. Given an existing method — a framework, a
+playbook, someone's advice — walk the steps and ask which one each piece serves,
+then name the steps it has no answer for. The usual finding is that the method
+is strong on R3 (cheap, staged) and silent on R1: **every check it prescribes is
+one you run inside your own head.** That is the gap to fill, and it is the gap
+that matters most.
 
 ### Gate 7b — when no standard exists yet
 

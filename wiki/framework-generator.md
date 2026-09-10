@@ -2,8 +2,8 @@
 title: Framework Generator — the network, and the steps that turn it into a domain framework
 type: synthesis
 created: 2026-09-08
-updated: 2026-09-08
-sources: [sources/2026-09-05-ng-using-coding-agents.md, sources/2026-07-27-lfvn-coding-convention.md, sources/2026-07-27-craft-philosophy-self-report.md]
+updated: 2026-09-10
+sources: [sources/2026-09-05-ng-using-coding-agents.md, sources/2026-07-27-lfvn-coding-convention.md, sources/2026-07-27-craft-philosophy-self-report.md, sources/2026-09-10-ng-reading-research-papers.md]
 ---
 
 # Framework Generator
@@ -189,6 +189,63 @@ publicly. Make one decision with something at stake. One real check beats ten
 comfortable ones.
 
 *Chỗ nào kiểm chứng từ bên ngoài đắt, chỗ đó người ta tự lừa mình — vì cái rẻ thì nằm bên trong.*
+
+## Second use: auditing someone else's method
+
+The generator turns out to do a second job — not only *producing* a framework
+but **grading one that already exists**. First test: Ng's paper-reading method
+(`sources/2026-09-10-ng-reading-research-papers.md`, a third-party summary —
+treat the wording as unverified).
+
+### What it gets right, and which root each piece is
+
+| Ng's move | Root | Why it works |
+|---|---|---|
+| Four passes over one paper: title/abstract/figures → conclusion → text without math → math | **R3** | Escalating cost with a bail-out after each pass. Identical in shape to his own 4-tier review gate — cheapest filter first, expensive attention spent only on survivors |
+| Scan 10% of all papers before reading any | **R3** | A cheap survey to *allocate* expensive attention across candidates |
+| 15–20 papers for understanding, 50–100 for mastery | **R2** | A countable target is a trigger; "read the literature" is not. The numbers themselves are unevidenced — their function is to be countable |
+| The four questions (what was attempted / key elements / what can I use / which references next) | **R1 + step 2** | They are a *failing test*: if you cannot answer them, the pass failed. "What can you use yourself?" judges the paper against your work — a standard outside the paper |
+
+### What the generator says is missing
+
+Running the seven steps on "learn a field by reading" exposes three holes.
+
+1. **No external check anywhere.** Every check in the method is answered in your
+   own head. By the R1–R3 tension below, that is exactly what you would predict
+   of a cheap method in a slow-feedback domain — and exactly where
+   self-deception enters.
+2. **No required output.** The method is entirely input-side. The learning run
+   above says *one produced output per session*, because the observer for "can
+   do" is the task performed unaided.
+3. **No spacing trigger.** It has a count but no re-visit event. Step 5 says a
+   rule with no trigger does not fire; "read 50 papers" does not say when to
+   come back to paper 3.
+
+**The diagnosis is sharper than the list.** Ng's method builds the *understand*
+observer and not the *do* observer — it is a **declarative**-learning method.
+For reading papers that is the right choice. Applied to React Native internals
+or to investing, it would produce understanding without capability, which is
+[[wiki/understanding-vs-doing]]'s whole subject.
+
+Minimum additions to make it procedural: one artifact per paper that runs or
+gets used · explain one paper to someone who does not know it · schedule the
+second look before closing the first.
+
+*Phương pháp của Ng xây người quan sát "hiểu", không xây người quan sát "làm được".*
+
+### What Ng's method gives back to the network
+
+Two refinements it earned:
+
+- **R3 applies inside a single task, not only across a pipeline.** The brain had
+  R3 as staged gates (lint → CI → AI → human). Ng applies the same escalation to
+  *one artifact*, four times, with a bail-out between passes. Third independent
+  sighting of escalating-cost filtering, so R3 holds by its own Rule of Three.
+- **Scan-before-spend is a partial answer to an open hole.**
+  [[wiki/agent-operating-model]] hole 3 says human attention across concurrent
+  work is unmanaged. Ng's "scan 10% of everything first, then go deep on few" is
+  the same problem — finite attention, many candidates — with a cheap survey as
+  the allocator.
 
 ## Where the method strains
 

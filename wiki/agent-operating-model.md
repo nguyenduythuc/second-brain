@@ -2,7 +2,7 @@
 title: Agent Operating Model — running agents, not just building them
 type: synthesis
 created: 2026-09-05
-updated: 2026-09-05
+updated: 2026-09-10
 sources: [sources/2026-09-05-ng-using-coding-agents.md, sources/2026-09-01-graph-engineering-kopadze.md, sources/2026-07-16-hermes-self-improvement.md, sources/2026-07-16-shepherd-architecture.md]
 ---
 
@@ -67,6 +67,12 @@ assumptions."*
 3. **Human attention across concurrent sessions is unmanaged.** The graph
    ingest covered fanning work out; nobody covered the operator's own attention
    as the scarce resource once it is fanned out.
+   **Partial answer 2026-09-10:** Ng's paper-reading method allocates attention
+   by *scanning 10% of every candidate before reading any of them* — a cheap
+   survey decides where the expensive passes go. Same problem shape (finite
+   attention, many candidates), so it ports: skim every agent's output cheaply,
+   then go deep only on the ones that fail the skim. See
+   [[wiki/framework-generator]].
 4. **No team dimension.** *"When you work in a team, you consider how to
    coordinate context across different developers' agents."* This brain models
    one person and one agent. He works in a team on a shared monorepo, so the

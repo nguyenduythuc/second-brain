@@ -2,7 +2,7 @@
 title: Four Roots — what 5 Whys reaches under everything in this brain
 type: synthesis
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-10
 sources: [sources/2026-09-05-ng-using-coding-agents.md, sources/2026-09-05-ng-ai-engineering-skills-map-verbatim.md, sources/2026-09-01-graph-engineering-kopadze.md, sources/2026-07-27-lfvn-coding-convention.md]
 ---
 
@@ -102,6 +102,12 @@ the habit → a habit that dies protects nothing.
 **Ng, "decompose into verifiable steps":** verifiability falls as scope grows →
 a big step has many failure modes and one summary output → and the check must
 stay cheaper than the work or it will not be run.
+
+**Ng's paper-reading passes (3rd sighting, 2026-09-10):** four passes over one
+paper, each more expensive, with a bail-out after each → identical shape to his
+4-tier review gate and to this brain's mechanical/judgment lint split.
+**Refinement earned:** R3 applies *inside a single task*, not only across stages
+of a pipeline. Same artifact, escalating passes.
 
 *Cái gate mà người ta bypass thì tệ hơn là không có gate.*
 
